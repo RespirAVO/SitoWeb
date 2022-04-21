@@ -1,0 +1,314 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100;300&family=Signika+Negative:wght@700&display=swap);
+
+body{
+    background-color: rgb(155, 243, 224);
+    /*background-color: white;*/
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+}
+
+#siteContainer{
+  width: 100%;
+  height: 736px;
+}
+
+#title{
+  position: absolute;
+  left: 13em;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Signika Negative";
+  color: #236b59; 
+}
+
+#title1{
+  position: absolute;
+  left: 6em;
+  font-size: 50px;
+  font-weight: bold;
+  font-family: "Signika Negative";
+  color: #236b59; 
+}
+
+#logo{
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 12em;
+  height: 12em;
+}
+  
+#description{
+  position:absolute ;
+  top:  13em;
+  left: 20em;
+  height: 30em;
+  width: 69em;
+  background-color: #59d3b4;
+  border-radius: 8px;
+}
+
+#navigatore{
+  position: absolute;
+  top: 13em;
+  left: 2em;
+  margin: 0;
+  height: 30em;
+  width: 15em;
+  z-index: -1;
+  background-color: #59d3b4;
+  border-radius: 8px;
+}
+
+.shadow{
+  box-shadow: -10px 20px 20px rgba(0,0,0,0.3) ;
+}
+
+#lista{
+  font-size: 30px;
+}
+
+#elemNav{
+  font-size: 30px;
+  color: #262626;
+  text-decoration: none;
+}
+
+#spazio{
+  margin-left: 20px;
+  margin-top: 25px;
+  margin-bottom: 50px;
+}
+
+#testoDescrizione
+{
+  margin: 10px;
+  font-size: 25px;
+}
+
+.btn {
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 1.25rem;
+  position: relative;
+  margin: 32px;
+  z-index: 100;
+}
+
+.btn-3 {
+  overflow: hidden;
+  color: #fff;
+  border-radius: 30px;
+  box-shadow: 0 0 0 0 rgba(143, 64, 248, 0.5), 0 0 0 0 rgba(39, 200, 255, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-3::after {
+  content: "";
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  top: -50px;
+  left: -100px;
+  background-color: #ff3cac;
+  background-image: linear-gradient(
+    225deg,
+    #27d86c 0%,
+    #26caf8 50%,
+    #c625d0 100%
+  );
+  z-index: -1;
+  transition: transform 0.5s ease;
+}
+
+.btn-3:hover {
+  transform: translate(0, -6px);
+  box-shadow: 10px -10px 25px 0 rgba(143, 64, 248, 0.5),
+    -10px 10px 25px 0 rgba(39, 200, 255, 0.5);
+}
+
+.btn-3:hover::after {
+  transform: rotate(150deg);
+}
+
+
+
+#ChiSiamo{
+  position:absolute ;
+  top:  14%;
+  left: 25%;
+  height: 60%;
+  width: 69%;
+  background-color: #59d3b4;
+  border-radius: 8px;
+}
+
+#navigatoreAlto{
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li a {
+    position: relative;
+    display: block;
+    padding: 20px 70px;
+    margin: 20px 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #262626;
+    font-weight: bold;
+}
+
+ul li {
+    list-style: none;
+    z-index: 4;
+}
+
+#containerNav{
+  position: absolute;
+  top: 20px;
+  left: 34em;
+  margin: 0;
+  height: 6em;
+  width: 60em;
+  z-index: 3;
+  background-color: #59d3b4;
+  border-radius: 8px;
+}
+
+#centro{
+  text-align: center;
+}
+
+#containerImg{
+  background-color: #59d3b4;
+}
+
+#img{
+  margin: 10px;
+}
+
+.works-grid{
+    position: absolute;
+    top: 13em;
+    display: grid;
+    margin-left: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    width: 745px;
+    border-radius: 8px;
+    gap: 0 5rem;
+  
+}
+
+.work-item{
+  margin-top: 50px;
+}
+
+.works-grid > :nth-child(odd){
+    margin-top: 5rem;
+}
+
+
+.work-item img{
+    position: relative;
+    width: 290px;
+    height: 256px;
+    top: 15px;
+    left: 15px;
+    object-fit: cover;
+    background-color: black;
+}
+
+.scrittaFoto{
+  position: relative;
+  top: 5px;
+  left: 15px;
+}
+.foot{
+    display: inline;
+    margin-top: 50%;
+    width: 100vw;
+    height: 100px;
+    float: left;
+    clear: both;
+    text-align: center;
+    background-color: #83cbab;
+}
+
+#divTitleImg{
+  position: absolute;
+  margin: 0px;
+  height: 50px;
+}
+
+#navigatoreMap{
+  position: absolute;
+  top: 13em;
+  left: 2em;
+  margin: 0;
+  height: 15em;
+  width: 17em;
+  z-index: -1;
+  background-color: #59d3b4;
+  border-radius: 8px;
+}
+
+.titleImg{
+  position: relative;
+  margin: 10px;
+}
+
+
+#elemNavMap{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  z-index: 1000;
+}
+
+.foot p{
+    line-height: 10px;
+    color: rgb(28, 43, 43);
+}
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#title1Map{
+  position: absolute;
+  top:  5em;
+  left: 12em;
+}
+
+#title1Grafico{
+  position: absolute;
+  top:  22em;
+  left: 12em;
+}
+
+.mappe{
+  position: absolute;
+  top:  14em;
+  left: 24em;
+  height: 30em;
+  width: 69em;
+  background-color: #59d3b4;
+  border-radius: 8px;  
+}
+
+#graficoMap{
+  position: relative;
+  top:  48em;
+  left: 24em;
+  height: 30em;
+  width: 69em;
+  background-color: #59d3b4;
+  border-radius: 8px; 
+}
