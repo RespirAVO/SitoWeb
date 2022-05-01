@@ -103,6 +103,9 @@ nav img{
     display: flex;
     justify-content: space-between;
 }
+.row--gallery {
+    float: right;
+}
 
 /*Sezione principale della pagina*/
 .info {
