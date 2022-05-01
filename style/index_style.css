@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Style per il logo*/
+.logo {
+    border-radius: 20px;
+}
+
+/*Header*/
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+/*Testo descrittivo del progetto*/
+.text {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text h1 {
+    font-size: 62px;
+}
+.text p {
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+
+/*Pagina contattaci*/
+.contact {
+    margin: auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    padding: 100px 0;
+}
+.contact h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+/*Sezione dei dati e del corpo del messaggio dell'email*/
+.contact_col input, .contact_col textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    outline: none;
+    border: 1px solid #aaa;
+    box-sizing: border-box;
+}
+.contact_col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+/*Bottone per l'invio del messaggio*/
+button {
+    margin-left: 50%;
+}
+
+/*Bem icone social*/
+/*Instagram*/
+.fa--ig {
+    color: #5851DB;
+}
+/*Github*/
+.fa--github {
+    color: black;
+}
+/*YoutTube*/
+.fa--yt{
+    color: red;
+}
+
+
+/*Mobile style for index & all menu page*/
+@media(max-width: 700px) {
+    /*Grandezza del testo*/
+    .text h1 {
+        font-size: 20px;
+    }
+    /*Bottoni*/
+    .nav_links ul li {
+        display: block;
+    }
+    .nav_links {
+        position: fixed;
+        background: #aaa;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav_links ul {
+        padding: 30px;
+    }
+    /*Bem icone social*/
+    /*Instagram*/
+    .fa--ig {
+        color: #5851DB;
+    }
+    /*Github*/
+    .fa--github {
+        color: black;
+    }
+    /*YoutTube*/
+    .fa--yt{
+        color: red;
+    }
+    /*Bottoni*/
+    .btn {
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 8px 8px;
+        border-radius: 15px;
+        font-size: 15px;
+        background: transparent;
+        width: 100px;
+    }
+    .contact h1 {
+        font-size: 20px;
+    }
+    .info_col h1 {
+        font-size: 15px;
+    }
+    .info_col h1 p {
+        font-size: 1px;
+    }
+    .info_col iframe {
+        max-width: 350px;
+        max-height: 200px;
+    }
+    .info_col img {
+        float: right;
+        padding: 2px;
+        max-width: 350px;
+        max-height: 200px;
+    }
+    #graficoMap {
+        width: 350px;
+    }
+    .map {
+        width: 300px;
+        height: 300px;
+        margin-top: 300px;
+    }
+    .gallery {
+        float: right;
+        height: 250px;
+        width: 250px;
+        display: flex;
+        overflow: auto;
+    }
+    .gallery img {
+        float: right;
+        padding: 2px;
+        max-width: 100%;
+        max-height: 100%;
+        flex-direction: row;
+        overflow: auto;
+    }
+}

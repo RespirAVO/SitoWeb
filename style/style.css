@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/*Scrollbar*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #ae2424; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #204db6; 
+}
+
+/*Proprietà usate in tutto il sito*/
+
+/*Style per il logo*/
+.logo {
+    border-radius: 20px;
+}
+
+/*Header delle pagine secondarie*/
+.sub_header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: #fff;
+}
+.sub_header h1 {
+    margin-top: 10px;
+}/*
+.sub_header img:hover {
+    border: 0 solid #fff;
+    color: black;
+    border-radius: 20px;
+    transition: 0.3s;
+}*/
+
+/*Bottoni del menu*/
+.nav_links {
+    flex: 1;
+    text-align: right;
+}
+nav {
+    display: flex;
+    padding: 0 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav_links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 28px;
+    border-radius: 15px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+}
+.btn:hover {
+    border: 1px solid #fff;
+    background: #fff;
+    color: black;
+    transition: 0.3s;
+}
+
+/*Immagini nel nav*/
+nav img{
+    width: 150px;
+}
+
+/*Riga per un informazione nella pagina*/
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/*Sezione principale della pagina*/
+.info {
+    width: 90%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+.info_col {
+   flex-basis: 100%; 
+}
+.info_col p {
+    padding: 15px 0 15px;
+}
+.info_col img {
+    float: right;
+    padding: 2px;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 20px;
+}
+
+/*frame dei video o della mappa del "dove siamo"*/
+.info_col iframe {
+    float: right;
+    max-width: 1000px;
+    max-height: 100%;
+    border-radius: 20px;
+}
+
+/*Footer di tutte le pagine*/
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+.footer h4 {
+    margin-bottom: 30px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+.footer--change {
+    font-size: 12px;
+}
+
+/*Icone dei social*/
+.icons .fa {
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+    text-decoration: none;
+}
+nav .fa {
+    display: none;
+}
+/*Bem icone social*/
+/*Instagram*/
+.fa--ig {
+    color: #5851DB;
+}
+/*Github*/
+.fa--github {
+    color: black;
+}
+/*YoutTube*/
+.fa--yt{
+    color: red;
+}
+
+/*Bottoni secondari*/
+.sub_btn {
+    display: inline-block;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    padding: 12px 28px;
+    border-radius: 15px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.sub_btn:hover {
+    border: 1px solid #000000;
+    background: #aaa;
+    color: black;
+    transition: 0.3s;
+}
+
+
+/*Mobile style for index & all menu page*/
+@media(max-width: 700px) {
+    /*Grandezza del testo*/
+    .text h1 {
+        font-size: 20px;
+    }
+    /*Bottoni*/
+    .nav_links ul li {
+        display: block;
+    }
+    .nav_links {
+        position: fixed;
+        background: #aaa;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 0.5s;
+    }
+    nav .fa {
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    .nav_links ul {
+        padding: 30px;
+    }
+    /*Bem icone social*/
+    /*Instagram*/
+    .fa--ig {
+        color: #5851DB;
+    }
+    /*Github*/
+    .fa--github {
+        color: black;
+    }
+    /*YoutTube*/
+    .fa--yt{
+        color: red;
+    }
+    /*Bottoni*/
+    .btn {
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 8px 8px;
+        border-radius: 15px;
+        font-size: 15px;
+        background: transparent;
+        width: 100px;
+    }
+    .contact h1 {
+        font-size: 20px;
+    }
+    .info_col h1 {
+        font-size: 15px;
+    }
+    .info_col h1 p {
+        font-size: 1px;
+    }
+    .info_col iframe {
+        max-width: 350px;
+        max-height: 200px;
+    }
+    .info_col img {
+        float: right;
+        padding: 2px;
+        max-width: 350px;
+        max-height: 200px;
+    }
+    /*--------------------*/
+    #graficoMap {
+        width: 350px;
+    }
+    .map {
+        width: 300px;
+        height: 300px;
+        margin-top: 300px;
+    }
+    /*--------------------*/
+    .gallery {
+        float: right;
+        height: 250px;
+        width: 250px;
+        display: flex;
+        overflow: auto;
+    }
+    .gallery img {
+        float: right;
+        padding: 2px;
+        max-width: 100%;
+        max-height: 100%;
+        flex-direction: row;
+        overflow: auto;
+    }
+}
