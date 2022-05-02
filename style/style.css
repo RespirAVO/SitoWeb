@@ -105,12 +105,15 @@ nav img{
     padding-top: 70px;
     padding-bottom: 30px;
 }
+/*Colonna per un'informazione*/
 .info_col {
    flex-basis: 100%; 
 }
+/*Paragrafo*/
 .info_col p {
     padding: 15px 0 15px;
 }
+/*Immagini*/
 .info_col img {
     float: right;
     padding: 2px;
@@ -119,7 +122,7 @@ nav img{
     border-radius: 20px;
 }
 
-/*frame dei video o della mappa del "dove siamo"*/
+/*Style dei frame della mappa e dei video*/
 .info_col iframe {
     float: right;
     max-width: 1000px;
@@ -134,6 +137,7 @@ nav img{
     padding: 30px 0;
 
 }
+/*testo*/
 .footer h4 {
     margin-bottom: 30px;
     margin-top: 20px;
@@ -168,7 +172,7 @@ nav .fa {
 }
 
 /*Bottoni secondari*/
-.sub_btn {
+.btn--sub {
     display: inline-block;
     text-decoration: none;
     color: black;
@@ -180,7 +184,7 @@ nav .fa {
     position: relative;
     cursor: pointer;
 }
-.sub_btn:hover {
+.btn--sub:hover {
     border: 1px solid #000000;
     background: #aaa;
     color: black;
@@ -219,19 +223,6 @@ nav .fa {
     .nav_links ul {
         padding: 30px;
     }
-    /*Bem icone social*/
-    /*Instagram*/
-    .fa--ig {
-        color: #5851DB;
-    }
-    /*Github*/
-    .fa--github {
-        color: black;
-    }
-    /*YoutTube*/
-    .fa--yt{
-        color: red;
-    }
     /*Bottoni*/
     .btn {
         text-decoration: none;
@@ -243,26 +234,32 @@ nav .fa {
         background: transparent;
         width: 100px;
     }
+    /*Style pagina contattaci*/
     .contact h1 {
         font-size: 20px;
     }
+    /*Colonna pagina*/
+    /*Titolo style*/
     .info_col h1 {
         font-size: 15px;
     }
+    /*Titolo e paragrafo style*/
     .info_col h1 p {
         font-size: 1px;
     }
+    /*Frame style*/
     .info_col iframe {
         max-width: 350px;
         max-height: 200px;
     }
+    /*Immagine style*/
     .info_col img {
         float: right;
         padding: 2px;
         max-width: 350px;
         max-height: 200px;
     }
-    /*--------------------*/
+    /*Pagina maps style*/
     #graficoMap {
         width: 350px;
     }
@@ -271,7 +268,7 @@ nav .fa {
         height: 300px;
         margin-top: 300px;
     }
-    /*--------------------*/
+    /*Galleria pagina media*/
     .gallery {
         height: 230px;
         width: 100%;

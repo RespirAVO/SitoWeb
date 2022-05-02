@@ -4,6 +4,7 @@
 SISTEMARE MAPPA CON VISTA DA MOBILE
 *************************************/
 
+/*Style per le mappe*/
 .mappe2 {
     position: absolute;
     top:  14em;
@@ -22,6 +23,7 @@ SISTEMARE MAPPA CON VISTA DA MOBILE
     background-color: #59d3b4;
     border-radius: 8px;  
 }
+/*Style per il grafico delle rilevazioni*/
 #graficoMap {
     width: 50rem;
     border-radius: 8px;
@@ -33,6 +35,7 @@ SISTEMARE MAPPA CON VISTA DA MOBILE
 .graf {
     height: 25rem;
 }
+/*Style per il posizionamento dei pointer "superato limite"*/
 .info_col--center {
     display: flex;
     flex-direction: row;
@@ -72,19 +75,6 @@ SISTEMARE MAPPA CON VISTA DA MOBILE
     .nav_links ul {
         padding: 30px;
     }
-    /*Bem icone social*/
-    /*Instagram*/
-    .fa--ig {
-        color: #5851DB;
-    }
-    /*Github*/
-    .fa--github {
-        color: black;
-    }
-    /*YoutTube*/
-    .fa--yt{
-        color: red;
-    }
     /*Bottoni*/
     .btn {
         text-decoration: none;
@@ -115,7 +105,7 @@ SISTEMARE MAPPA CON VISTA DA MOBILE
         max-width: 350px;
         max-height: 200px;
     }
-    /*-----------------------------*/
+    /*Style per il posizionamento dei pointer "superato limite"*/
     .info_col--center {
         display: flex;
         flex-direction: column;
@@ -129,20 +119,19 @@ SISTEMARE MAPPA CON VISTA DA MOBILE
         width: 300px;
         height: 300px;
     }
-    /*---------------------------*/
+    /*Galleria pagina media*/
     .gallery {
-        float: right;
-        height: 250px;
-        width: 250px;
+        height: 230px;
+        width: 100%;
         display: flex;
+        flex-direction: row;
         overflow: auto;
     }
     .gallery img {
-        float: right;
-        padding: 2px;
-        max-width: 100%;
-        max-height: 100%;
-        flex-direction: row;
-        overflow: auto;
+        height: 230px;
+        width: 100%;
+        flex-shrink: 0;
+        object-fit: cover;
+        position: sticky;
     }
 }

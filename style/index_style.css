@@ -22,6 +22,7 @@
 }
 
 /*Testo descrittivo del progetto*/
+/*Testo principale pagina*/
 .text {
     width: 90%;
     color: #fff;
@@ -31,9 +32,11 @@
     transform: translate(-50%, -50%);
     text-align: center;
 }
+/*Titolo*/
 .text h1 {
     font-size: 62px;
 }
+/*Paragrafo*/
 .text p {
     margin: 10px 0 40px;
     font-size: 14px;
@@ -51,44 +54,11 @@
     text-align: center;
     padding: 100px 0;
 }
+/*Titolo*/
 .contact h1 {
     color: #fff;
     margin-bottom: 40px;
     padding: 0;
-}
-
-/*Sezione dei dati e del corpo del messaggio dell'email*/
-.contact_col input, .contact_col textarea {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 20px;
-    margin-left: 50%;
-    outline: none;
-    border: 1px solid #aaa;
-    box-sizing: border-box;
-}
-.contact_col {
-    flex-basis: 48%;
-    margin-bottom: 30px;
-}
-
-/*Bottone per l'invio del messaggio*/
-button {
-    margin-left: 50%;
-}
-
-/*Bem icone social*/
-/*Instagram*/
-.fa--ig {
-    color: #5851DB;
-}
-/*Github*/
-.fa--github {
-    color: black;
-}
-/*YoutTube*/
-.fa--yt{
-    color: red;
 }
 
 
@@ -123,19 +93,6 @@ button {
     .nav_links ul {
         padding: 30px;
     }
-    /*Bem icone social*/
-    /*Instagram*/
-    .fa--ig {
-        color: #5851DB;
-    }
-    /*Github*/
-    .fa--github {
-        color: black;
-    }
-    /*YoutTube*/
-    .fa--yt{
-        color: red;
-    }
     /*Bottoni*/
     .btn {
         text-decoration: none;
@@ -147,25 +104,32 @@ button {
         background: transparent;
         width: 100px;
     }
+    /*Style pagina contattaci*/
     .contact h1 {
         font-size: 20px;
     }
+    /*Colonna pagina*/
+    /*Titolo style*/
     .info_col h1 {
         font-size: 15px;
     }
+    /*Titolo e paragrafo style*/
     .info_col h1 p {
         font-size: 1px;
     }
+    /*Frame style*/
     .info_col iframe {
         max-width: 350px;
         max-height: 200px;
     }
+    /*Immagine style*/
     .info_col img {
         float: right;
         padding: 2px;
         max-width: 350px;
         max-height: 200px;
     }
+    /*Pagina maps style*/
     #graficoMap {
         width: 350px;
     }
@@ -174,6 +138,7 @@ button {
         height: 300px;
         margin-top: 300px;
     }
+    /*Galleria pagina media*/
     .gallery {
         float: right;
         height: 250px;

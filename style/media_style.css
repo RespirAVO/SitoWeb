@@ -35,6 +35,7 @@
     .text h1 {
         font-size: 20px;
     }
+
     /*Bottoni*/
     .nav_links ul li {
         display: block;
@@ -59,19 +60,6 @@
     }
     .nav_links ul {
         padding: 30px;
-    }
-    /*Bem icone social*/
-    /*Instagram*/
-    .fa--ig {
-        color: #5851DB;
-    }
-    /*Github*/
-    .fa--github {
-        color: black;
-    }
-    /*YoutTube*/
-    .fa--yt{
-        color: red;
     }
     /*Bottoni*/
     .btn {
