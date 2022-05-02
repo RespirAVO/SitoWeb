@@ -20,6 +20,7 @@
     flex-direction: row;
     overflow: auto;
 }
+/*Immagini della galleria (pagina media)*/
 .gallery img {
     height: 470px;
     width: 500px;
@@ -35,7 +36,6 @@
     .text h1 {
         font-size: 20px;
     }
-
     /*Bottoni*/
     .nav_links ul li {
         display: block;
@@ -72,25 +72,32 @@
         background: transparent;
         width: 100px;
     }
+    /*titolo spazio contattaci*/
     .contact h1 {
         font-size: 20px;
     }
+    /*Colonna pagina*/
+    /*Titolo style*/
     .info_col h1 {
         font-size: 15px;
     }
+    /*Titolo e paragrafo style*/
     .info_col h1 p {
         font-size: 1px;
     }
+    /*Frame style*/
     .info_col iframe {
         max-width: 350px;
         max-height: 200px;
     }
+    /*Immagine style*/
     .info_col img {
         float: right;
         padding: 2px;
         max-width: 350px;
         max-height: 200px;
     }
+    /*Pagina maps style*/
     #graficoMap {
         width: 350px;
     }
@@ -99,6 +106,7 @@
         height: 300px;
         margin-top: 300px;
     }
+    /*Galleria pagina media*/
     .gallery {
         height: 230px;
         width: 100%;

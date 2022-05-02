@@ -23,18 +23,20 @@ SISTEMARE MAPPA CON VISTA DA MOBILE
     background-color: #59d3b4;
     border-radius: 8px;  
 }
+.map {
+    height: 25rem;
+}
+
 /*Style per il grafico delle rilevazioni*/
 #graficoMap {
     width: 50rem;
     border-radius: 8px;
     float: right;
 }
-.map {
-    height: 25rem;
-}
 .graf {
     height: 25rem;
 }
+
 /*Style per il posizionamento dei pointer "superato limite"*/
 .info_col--center {
     display: flex;
