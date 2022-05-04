@@ -22,6 +22,7 @@
 }
 /*Immagini della galleria (pagina media)*/
 .gallery img {
+    max-width: 100%;
     height: 470px;
     width: 500px;
     flex-shrink: 0;

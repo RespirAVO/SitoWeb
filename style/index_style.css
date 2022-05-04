@@ -35,6 +35,7 @@
 /*Titolo*/
 .text h1 {
     font-size: 62px;
+    color: rgb(40, 182, 40);
 }
 /*Paragrafo*/
 .text p {
