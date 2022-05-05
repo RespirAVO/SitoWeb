@@ -93,8 +93,24 @@
                     dal nostro telefono, mentre nel secondo file sono presenti gli effettvi valori rilevati da Flow.
                 </p>
                 <p>
-                    <b>Per chi vuole conoscere meglio Unicsv:</b><br/><br/>
-                    
+                    <b>Per chi vuole conoscere meglio Unicsv:</b><br/>
+                    <p>
+                        La struttura di Unicsv è suddivisa in livelli:<br/><br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Il livello più vicino all'utente è quello che permette all'utente di unire le misure<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Il livello più lontano, invece, comprende tutta la collezione di librerie scritte per il programma.<br/><br/><br/>
+                        Le librerie scritte sono:<br/><br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- csvlib<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- assertlib<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- filelib<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- iolib<br/>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- siglib<br/>
+                    </p>
+                    <p>
+                        Le librerie Assertlib, filelib, e iolib sono delle librerie così dette "wrapper" ovvero librierie già presenti in C standard,
+                        ma queste hanno alcune funzioni in più; un esempio di funzione presente in queste librerie è il println, che corrisponde al printf
+                        del C standard ma in più aggiunge un \n alla fine, in modo da non doverlo scrivere ogni volta.<br/>
+                        La libreria filelib, invece, permette di apirere un file senza scrivere ogni volta fileopen e poi la modalità di apertura.
+                    </p>
                 </p>
             </div>
         </div>
