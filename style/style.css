@@ -113,8 +113,26 @@ nav img{
 }
 /*Paragrafo*/
 .info_col p {
+    max-width: 800px;
+    color: rgb(125, 123, 123);
+    font-size: 25px;
     padding: 15px 0 15px;
+    animation: fadeIn linear 1s;
+    -webkit-animation: fadeIn linear 1s;
+    -moz-animation: fadeIn linear 1s;
+    -o-animation: fadeIn linear 1s;
+    -ms-animation: fadeIn linear 1s;
 }
+/*Keyframe per il fade in del testo*/
+@keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes fadeIn {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
 /*Immagini*/
 .info_col img {
     float: right;
