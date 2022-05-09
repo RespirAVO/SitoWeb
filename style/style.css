@@ -214,10 +214,6 @@ nav .fa {
 
 /*Mobile style for index & all menu page*/
 @media(max-width: 700px) {
-    /*Grandezza del testo*/
-    .text h1 {
-        font-size: 20px;
-    }
     /*Bottoni*/
     .nav_links ul li {
         display: block;
@@ -261,11 +257,11 @@ nav .fa {
     /*Colonna pagina*/
     /*Titolo style*/
     .info_col h1 {
-        font-size: 15px;
+        font-size: 30px;
     }
     /*Titolo e paragrafo style*/
-    .info_col h1 p {
-        font-size: 1px;
+    .info_col p {
+        font-size: 20px;
     }
     /*Frame style*/
     .info_col iframe {

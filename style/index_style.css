@@ -67,7 +67,7 @@
 @media(max-width: 700px) {
     /*Grandezza del testo*/
     .text h1 {
-        font-size: 20px;
+        font-size: 35px;
     }
     /*Bottoni*/
     .nav_links ul li {
@@ -115,8 +115,8 @@
         font-size: 30px;
     }
     /*Titolo e paragrafo style*/
-    .info_col h1 p {
-        font-size: 1px;
+    .info_col p {
+        font-size: 20px;
     }
     /*Frame style*/
     .info_col iframe {
