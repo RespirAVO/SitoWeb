@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#form {
+    margin-left: 42%;
+}
+
+.field {
+    margin-bottom: 10px;
+}
+  
+.field label {
+    display: block;
+    font-size: 18px;
+    color: #aaa;
+}
+  
+.field input {
+    display: block;
+    height: 30px;
+    width: 250px;
+    min-width: 250px;
+    font-size: 14px;
+}
+
+#message {
+    height: 100px;
+    inline-size: 0;
+}
+
+#button {
+    margin-left: 25%;
+}
+  
+input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #0e8708;
+    color: #fff;
+    border: none
+}

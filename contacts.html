@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/index_style.css">
+    <link rel="stylesheet" href="./style/contacts_style.css">
     <link rel="icon" href="./img/home_page.png" type="x-icon">
     <title>Contacts</title>
 </head>
@@ -15,7 +16,7 @@
     <!--Header-->
     <section class="sub_header">
         <nav>
-            <a href="index.html"><img src="./img/logo_bas.png" onmouseover="this.src='./img/logo_hov.png';" onmouseout="this.src='./img/logo_bas.png';" class="logo"/></a>
+            <a href="index.html"><img src="./img/logo_bas.png" onmouseover="this.src='./img/logo_green.png';" onmouseout="this.src='./img/logo_bas.png';" class="logo"/></a>
             <div class="nav_links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -34,7 +35,25 @@
     <!--Central section-->
     <section class="contact_col">
         <div class="row">
-            
+            <form id="form">
+                <div class="field">
+                    <label for="from_name">Mittente</label>
+                    <input type="text" name="from_name" id="from_name">
+                </div>
+                <div class="field">
+                    <label for="message">Messaggio</label>
+                    <input type="text" name="message" id="message">
+                </div>
+              
+                    <input type="submit" id="button" value="Send Email" >
+              </form>
+              
+              <script type="text/javascript"
+                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+              
+              <script type="text/javascript">
+                emailjs.init('Bg5VvRTLKVlzPUQcV')
+              </script>
         </div>
     </section>
 
@@ -75,6 +94,28 @@
         function hideMenu() {
             nav_Links.style.right = "-200px";
         }
+
+        // Invio di Email tramite il form 
+        const btn = document.getElementById('button');
+
+        document.getElementById('form')
+            .addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                btn.value = 'Sending...';
+
+                const serviceID = 'default_service';
+                const templateID = 'template_xmnueot';
+
+                emailjs.sendForm(serviceID, templateID, this)
+                    .then(() => {
+                    btn.value = 'Send Email';
+                    alert('Sent!');
+                }, (err) => {
+                    btn.value = 'Send Email';
+                    alert(JSON.stringify(err));
+                });
+        });
     </script>
 </body>
 </html>
