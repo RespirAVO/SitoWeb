@@ -27,6 +27,10 @@ SISTEMARE MAPPA CON VISTA DA MOBILE
     height: 25rem;
 }
 
+.info_col--map {
+    width: 100%;
+}
+
 /*Style per il grafico delle rilevazioni*/
 #graficoMap {
     width: 50rem;
@@ -43,6 +47,14 @@ SISTEMARE MAPPA CON VISTA DA MOBILE
     flex-direction: row;
     align-items: center;
     text-align: center;
+}
+
+/*Style per il selector delle mappe/grafici*/
+select {
+    color: black;
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 
@@ -115,7 +127,8 @@ SISTEMARE MAPPA CON VISTA DA MOBILE
         text-align: center;
     }
     #graficoMap {
-        width: 350px;
+        width: 100%;
+        height: 20%;
     }
     .map {
         width: 300px;
