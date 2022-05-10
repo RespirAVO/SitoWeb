@@ -16,7 +16,15 @@
     <!--Header-->
     <section class="sub_header">
         <nav>
-            <a href="index.html"><img src="./img/logo_bas.png" onmouseover="this.src='./img/logo_green.png';" onmouseout="this.src='./img/logo_bas.png';" class="logo"/></a>
+            <a href="index.html">
+                <img 
+                    src="./img/logo_bas.png" 
+                    onmouseover="this.src='./img/logo_green.png';" 
+                    onmouseout="this.src='./img/logo_bas.png';" 
+                    class="logo"
+                    alt="immagini dei due tipi di loghi"    
+                    />
+                </a>
             <div class="nav_links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -38,22 +46,20 @@
             <form id="form">
                 <div class="field">
                     <label for="from_name">Mittente</label>
-                    <input type="text" name="from_name" id="from_name">
+                    <input type="text" name="from_name" id="from_name" value="Inserisci qua il tuo nome">
                 </div>
                 <div class="field">
                     <label for="message">Messaggio</label>
-                    <input type="text" name="message" id="message">
+                    <input type="text" name="message" id="message" value="Scrivi qua il tuo messaggio">
                 </div>
+                <input type="submit" id="button" value="Invia il messaggio">
+            </form>
               
-                    <input type="submit" id="button" value="Send Email" >
-              </form>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
               
-              <script type="text/javascript"
-                src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-              
-              <script type="text/javascript">
+            <script type="text/javascript">
                 emailjs.init('Bg5VvRTLKVlzPUQcV')
-              </script>
+            </script>
         </div>
     </section>
 

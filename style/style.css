@@ -119,9 +119,6 @@ nav img{
     padding: 15px 0 15px;
     animation: fadeIn linear 1s;
     -webkit-animation: fadeIn linear 1s;
-    -moz-animation: fadeIn linear 1s;
-    -o-animation: fadeIn linear 1s;
-    -ms-animation: fadeIn linear 1s;
 }
 /*Keyframe per il fade in del testo*/
 @keyframes fadeIn {
