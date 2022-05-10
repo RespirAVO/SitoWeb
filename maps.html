@@ -73,27 +73,41 @@
                     <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"/>
                     indica che il limite è stato superato
                 </p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                <p>
+                    <p></p>
+                    <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"/>
+                    Se sono tutti verdi allora il valore non è stato trovato
+                </p>
             </div>
         </div>
+
         <br/>
         <br/>
-        <h4>Scegli la mappa di:</h4>
+
+        <!--Selector per la visualizzazione delle mappe-->
+        <h4>Scegli la mappa :</h4>
         <br/>
-        <select>
-            <option>Bellini Antonio     </option>
-            <option>Carlone Alfonso     </option>
-            <option>Circhetta Alessandro</option>
-            <option>D'Agostino Vincenzo </option>
-            <option>Dela Rosa Valentino </option>
-            <option>Ferrari             </option>
-            <option>Morabito            </option>
-            <option>Pellegrino Tommaso  </option>
-            <option>Pesce Enrico        </option>
-            <option>Rocca Francesco     </option>
-            <option>Vella Davide        </option>
-            <option>Pansini Gugliemo    </option>
-            <option>Salerno Alessandro  </option>
+        <select id="fileList">
+            <!--
+                Non funziona (bug mappe: dice di essere in Africa)
+                <option value="Bellini_2022_02_22_all.csv">Bellini 22 Febbraio 2022</option>
+            -->
+            <option value="Bellini_2022_03_01_all.csv">         Bellini 1 Marzo 2022    </option>
+            <option value="Bellini_2022_02_22_all.csv">         Bellini 8 Marzo 2022    </option>
+            <option value="DelaRosa_2022_02_28__2022_03_29.csv">Dela Rosa               </option>
+            <option value="Dagostino_2022_03_15_all.csv">       D'Agostino 15 Marzo 2022</option>
+            <option value="Dagostino_2022_03_16_all.csv">       D'Agostino 16 Marzo 2022</option>
+            <option value="Dagostino_2022_03_17_all.csv">       D'Agostino 17 Marzo 2022</option>
+            <option value="data.csv">                           data.csv                </option>
         </select>
+        <br/>
+        <br/>
+        <br/>
+        <h4>Scegli cosa visualizzare</h4>
+        <br/>
+        <select id="optionList"></select>
+        
         <!--Riga per la mappa-->
         <div class="row">
             <div id="mappaR" class="info_col map">

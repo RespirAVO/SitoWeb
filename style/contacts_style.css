@@ -39,7 +39,7 @@ input[type="submit"] {
     margin: 0 auto;
     padding: 5%;
     font-size: 20px;
-    background-color: #0e8708;
+    background-color: rgb(15, 136, 0);
     color: #fff;
     border: none
 }

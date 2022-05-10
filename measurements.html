@@ -35,7 +35,7 @@
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>Rilevazioni ottenute</h1>
+        <h1>Rilevazioni</h1>
     </section>
 
     <!--Central section-->
@@ -69,63 +69,6 @@
                 </p>
             </div>            
         </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <div class="row">
-            <div class="info_col">
-                <h1>I file .csv</h1>
-                <p>In che formato sono i dati che abbiamo ottenuto?&nbsp;&nbsp;&nbsp;Cosa sono i file .csv?</p>
-                <a href="img/file csv.png"><img src="img/file csv.png" alt="immagine file .csv"/></a>
-                <p>
-                    Partiamo spiegando cosa sono i file .csv . I file Comma Separated Value (dall'acronimo csv) sono dei file nel quale i dati vengono separati 
-                    da una virgola (comma). 
-                </p>
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-        <div class="row">
-            <div class="info_col">
-                <h1>Unicsv</h1>
-                <p>Che cos'è Unicsv?&nbsp;&nbsp;&nbsp;Perchè è nato?</p>
-                <a href="img/unicsv.PNG"><img src="img/unicsv.PNG" alt="immagine dell'interfaccia di unicsv"/></a>
-                <p>
-                    Unicsv è un programma scritto in C language in grado di unire due file CSV. Il programma è nato perche
-                    avevamo la necessita di avere in un unico file sia la posizione del rilevamento, che i valori rilevati,
-                    siccome per la creazione delle mappe e dei grafici era necessario avere un unico file.
-                    I dati forniti da Plume Labs, infatti, sono divisi in due file: uno contiene tutte le posizioni GPS fornite 
-                    dal nostro telefono, mentre nel secondo file sono presenti gli effettvi valori rilevati da Flow.
-                </p>
-                <p>
-                    <b>Per chi vuole conoscere meglio Unicsv:</b><br/>
-                    <p>
-                        La struttura di Unicsv è suddivisa in livelli:<br/><br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Il livello più vicino all'utente è quello che permette all'utente di unire le misure<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Il livello più lontano, invece, comprende tutta la collezione di librerie scritte per il programma.<br/><br/><br/>
-                        Le librerie scritte sono:<br/><br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- csvlib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- assertlib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- filelib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- iolib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- siglib<br/>
-                    </p>
-                    <p>
-                        Le librerie Assertlib, filelib, e iolib sono delle librerie così dette "wrapper" ovvero librierie già presenti in C standard,
-                        ma queste hanno alcune funzioni in più; un esempio di funzione presente in queste librerie è il println, che corrisponde al printf
-                        del C standard ma in più aggiunge un \n alla fine, in modo da non doverlo scrivere ogni volta.<br/>
-                        La libreria filelib, invece, permette di apirere un file senza scrivere ogni volta fileopen e poi la modalità di apertura.
-                    </p>
-                </p>
-            </div>
-        </div>
-        <br/>
-        <br/>
-        <br/>
-        <br/>
     </section>
 
     <!--Footer-->
