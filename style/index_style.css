@@ -44,6 +44,13 @@
     color: #fff;
 }
 
+/*Testo che porta ad altri siti*/
+.text--web_text {
+    color: rgb(15, 136, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /*Banner per la pagina contattaci*/
 .contact {
     margin: auto;
@@ -55,8 +62,40 @@
     text-align: center;
     padding: 100px 0;
 }
+
+/*Sezione per il progetto AVOmobility*/
+.contact--avomobility {
+    margin: auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    padding: 100px 0;
+}
+/*Sezione per il progetto greendonors*/
+.contact--greendonors {
+    margin: auto;
+    width: 80%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/banner.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    padding: 100px 0;}
 /*Titolo*/
 .contact h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.contact--avomobility h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+.contact--greendonors h1 {
     color: #fff;
     margin-bottom: 40px;
     padding: 0;

@@ -13,9 +13,8 @@
 
 /*Galleria di foto*/
 .gallery {
-    float: right;
-    height: 500px;
-    width: 500px;
+    margin: 0 auto;
+    width: 900px;
     display: flex;
     flex-direction: row;
     overflow: auto;
@@ -23,12 +22,13 @@
 /*Immagini della galleria (pagina media)*/
 .gallery img {
     max-width: 100%;
-    height: 470px;
-    width: 500px;
+    height: 600px;
+    width: 900px;
     flex-shrink: 0;
     object-fit: cover;
     position: sticky;
 }
+
 
 
 /*Mobile style for index & all menu page*/
