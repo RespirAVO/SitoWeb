@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/index_style.css">
+    <link rel="styleshhet" href="./style/maps_style.css">
+    <link rel="icon" href="img/home_page.png" type="x-icon">
+    <title>Homepage</title>
+    <meta name="google-site-verification" content="7wKsrMfJQbiN-AWfsPxDkZwQOZnXa5ZifSarC6COm0U" />
+</head>
+
+<body>
+    <!--Header-->
+    <section class="sub_header">
+        <nav>
+            <a href="index.html">
+                <img 
+                    src="./img/logo_bas.png" 
+                    onmouseover="this.src='./img/logo_green.png';" 
+                    onmouseout="this.src='./img/logo_bas.png';" 
+                    class="logo"
+                    alt="immagini dei due tipi di loghi"
+                    />
+                </a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="media.html"        class="btn">        📸 &nbsp;&nbsp;&nbsp;MEDIA        </a></li>
+                    <li><a href="maps.html"         class="btn">        🗺️ &nbsp;&nbsp;&nbsp;MAPPE        </a></li>
+                    <li><a href="measurements.html" class="btn">        ⚛️ &nbsp;&nbsp;&nbsp;RILEVAZIONI  </a></li>
+                    <li><a href="costi.html"        class="btn">        💲  &nbsp;&nbsp;&nbsp;ANALISI COSTI</a></li>
+                    <li><a href="info.html"         class="btn">&nbsp;   ℹ️  &nbsp;&nbsp;      INFO         </a></li>
+                    <li><a href="about.html"        class="btn">        👤  &nbsp;&nbsp;&nbsp;CHI SIAMO    </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Analisi dei costi economici e sociali</h1>
+    </section>
+    
+    <!--Central section-->
+    <section class="info">
+    	<div class="row">
+        	<h1>🚧 Work in progress</h1>
+        </div>
+    </section>
+    
+    <!--Footer-->
+    <section class="footer">
+        <h4>Dove siamo</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.7361655156838!2d7.690239915322858!3d45.070862879098236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d7b78bcafcd%3A0xe69dde6451ebe36e!2sCorso%20S.%20Maurizio%2C%208%2C%2010124%20Torino%20TO!5e0!3m2!1sit!2sit!4v1651151437775!5m2!1sit!2sit"
+            width="300" height="150"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <p>@2021 - 2022</p>
+        <p>Istituto tecnico industriale "A.Avogadro" di Torino</p>
+        <p>C.so San Maurizio 8, 10125, Torino (TO)</p>
+        <br/>
+        <p class="footer--license">CC By Classe 3C Info</p>
+
+        <!--Social-->
+        <div class="icons">
+            <a href="https://instagram.com/respir_avo?igshid=NDA1YzNhOGU="     class="fa fa-instagram fa--ig"  target="_blank"></a>
+            <a href="https://github.com/RespirAVO"                             class="fa fa-github fa--github" target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCBUx7uhN9ca06NqeSQzwC5Q" class="fa fa-youtube fa--yt"    target="_blank"></a>
+        </div>
+    </section>
+
+
+    <!--Javascript per il menu da mobile-->
+    <script>
+        var nav_Links = document.getElementById("navLinks");
+        // Funzione che fa comparire il menu
+        function showMenu() {
+            nav_Links.style.right = "0";
+        }
+        // Funzione che nasconde il menu
+        function hideMenu() {
+            nav_Links.style.right = "-200px";
+        }
+    </script>
+</body>
+<<<<<<< HEAD
+</html>
+=======
+</html>
+>>>>>>> da35dc350413e5e3dfb93c27692def93932c23b6

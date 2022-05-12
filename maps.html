@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" rel="stylesheet" integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="crossorigin="">
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.3.0/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+    <script src="/js/map.js" type="module" defer></script>
+    <script src="/js/graph.js" type="module"  defer></script>
+    <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/index_style.css" rel="stylesheet">
+    <link href="./style/maps_style.css" rel="stylesheet">
+    <link rel="icon" href="./img/mappe_page.png" type="x-icon">
+    <title>Mappe</title>
+</head>
+
+<body>
+    <!--Header-->
+    <section class="sub_header">
+        <nav>
+            <a href="index.html">
+                <img 
+                    src="./img/logo_bas.png" 
+                    onmouseover="this.src='./img/logo_green.png';" 
+                    onmouseout="this.src='./img/logo_bas.png';" 
+                    class="logo"
+                    alt="immagini dei due tipi di loghi"
+                    />
+                </a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="media.html"        class="btn">        📸 &nbsp;&nbsp;&nbsp;MEDIA        </a></li>
+                    <li><a href="maps.html"         class="btn">        🗺️ &nbsp;&nbsp;&nbsp;MAPPE        </a></li>
+                    <li><a href="measurements.html" class="btn">        ⚛️ &nbsp;&nbsp;&nbsp;RILEVAZIONI  </a></li>
+                    <li><a href="costi.html"        class="btn">        💲  &nbsp;&nbsp;&nbsp;ANALISI COSTI</a></li>
+                    <li><a href="info.html"         class="btn">&nbsp;   ℹ️  &nbsp;&nbsp;      INFO         </a></li>
+                    <li><a href="about.html"        class="btn">        👤  &nbsp;&nbsp;&nbsp;CHI SIAMO    </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Mappe e grafici</h1>
+    </section>
+
+    <!--Central section-->
+    <section class="info">
+        <!--Riga per le mappe delle rilevazioni-->
+        <div class="row">
+            <div class="info_col">
+                <h1>Mappa del percorso delle rilevazioni</h1>
+                <p>La mappa che segue rappresenta uno dei percorsi fatti per ottenere una delle misurazioni</p>
+            </div>
+        </div>
+        <!--Riga per i pointer del "superato limite"-->
+        <div class="row">
+            <div class="info_col info_col--center">
+                <p>
+                    <p></p>
+                    <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"/>
+                    indica che il limite non è superato
+                </p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                <p>
+                    <p></p>
+                    <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-red.png"/>
+                    indica che il limite è stato superato
+                </p>
+                <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
+                <p>
+                    <p></p>
+                    <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"/>
+                    Se sono tutti verdi allora il valore non è stato trovato
+                </p>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <!--Selector per la visualizzazione delle mappe-->
+        <h4>Scegli la mappa del:</h4>
+        <br/>
+        <select id="fileList">
+            <!--
+                Non funziona (bug mappe: dice di essere in Africa)
+                <option value="Bellini_2022_02_22_all.csv">     22 Febbraio 2022</option>
+                <option value="Bellini_2022_03_01_all.csv">     01 Marzo 2022    </option>
+                <option value="Bellini_2022_02_22_all.csv">     08 Marzo 2022    </option>
+            -->
+            <option value="Carlone_2022_04_24_all.csv">         24 Aprile 2022</option>
+            <option value="Dagostino_2022_03_15_all.csv">       15 Marzo 2022 </option>
+            <option value="Dagostino_2022_03_16_all.csv">       16 Marzo 2022 </option>
+            <option value="Dagostino_2022_03_17_all.csv">       17 Marzo 2022 </option>
+            <option value="Carlone_2022_05_06_all.csv">         06 Maggio 2022</option>
+            <option value="DelaRosa_2022_02_28__2022_03_29.csv">Dela Rosa     </option>
+        </select>
+        <br/>
+        <br/>
+        <br/>
+        <h4>Scegli cosa visualizzare</h4>
+        <br/>
+        <select id="optionList"></select>
+        
+        <!--Riga per la mappa-->
+        <div class="row">
+            <div id="mappaR" class="info_col map">
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+
+        <!--Riga per il grafico delle rilevazioni-->
+        <div class="row">
+            <div class="info_col">
+                <h1>Grafico delle rilevazioni</h1>
+                <p>Ecco un grafico che mostra tutti i dati ottenuti dalle rilevazioni fatte dagli studenti della classe 3C</p>
+            </div>
+        </div>
+        <!--Riga 2 perla spiegazione del grafico delle rilevazioni-->
+        <div class="row">
+            <div class="info_col">
+               <p>
+                  
+               </p> 
+            </div>
+        </div>
+        <h4>Scegli il grafico di:</h4>
+        <br/>
+        <select>
+            <option>Bellini Antonio     </option>
+            <option>Carlone Alfonso     </option>
+            <option>Circhetta Alessandro</option>
+            <option>D'Agostino Vincenzo </option>
+            <option>Dela Rosa Valentino </option>
+            <option>Ferrari             </option>
+            <option>Morabito            </option>
+            <option>Pellegrino Tommaso  </option>
+            <option>Pesce Enrico        </option>
+            <option>Rocca Francesco     </option>
+            <option>Vella Davide        </option>
+            <option>Pansini Gugliemo    </option>
+            <option>Salerno Alessandro  </option>
+        </select>
+        <!--Riga 3 per il grafico delle rilevazioni-->
+        <div class="row">
+            <div id="graficoMap" class="info_col">
+                <canvas id="grafico">
+                </canvas>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer-->
+    <section class="footer">
+        <h4>Dove siamo</h4>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2817.7361655156838!2d7.690239915322858!3d45.070862879098236!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47886d7b78bcafcd%3A0xe69dde6451ebe36e!2sCorso%20S.%20Maurizio%2C%208%2C%2010124%20Torino%20TO!5e0!3m2!1sit!2sit!4v1651151437775!5m2!1sit!2sit"
+            width="300" height="150"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+        <p>@2021 - 2022</p>
+        <p>Istituto tecnico industriale "A.Avogadro" di Torino</p>
+        <p>C.so San Maurizio 8, 10125, Torino (TO)</p>
+        <br/>
+        <p class="footer--license">CC By Classe 3C Info</p>
+
+        <!--Social-->
+        <div class="icons">
+            <a href="https://instagram.com/respir_avo?igshid=NDA1YzNhOGU="     class="fa fa-instagram fa--ig"  target="_blank"></a>
+            <a href="https://github.com/RespirAVO"                             class="fa fa-github fa--github" target="_blank"></a>
+            <a href="https://www.youtube.com/channel/UCBUx7uhN9ca06NqeSQzwC5Q" class="fa fa-youtube fa--yt"    target="_blank"></a>
+        </div>
+    </section>
+
+
+    <!--Javascript per il menu da mobile-->
+    <script>
+        var nav_Links = document.getElementById("navLinks");
+        // Funzione che fa comparire il menu
+        function showMenu() {
+            nav_Links.style.right = "0";
+        }
+        // Funzione che nasconde il menu
+        function hideMenu() {
+            nav_Links.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
