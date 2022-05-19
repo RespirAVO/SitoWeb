@@ -119,6 +119,16 @@ nav img{
     animation: fadeIn linear 1s;
     -webkit-animation: fadeIn linear 1s;
 }
+
+/**/
+.info_col--web_text {
+    color: rgb(15, 136, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+.info_col--web_text:hover {
+    color: red;
+}
 /*Keyframe per il fade in del testo*/
 @keyframes fadeIn {
     0% {opacity:0;}
