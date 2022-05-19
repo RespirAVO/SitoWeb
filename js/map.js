@@ -1,3 +1,4 @@
+"use strict";
 import Icons from "./icons.js";
 import Utils from "./utils.js";
 
@@ -43,7 +44,10 @@ function drawMarkers(map, data, field) {
         let popupMsg = '';
 
         for (const key of Object.keys(row))
-            popupMsg += key + ': ' + row[key] + '<br>';
+            if(key === 'timestamp')
+                popupMsg += 'data: ' + dayjs(row.timestamp * 1000,'x').format('DD/MM/YYYY hh:mm:ss') + '<br>';
+            else
+                popupMsg += key + ': ' + row[key] + '<br>';
 
         const marker = L.marker([lat, lon], {
             icon: (row[field] > (limit * 2) ? Icons.violet : 
@@ -59,8 +63,8 @@ function drawMarkers(map, data, field) {
 }
 
 async function uploadMesuresFromFile(map, fileName) {
-    markers.clearLayers();
     const data = await Utils.csvToObj(fileName);
+    data.pop();
 
     optsList.innerHTML = '';
     for (const key of Object.keys(data[0])) {
@@ -71,14 +75,13 @@ async function uploadMesuresFromFile(map, fileName) {
         newEle.setAttribute('value', key);
         newEle.innerText = key;
         optsList.appendChild(newEle);
-         
     }
 
-    drawMarkers(map, data, document.querySelector('#optionList').children[0].value);
+    drawMarkers(map, data, optsList.value);
 
-    optsList.addEventListener('change', e => {
+    optsList.onchange = e => {
         drawMarkers(map, data, optsList.value);
-    });
+    };
 }
 
 uploadMesuresFromFile(map, fileList.value);

@@ -16,7 +16,6 @@ function gm3ToPpb(value, field) {
 
 async function csvToObj(fileName) {
     return new Promise((succ) => {
-       
         $.get('./rilevazioni/' + fileName, csvString => {
             let csvStringParsed = Papa.parse(csvString, { header: true, dynamicTyping: true }).data;
             succ(csvStringParsed);
