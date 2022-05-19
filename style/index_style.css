@@ -181,6 +181,7 @@
         height: 300px;
         margin-top: 300px;
     }
+    
     /*Galleria pagina media*/
     .gallery {
         float: right;
@@ -196,5 +197,21 @@
         max-height: 100%;
         flex-direction: row;
         overflow: auto;
+    }
+
+    /*Galleria pagina maps*/
+    .gallery--maps {
+        height: 230px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        overflow: auto;
+    }
+    .gallery--maps img {
+        height: 230px;
+        width: 100%;
+        flex-shrink: 0;
+        object-fit: cover;
+        position: sticky;
     }
 }

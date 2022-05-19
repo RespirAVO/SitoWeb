@@ -87,21 +87,17 @@
         <br/>
 
         <!--Selector per la visualizzazione delle mappe-->
-        <h4>Scegli la mappa del:</h4>
+        <h4>Scegli la mappa del: (le mappe del giorno 15 e 16 Marzo sono molto pesanti, quindi potrebbe volerci un po per caricarle)</h4>
         <br/>
         <select id="fileList">
-            <!--
-                Non funziona (bug mappe: dice di essere in Africa)
-                <option value="Bellini_2022_02_22_all.csv">     22 Febbraio 2022</option>
-                <option value="Bellini_2022_03_01_all.csv">     01 Marzo 2022    </option>
-                <option value="Bellini_2022_02_22_all.csv">     08 Marzo 2022    </option>
-            -->
             <option value="Carlone_2022_04_24_all.csv">         24 Aprile 2022</option>
             <option value="Dagostino_2022_03_15_all.csv">       15 Marzo 2022 </option>
             <option value="Dagostino_2022_03_16_all.csv">       16 Marzo 2022 </option>
             <option value="Dagostino_2022_03_17_all.csv">       17 Marzo 2022 </option>
+            <option value="Delarosa_2022_03_18.csv">            18 Marzo 2022 </option>
+            <option value="Delarosa_2022_03_24.csv">            24 Marzo 2022 </option>
+            <option value="Delarosa_2022_03_25.csv">            25 Marzo 2022 </option>
             <option value="Carlone_2022_05_06_all.csv">         06 Maggio 2022</option>
-            <option value="DelaRosa_2022_02_28__2022_03_29.csv">Dela Rosa     </option>
         </select>
         <br/>
         <br/>
@@ -116,6 +112,32 @@
             </div>
         </div>
 
+        <!--Immagini delle rilevazioni con annotazioni-->
+        <div class="row">
+            <div class="info_col">
+                <div class="gallery--maps">
+                    <img src="img/Foto_1_Pesce.jpg"   alt="Immagine 1 Pesce"/>
+                    <img src="img/Foto_2_Pesce.jpg"   alt="Immagine 2 Pesce"/>
+                    <img src="img/Foto_3_Pesce.jpg"   alt="Immagine 3 Pesce"/>
+                    <img src="img/Foto_1_Carlone.jpg" alt="Immagine 1 Carlone"/>
+                    <img src="img/Foto_1_Carlone.jpg" alt="Immagine 2 Carlone"/>
+                    <img src="img/Foto_1_Carlone.jpg" alt="Immagine 3 Carlone"/>
+                </div>
+                <p>
+                    
+                </p>
+                <p>
+            </div>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <div class="info_col">
+                <div class="gallery--maps">
+                    <img src="img/Foto_1_Carlone.jpg" alt="Immagine 2 Carlone"/>
+                    <img src="img/Foto_1_Carlone.jpg" alt="Immagine 2 Carlone"/>
+                    <img src="img/Foto_1_Carlone.jpg" alt="Immagine 2 Carlone"/>
+                </div>
+            </div>
+        </div>
+
         <br/>
         <br/>
 
@@ -126,31 +148,7 @@
                 <p>Ecco un grafico che mostra tutti i dati ottenuti dalle rilevazioni fatte dagli studenti della classe 3C</p>
             </div>
         </div>
-        <!--Riga 2 perla spiegazione del grafico delle rilevazioni-->
-        <div class="row">
-            <div class="info_col">
-               <p>
-                  
-               </p> 
-            </div>
-        </div>
-        <h4>Scegli il grafico di:</h4>
-        <br/>
-        <select>
-            <option>Bellini Antonio     </option>
-            <option>Carlone Alfonso     </option>
-            <option>Circhetta Alessandro</option>
-            <option>D'Agostino Vincenzo </option>
-            <option>Dela Rosa Valentino </option>
-            <option>Ferrari             </option>
-            <option>Morabito            </option>
-            <option>Pellegrino Tommaso  </option>
-            <option>Pesce Enrico        </option>
-            <option>Rocca Francesco     </option>
-            <option>Vella Davide        </option>
-            <option>Pansini Gugliemo    </option>
-            <option>Salerno Alessandro  </option>
-        </select>
+        
         <!--Riga 3 per il grafico delle rilevazioni-->
         <div class="row">
             <div id="graficoMap" class="info_col">
