@@ -88,6 +88,19 @@ nav {
     transition: 0.3s;
 }
 
+/*Colore del bottone quando si è nella paggina measurements*/
+.btn--meas {
+    border: 1px solid rgb(15, 136, 0);
+}
+/*Colore del bottone quando si è nella pagina costi*/
+.btn--costi {
+    border: 1px solid rgb(15, 136, 0);
+}
+/*Colore del bottone quando si è nella pagina info*/
+.btn--info {
+    border: 1px solid rgb(15, 136, 0);
+}
+
 /*Immagini nel nav*/
 nav img{
     width: 150px;

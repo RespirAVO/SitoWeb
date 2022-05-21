@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style/style.css">
     <link rel="icon" href="./img/info_page.png" type="x-icon">
-    <title>Info</title>
+    <title>Il progetto</title>
 </head>
 
 <body>
@@ -26,17 +26,17 @@
             <div class="nav_links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="media.html"        class="btn">        📸 &nbsp;&nbsp;&nbsp;MEDIA        </a></li>
-                    <li><a href="maps.html"         class="btn">        🗺️ &nbsp;&nbsp;&nbsp;MAPPE        </a></li>
-                    <li><a href="measurements.html" class="btn">        ⚛️ &nbsp;&nbsp;&nbsp;RILEVAZIONI  </a></li>
-                    <li><a href="costi.html"        class="btn">        💲  &nbsp;&nbsp;&nbsp;ANALISI COSTI</a></li>
-                    <li><a href="info.html"         class="btn">&nbsp;   ℹ️  &nbsp;&nbsp;      INFO         </a></li>
-                    <li><a href="about.html"        class="btn">        👤  &nbsp;&nbsp;&nbsp;CHI SIAMO    </a></li>
+                    <li><a href="media.html"        class="btn">               📸 &nbsp;&nbsp;&nbsp;MEDIA        </a></li>
+                    <li><a href="maps.html"         class="btn">               🗺️ &nbsp;&nbsp;&nbsp;MAPPE        </a></li>
+                    <li><a href="measurements.html" class="btn">               ⚛️ &nbsp;&nbsp;&nbsp;RILEVAZIONI  </a></li>
+                    <li><a href="costi.html"        class="btn">                💲  &nbsp;&nbsp;&nbsp;ANALISI COSTI</a></li>
+                    <li><a href="info.html"         class="btn btn--info">&nbsp;ℹ️  &nbsp;&nbsp;      IL PROGETTO  </a></li>
+                    <li><a href="about.html"        class="btn">               👤  &nbsp;&nbsp;&nbsp;CHI SIAMO    </a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>Informazioni</h1>
+        <h1>Il progetto</h1>
     </section>
 
     <!--Central section-->
@@ -86,7 +86,7 @@
                 <p>In che formato sono i dati che abbiamo ottenuto?&nbsp;&nbsp;&nbsp;Cosa sono i file .csv?</p>
                 <a href="img/file csv.png"><img src="img/file csv.png" alt="immagine file .csv"/></a>
                 <p>
-                    Partiamo spiegando cosa sono i file .csv . I file Comma Separated Value (dall'acronimo csv) sono dei file nel quale i dati vengono separati 
+                    Iniziamo spiegando cosa sono i file .csv . I file Comma Separated Value (dall'acronimo csv) sono dei file nel quale i dati vengono separati 
                     da una virgola (comma). 
                 </p>
             </div>
@@ -103,11 +103,11 @@
                 <p>Che cos'è <a href="https://github.com/RespirAVO/unicsv" class="info_col--web_text" target="_blank">Unicsv</a>?&nbsp;&nbsp;&nbsp;Perchè è nato?</p>
                 <a href="img/unicsv.PNG"><img src="img/unicsv.PNG" alt="immagine dell'interfaccia di unicsv"/></a>
                 <p>
-                    Unicsv è un programma scritto in C language in grado di unire due file CSV. Il programma è nato perche
-                    avevamo la necessita di avere in un unico file sia la posizione del rilevamento, che i valori rilevati,
-                    siccome per la creazione delle mappe e dei grafici era necessario avere un unico file.
-                    I dati forniti da Plume Labs, infatti, sono divisi in due file: uno contiene tutte le posizioni GPS fornite 
-                    dal nostro telefono, mentre nel secondo file sono presenti gli effettvi valori rilevati da Flow.
+                    Unicsv è un programma che abbiamo scritto in C language, ed è in grado di unire due file CSV. Il programma è nato perche avevamo la necessità 
+                    di avere in un unico file i dati delle posizioni e quelli delle misure, sincronizzandoli in base al tempo di rilevazione, unendo i dati ravvicinati 
+                    di circa 30 secondi. Questo era necessario, perche per creare le mappe e i grafici delle misure dovevamo avere un unico file CSV completo di posizioni 
+                    e misure. I dati forniti da Plume Labs, infatti, sono generati su due file CSV: uno contiene i dati delle le posizioni GPS fornite dal nostro telefono, 
+                    mentre il secondo file contienei valori delle misure rilevati da Flow.
                 </p>
                 <p>
                     <b>Per chi vuole conoscere meglio Unicsv:</b><br/>
@@ -128,6 +128,42 @@
                         del C standard ma in più aggiunge un \n alla fine, in modo da non doverlo scrivere ogni volta.<br/>
                         La libreria filelib, invece, permette di apirere un file senza scrivere ogni volta fileopen e poi la modalità di apertura.
                     </p>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="row">
+            <div class="info_col">
+                <h1>Mappe e Grafici con Leaflet</h1>
+                <p>
+                   Per la creazione delle mappe presenti sul sito abbiamo utilizzato una libreria di Javascript, chiamata Leaflet.
+                   (Javascript è il linguaggio utilizzato nei siti web per far si che ad ogni azione compiuta, per esempio il click di un bottone,
+                   dall'utente avvenga qualcosa sul sito)
+                </p>
+                <p>
+                    <b>Per chi vuole conoscere meglio Leaflet:</b><br/>
+                </p>
+            </div>
+        </div>
+
+        <br/>
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="row">
+            <div class="info_col">
+                <h1>OpenStreetMap</h1>
+                <p>
+                   Spiegare qui cos'è OpenStreetMap
+                </p>
+                <p>
+                    <b>Per chi vuole conoscere meglio Open Street Map:</b><br/>
+                </p>
             </div>
         </div>
     </section>

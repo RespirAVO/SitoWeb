@@ -51,6 +51,11 @@
     text-align: center;
 }
 
+/*Colore del bottone quando si è nella pagina mappe*/
+.btn--maps {
+    border: 1px solid rgb(15, 136, 0);
+}
+
 /*Style per il selector delle mappe/grafici*/
 select {
     color: black;

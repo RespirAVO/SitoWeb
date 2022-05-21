@@ -29,6 +29,10 @@
     position: sticky;
 }
 
+/*Colore del bottone quando si è nella pagina media*/
+.btn--media {
+    border: 1px solid rgb(15, 136, 0);
+}
 
 
 /*Mobile style for index & all menu page*/

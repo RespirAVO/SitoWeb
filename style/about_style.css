@@ -5,3 +5,8 @@
     padding: 0;
     font-family: 'Roboto Condensed', sans-serif;
 }
+
+/*Colore del bottone quando si è nella paggina measurements*/
+.btn--about {
+    border: 1px solid rgb(15, 136, 0);
+}
