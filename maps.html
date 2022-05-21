@@ -13,8 +13,8 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js/dist/chart.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
-    <script src="/js/map.js" type="module" defer></script>
-    <script src="/js/graph.js" type="module"  defer></script>
+    <script src="./js/map.js" type="module" defer></script>
+    <script src="./js/graph.js" type="module"  defer></script>
     <link href="./style/style.css" rel="stylesheet">
     <link href="./style/index_style.css" rel="stylesheet">
     <link href="./style/maps_style.css" rel="stylesheet">
@@ -33,8 +33,8 @@
                     onmouseout="this.src='./img/logo_bas.png';" 
                     class="logo"
                     alt="immagini dei due tipi di loghi"
-                    />
-                </a>
+                />
+            </a>
             <div class="nav_links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
@@ -60,6 +60,7 @@
                 <p>Le mappe che seguono rappresentano i percorsi da noi effettuati e le rispettive rilevazioni</p>
             </div>
         </div>
+
         <!--Riga per i pointer del "superato limite"-->
         <div class="row">
             <div class="info_col info_col--center">
@@ -148,7 +149,7 @@
                 <p>Ecco un grafico che mostra gli andamenti delle rilevazioni effetuate</p>
             </div>
         </div>
-        
+
         <!--Riga 3 per il grafico delle rilevazioni-->
         <div class="row">
             <div id="graficoMap" class="info_col">

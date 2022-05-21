@@ -65,8 +65,7 @@
     text-align: center;
     padding: 100px 0;
 }
-
-/*Sezione per il progetto AVOmobility*/
+/*Banner per il progetto AVOmobility*/
 .contact--avomobility {
     margin: auto;
     width: 80%;
@@ -77,7 +76,7 @@
     text-align: center;
     padding: 100px 0;
 }
-/*Sezione per il progetto greendonors*/
+/*Banner per il progetto greendonors*/
 .contact--greendonors {
     margin: auto;
     width: 80%;
@@ -87,6 +86,7 @@
     border-radius: 15px;
     text-align: center;
     padding: 100px 0;}
+    
 /*Titolo*/
 .contact h1 {
     color: #fff;

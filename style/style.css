@@ -42,6 +42,7 @@
     text-align: center;
     color: #fff;
 }
+
 /*Titolo*/
 .sub_header h1 {
     margin-top: 10px;
@@ -69,6 +70,7 @@ nav {
     text-decoration: none;
     font-size: 13px;
 }
+
 /*Bottoni*/
 .btn {
     display: inline-block;
@@ -87,7 +89,6 @@ nav {
     color: black;
     transition: 0.3s;
 }
-
 /*Colore del bottone quando si è nella paggina measurements*/
 .btn--meas {
     border: 1px solid rgb(15, 136, 0);
@@ -101,7 +102,7 @@ nav {
     border: 1px solid rgb(15, 136, 0);
 }
 
-/*Immagini nel nav*/
+/*Grandezza immagini nel nav*/
 nav img{
     width: 150px;
 }
@@ -216,7 +217,7 @@ nav .fa {
     transition: 0.3s;
 }
 
-/*Bem icone social*/
+/*Icone social*/
 /*Instagram*/
 .fa--ig {
     color: #5851DB;
