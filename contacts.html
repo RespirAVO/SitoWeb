@@ -47,11 +47,11 @@
             <form id="form">
                 <div class="field">
                     <label for="from_name">Mittente</label>
-                    <input type="text" name="from_name" id="from_name" value="Inserisci qua il tuo nome">
+                    <input type="text" name="from_name" id="from_name">
                 </div>
                 <div class="field">
                     <label for="message">Messaggio</label>
-                    <input type="text" name="message" id="message" value="Scrivi qua il tuo messaggio">
+                    <input type="text" name="message" id="message">
                 </div>
                 <input type="submit" id="button" value="Invia il messaggio">
             </form>
@@ -90,7 +90,7 @@
     </section>
 
 
-    <!--Javascript per il menu da mobile-->
+    <!--Javascript per il menu da mobile e per l'invio di email-->
     <script>
         var nav_Links = document.getElementById("navLinks");
         // Funzione che fa comparire il menu
@@ -109,17 +109,17 @@
             .addEventListener('submit', function(event) {
                 event.preventDefault();
 
-                btn.value = 'Sending...';
+                btn.value = 'Invio...';
 
                 const serviceID = 'default_service';
                 const templateID = 'template_xmnueot';
 
                 emailjs.sendForm(serviceID, templateID, this)
                     .then(() => {
-                    btn.value = 'Send Email';
-                    alert('Sent!');
+                    btn.value = 'Invia il messaggio';
+                    alert('Inviato con successo!');
                 }, (err) => {
-                    btn.value = 'Send Email';
+                    btn.value = 'Invia il messaggio';
                     alert(JSON.stringify(err));
                 });
         });
