@@ -10,3 +10,13 @@
 .btn--about {
     border: 1px solid rgb(15, 136, 0);
 }
+
+/*Immagine pagina about della classe*/
+.gallery--about {
+    border-radius: 15px;
+}
+
+/*Testo sopra la foto*/
+.row > h1 {
+    margin: 0 auto;
+}
