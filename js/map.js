@@ -54,7 +54,8 @@ function drawMarkers(map, data, field) {
                    row[field] > limit ? Icons.red : 
                    row[field] > (limit - (limit / 4)) ? Icons.orange : 
                    row[field] > (limit / 2) ? Icons.yellow : 
-                   Icons.green),
+                   row[field] < (limit / 2) ? Icons.green :
+                   Icons.grey),
             opacity: 1
         }).addTo(markers);
 
