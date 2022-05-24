@@ -134,6 +134,12 @@ nav img{
     -webkit-animation: fadeIn linear 1s;
 }
 
+/*Proprietà per la riga orizzontale*/
+hr {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
 /**/
 .info_col--web_text {
     color: rgb(15, 136, 0);
