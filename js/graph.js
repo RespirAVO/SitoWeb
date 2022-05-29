@@ -14,10 +14,11 @@ const graph = new Chart('grafico', {
             x: {
                 type: 'time',
                 time: {
-                    parser: 'dd/MM/yyyy hh:mm:ss',
+                    parser: 'dd/MM/yyyy HH:mm:ss',
                     unit: 'hour',
+                    stepSize: 1,
                     displayFormats: {
-                       'hour': 'dd/MM/yyyy hh:mm:ss'
+                       'hour': 'dd/MM/yyyy HH:mm:ss'
                     }
                 }
             }
@@ -29,20 +30,7 @@ async function drawGraphFormFile(graph, fileName) {
     let datasets = [];
     let data = await Utils.csvToObj(fileName + '/rilevazioni.csv');
 
-    //data = data.sort((a,b) => a.timestamp > b.timestamp);
-
-    //console.log(data);
-
-    for(let i = 0; i < data.length -1; i++) {
-        if(((data[i + 1].timestamp - data[i].timestamp) < 60)) {
-            delete data[i]; 
-        } else {
-            //console.log(data[i + 1].timestamp - data[i].timestamp);
-        }
-
-    }
-    data = data.filter(ele => ele !== undefined);
-    
+    data = data.sort((a,b) => b.timestamp - a.timestamp);
 
     for(const key of Object.keys(data[0])) {
         if(forbiddenFields.indexOf(key) !== -1)
@@ -53,13 +41,12 @@ async function drawGraphFormFile(graph, fileName) {
     }
 
     for(const row of data) {
-        //console.log(row);
         datasets.forEach(dataset => {
             if(!row[dataset.label])
                 return;
             
-            dataset.data.push( { x:dayjs(row.timestamp * 1000,'x').format('DD/MM/YYYY hh:mm:ss') /*Date.parse(row.timestamp * 1000)*/, y: row[dataset.label]  } )
-            //console.log(dataset.label + " " + row[dataset.label] + " " + row.timestamp);
+            dataset.data.push( { x:dayjs(row.timestamp * 1000,'x').format('DD/MM/YYYY HH:mm:ss'), y: row[dataset.label]  } )
+            console.log(dataset.label + " " + row[dataset.label] + " " + row.timestamp);
         });
     }
 
