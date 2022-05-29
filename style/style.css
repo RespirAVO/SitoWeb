@@ -133,8 +133,8 @@ nav {
 .btn--costi {
     border: 1px solid var(--logo);
 }
-/*Colore del bottone quando si è nella pagina info*/
-.btn--info {
+/*Colore del bottone quando si è nella pagina project*/
+.btn--proj {
     border: 1px solid var(--logo);
 }
 
@@ -176,7 +176,7 @@ hr {
     margin-left: 2.5%;
 }
 
-/**/
+/*hypertext*/
 .info_col--web_text {
     color: var(--logo);
     text-decoration: none;
@@ -275,16 +275,15 @@ nav .fa {
 
 /*Bottone per cambio tema*/
 .theme {
-    display: grid;
-    align-items: center;
+    background-color: var(--logo);
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    border: 1px solid var(--text);
-    background-color: var(--logo);
-    position: absolute;
-    top: 90%;
+    align-items: center;
+    cursor: pointer;
+    position: sticky;
     left: 95%;
+    top: 90%;
 }
 .theme:hover {
     border: 1px solid var(--text2);
