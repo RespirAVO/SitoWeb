@@ -138,14 +138,24 @@
 
         <div class="row">
             <div class="info_col">
-                <h1>Mappe e Grafici con Leaflet</h1>
+                <h1>Mappe con Leaflet</h1>
+                <img src="img/unicsv.PNG" alt="immagine dell'interfaccia di unicsv"/>
                 <p>
                    Per la creazione delle mappe presenti sul sito abbiamo utilizzato una libreria di Javascript, chiamata Leaflet.
                    (Javascript è il linguaggio utilizzato nei siti web per far si che ad ogni azione compiuta, per esempio il click di un bottone,
                    dall'utente avvenga qualcosa sul sito)
-                </p>
+                </p>   
                 <p>
-                    Per chi vuole conoscere meglio Leaflet:<br/>
+                    Per chi vuole conoscere meglio Leaflet:<br/><br/>
+                    Leaflet è una libreira che permette di lavorare con mappe online come (Mapbox, Open Street Map e molte altre), mettendole dentro una finestra da cui e possibile interagire con la mappa.
+                    Le interazioni possono essere zoomare, mettere figure geometriche, mettere makers e perfino immagini a cui e possibile assocciarci una didascalia, la quale spiega il marker o immagine con informazioni utili.<br/><br/>
+
+                    Nel sito è stata usata la tecnologia per tracciare il perscorso di una misurazione dato il suo file csv, 
+                    dal file saranno prese informazioni che saranno rappresente attatraverso il colore del marker, che indica il superamento del limite di una sostanza,
+                    selezionabile dal sito tramite il menu a tendina.
+                    Per ricreare il percoro della rilevazione sulla mappa è necessario che il file che si fornisce abbia un campo timestamp che esprime il tempo in secondi dalla UNIX epoch, poi i campi per le coordinate geografiche il cui nome del campo puo essere espresso
+                    sia in italiano che in inglese.<br/>
+                    Messi questi tre campi obbligatori ogni altro campo verrà percepito come sostanza da analizzare e ogni sostanza dovrà avere affianco al nome del campo l'unità di misura in cui è stata misurata tra parentesi. <br/>  
                 </p>
             </div>
         </div>

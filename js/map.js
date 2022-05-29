@@ -64,7 +64,7 @@ function drawMarkers(map, data, field) {
 }
 
 async function uploadMesuresFromFile(map, fileName) {
-    const data = await Utils.csvToObj(fileName);
+    const data = await Utils.csvToObj(fileName + '/rilevazioni.csv');
     data.pop();
 
     optsList.innerHTML = '';
@@ -85,8 +85,24 @@ async function uploadMesuresFromFile(map, fileName) {
     };
 }
 
+function loadImgs() {
+    const numberOfFoto = fileList.querySelector('option[value="'+fileList.value+'"]').getAttribute('nFoto');
+    const fotoContainer = document.querySelector('#gallery');
+    fotoContainer.innerHTML = '';
+    for(let i = 0; i < numberOfFoto; i++) {
+        const tmpFoto = document.createElement('img');
+        tmpFoto.src = './rilevazioni/' + fileList.value + '/imgs/img' + i + '.png';
+
+        fotoContainer.append(tmpFoto);
+    }
+}
+
 uploadMesuresFromFile(map, fileList.value);
+$('#note').load('./rilevazioni/' + fileList.value + '/note.html');
+loadImgs();
 
 fileList.addEventListener('change', e => {
     uploadMesuresFromFile(map, fileList.value);
+    $('#note').load('./rilevazioni/' + fileList.value + '/note.html');
+    loadImgs();
 });

@@ -27,7 +27,7 @@ const graph = new Chart('grafico', {
 
 async function drawGraphFormFile(graph, fileName) {
     let datasets = [];
-    let data = await Utils.csvToObj(fileName);
+    let data = await Utils.csvToObj(fileName + '/rilevazioni.csv');
 
     //data = data.sort((a,b) => a.timestamp > b.timestamp);
 
@@ -37,7 +37,7 @@ async function drawGraphFormFile(graph, fileName) {
         if(((data[i + 1].timestamp - data[i].timestamp) < 60)) {
             delete data[i]; 
         } else {
-            console.log(data[i + 1].timestamp - data[i].timestamp);
+            //console.log(data[i + 1].timestamp - data[i].timestamp);
         }
 
     }
@@ -53,13 +53,13 @@ async function drawGraphFormFile(graph, fileName) {
     }
 
     for(const row of data) {
-        console.log(row);
+        //console.log(row);
         datasets.forEach(dataset => {
             if(!row[dataset.label])
                 return;
             
             dataset.data.push( { x:dayjs(row.timestamp * 1000,'x').format('DD/MM/YYYY hh:mm:ss') /*Date.parse(row.timestamp * 1000)*/, y: row[dataset.label]  } )
-            console.log(dataset.label + " " + row[dataset.label] + " " + row.timestamp);
+            //console.log(dataset.label + " " + row[dataset.label] + " " + row.timestamp);
         });
     }
 
