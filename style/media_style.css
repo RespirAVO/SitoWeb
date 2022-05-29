@@ -6,11 +6,6 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
-/*Style per il logo*/
-.logo {
-    border-radius: 20px;
-}
-
 /*Galleria di foto*/
 .gallery {
     margin: 0 auto;
@@ -31,7 +26,7 @@
 
 /*Colore del bottone quando si è nella pagina media*/
 .btn--media {
-    border: 1px solid rgb(15, 136, 0);
+    border: 1px solid var(--logo);
 }
 
 
@@ -43,7 +38,7 @@
     }
     .nav_links {
         position: fixed;
-        background: #aaa;
+        background: var(--menu-color);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -54,7 +49,7 @@
     }
     nav .fa {
         display: block;
-        color: #fff;
+        color: var(--text);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -65,8 +60,8 @@
     /*Bottoni*/
     .btn {
         text-decoration: none;
-        color: #fff;
-        border: 1px solid #fff;
+        color: var(--text);
+        border: 1px solid var(--text);
         padding: 8px 8px;
         border-radius: 15px;
         font-size: 15px;

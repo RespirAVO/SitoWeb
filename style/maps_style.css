@@ -13,7 +13,7 @@
     left: 24em;
     height: 30em;
     width: 69em;
-    background-color: #59d3b4;
+    background-color: var(--maps-color1);
     border-radius: 8px;  
 }
 .mappe {
@@ -22,7 +22,7 @@
     top: 19em;
     height: 30em;
     width: 69em;
-    background-color: #59d3b4;
+    background-color: var(--maps-color1);
     border-radius: 8px;  
 }
 .map {
@@ -53,12 +53,11 @@
 
 /*Colore del bottone quando si è nella pagina mappe*/
 .btn--maps {
-    border: 1px solid rgb(15, 136, 0);
+    border: 1px solid var(--logo);
 }
 
 /*Style per il selector delle mappe/grafici*/
 select {
-    color: black;
     font-size: 15px;
     padding: 10px;
     border-radius: 15px;
@@ -90,7 +89,7 @@ select {
     }
     .nav_links {
         position: fixed;
-        background: #aaa;
+        background: var(--menu-color);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -101,7 +100,7 @@ select {
     }
     nav .fa {
         display: block;
-        color: #fff;
+        color: var(--text);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -112,8 +111,8 @@ select {
     /*Bottoni*/
     .btn {
         text-decoration: none;
-        color: #fff;
-        border: 1px solid #fff;
+        color: var(--text);
+        border: 1px solid var(--text);
         padding: 8px 8px;
         border-radius: 15px;
         font-size: 15px;

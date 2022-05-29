@@ -15,7 +15,7 @@
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(../img/banner.png);
+    background-image: linear-gradient(var(--opacity),var(--opacity)),url(../img/banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -25,7 +25,7 @@
 /*Testo principale pagina*/
 .text {
     width: 90%;
-    color: #fff;
+    color: var(--text);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -35,30 +35,30 @@
 /*Titolo*/
 .text h1 {
     font-size: 62px;
-    color: rgb(15, 136, 0);
+    color: var(--logo);
 }
 /*Paragrafo*/
 .text p {
     margin: 10px 0 40px;
     font-size: 14px;
-    color: #fff;
+    color: var(--text);
 }
 
 /*Testo che porta ad altri siti*/
 .text--web_text {
-    color: rgb(15, 136, 0);
+    color: var(--logo);
     text-decoration: none;
     cursor: pointer;
 }
 .text--web_text:hover {
-    color: red;
+    color: var(--btn-hov);
 }
 
 /*Banner per la pagina contattaci*/
 .contact {
     margin: auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/banner.png);
+    background-image: linear-gradient(var(--secondary-opacity),var(--secondary-opacity)), url(../img/banner.png);
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -69,7 +69,7 @@
 .contact--avomobility {
     margin: auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/avo_mobility.jpeg);
+    background-image: linear-gradient(var(--secondary-opacity),var(--secondary-opacity)), url(../img/avo_mobility.jpeg);
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -80,7 +80,7 @@
 .contact--greendonors {
     margin: auto;
     width: 80%;
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../img/banner.png);
+    background-image: linear-gradient(var(--secondary-opacity),var(--secondary-opacity)), url(../img/banner.png);
     background-position: center;
     background-size: cover;
     border-radius: 15px;
@@ -89,17 +89,17 @@
     
 /*Titolo*/
 .contact h1 {
-    color: #fff;
+    color: var(--text);
     margin-bottom: 40px;
     padding: 0;
 }
 .contact--avomobility h1 {
-    color: #fff;
+    color: var(--text);
     margin-bottom: 40px;
     padding: 0;
 }
 .contact--greendonors h1 {
-    color: #fff;
+    color: var(--text);
     margin-bottom: 40px;
     padding: 0;
 }
@@ -117,7 +117,7 @@
     }
     .nav_links {
         position: fixed;
-        background: #aaa;
+        background: var(--menu-color);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -128,7 +128,7 @@
     }
     nav .fa {
         display: block;
-        color: #fff;
+        color: var(--text);
         margin: 10px;
         font-size: 22px;
         cursor: pointer;
@@ -139,8 +139,8 @@
     /*Bottoni*/
     .btn {
         text-decoration: none;
-        color: #fff;
-        border: 1px solid #fff;
+        color: var(--text);
+        border: 1px solid var(--text);
         padding: 8px 8px;
         border-radius: 15px;
         font-size: 15px;
