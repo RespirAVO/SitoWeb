@@ -273,6 +273,24 @@ nav .fa {
     color: red;
 }
 
+/*Bottone per cambio tema*/
+.theme {
+    display: grid;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid var(--text);
+    background-color: var(--logo);
+    position: absolute;
+    top: 90%;
+    left: 95%;
+}
+.theme:hover {
+    border: 1px solid var(--text2);
+    background-color: var(--btn-hov);
+}
+
 
 /*Style per la dark mode in base alle system settings*/
 @media(prefers-color-scheme: dark) {
