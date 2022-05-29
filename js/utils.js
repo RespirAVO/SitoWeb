@@ -14,7 +14,7 @@ function gm3ToPpb(value, field) {
     return value * (1 / ugm3Values[field.replace('(ug/m3)', '').trim().toUpperCase()]);
 }
 
-async function csvToObj(fileName) {
+function csvToObj(fileName) {
     return new Promise((succ) => {
         $.get('./rilevazioni/' + fileName, csvString => {
             let csvStringParsed = Papa.parse(csvString, { header: true, dynamicTyping: true }).data;
