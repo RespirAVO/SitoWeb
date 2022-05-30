@@ -23,8 +23,17 @@ function csvToObj(fileName) {
     });
 }
 
+function filterEntryByTimeDiff(data, timeDiff) {
+    for(let i = 0; i < data.length -1; i++)
+        if(((data[i].timestamp - data[i + 1].timestamp) < 20))
+            delete data[i]; 
+
+    return data.filter(ele => ele !== undefined);
+}
+
 export default{
     ppbToGm3,
     gm3ToPpb,
-    csvToObj
+    csvToObj,
+    filterEntryByTimeDiff
 };

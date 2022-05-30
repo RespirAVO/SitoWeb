@@ -32,6 +32,8 @@ async function drawGraphFormFile(graph, fileName) {
 
     data = data.sort((a,b) => b.timestamp - a.timestamp);
 
+    data = Utils.filterEntryByTimeDiff(data, 20);
+
     for(const key of Object.keys(data[0])) {
         if(forbiddenFields.indexOf(key) !== -1)
             continue;
@@ -46,7 +48,6 @@ async function drawGraphFormFile(graph, fileName) {
                 return;
             
             dataset.data.push( { x:dayjs(row.timestamp * 1000,'x').format('DD/MM/YYYY HH:mm:ss'), y: row[dataset.label]  } )
-            console.log(dataset.label + " " + row[dataset.label] + " " + row.timestamp);
         });
     }
 
