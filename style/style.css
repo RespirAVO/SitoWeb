@@ -9,6 +9,7 @@
 /*COLOR PALETTE DELLE PAGINE*/
 :root {
     /*Light Theme*/
+    --background-light:         white;
     --logo-light:               rgb(15, 136, 0);
     --text-light:               #fff;
     --text2-light:              black;
@@ -26,6 +27,7 @@
 
 
     /*Dark theme*/
+    --background-dark:         #ccc;
     --logo-dark:               rgb(15, 136, 0);
     --text-dark:               #fff;
     --text2-dark:              black;
@@ -61,7 +63,9 @@
     background: var(--logo); 
 }
 
-/*Proprietà usate in tutto il sito*/
+body {
+    background-color: var(--background);
+}
 
 /*Style per il logo*/
 .logo {
@@ -273,27 +277,11 @@ nav .fa {
     color: red;
 }
 
-/*Bottone per cambio tema*/
-.theme {
-    background-color: var(--logo);
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    align-items: center;
-    cursor: pointer;
-    position: sticky;
-    left: 95%;
-    top: 90%;
-}
-.theme:hover {
-    border: 1px solid var(--text2);
-    background-color: var(--btn-hov);
-}
-
 
 /*Style per la dark mode in base alle system settings*/
 @media(prefers-color-scheme: dark) {
     :root {
+        --background:         var(--background-dark);
         --logo:               var(--logo-dark);
         --text:               var(--text-dark);
         --text2:              var(--text2-dark);
@@ -309,28 +297,12 @@ nav .fa {
             /*Maps color*/
             --maps-color1:    var(--maps-color1-dark);
     }
-    /*Dark*/
-    [color-scheme = "dark"] {
-        --logo-dark:               rgb(15, 136, 0);
-        --text-dark:               #fff;
-        --text2-dark:              black;
-        --paragraph-dark:          rgb(125, 123, 123);
-        --opacity-dark:            rgba(4,9,30,0.7); 
-        --secondary-opacity-dark:  rgba(0,0,0,0.7);
-        --menu-color-dark:         #aaa;
-        --btn-hov:                 red;
-            /*Contact color*/
-            --contact-field-dark:  rgb(101, 101, 101);
-            --contact-text-dark:   #aaa;
-            --contact-text2-dark:  #fff;
-            /*Maps color*/
-            --maps-color1-dark:    #59d3b4;
-    }
 }
 
 /*Style per la light mode in base alle system settings*/
 @media(prefers-color-scheme: light) {
     :root {
+        --background:         var(--background-light);
         --logo:               var(--logo-light);
         --text:               var(--text-light);
         --text2:              var(--text2-light);
@@ -345,23 +317,6 @@ nav .fa {
             --contact-text2:  var(--contact-text2-light);
             /*Maps color*/
             --maps-color1:    var(--maps-color1-light);
-    }
-    /*light*/
-    [color-scheme = "light"] {
-        --logo:               rgb(15, 136, 0);
-        --text:               #fff;
-        --text2:              black;
-        --paragraph:          rgb(125, 123, 123);
-        --opacity:            rgba(4,9,30,0.7); 
-        --secondary-opacity:  rgba(0,0,0,0.7);
-        --menu-color:         #aaa;
-        --btn-hov:            red;
-            /*Contact color*/
-            --contact-field:  rgb(101, 101, 101);
-            --contact-text:   #aaa;
-            --contact-text2:  #fff;
-            /*Maps color*/
-            --maps-color1:    #59d3b4;
     }
 }
 
