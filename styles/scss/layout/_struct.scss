@@ -1,0 +1,254 @@
+body {
+    background-color: var(--background-light);
+}
+
+/* LOGO */
+.logo {
+    border-radius: 20px;
+}
+
+/* HEADER DELLA HOME */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(var(--opacity),var(--opacity)),url(../../../images/content/banner.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+/* TITOLO */
+.text {
+    width: 90%;
+    color: var(--text);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+        font-size: 62px;
+        color: var(--logo);
+    }
+    p {
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: var(--text);
+    }
+    &--web_text {
+        color: var(--logo);
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: var(--btn-hov);
+        }
+    }
+}
+
+/* BANNER PER ALTRI PORGETTI */
+.contact {
+    margin: auto;
+    width: 80%;
+    background-image: linear-gradient(var(--secondary-opacity),var(--secondary-opacity)), url(../../../images/content/banner.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    text-align: center;
+    padding: 100px 0;
+    h1 {
+        color: var(--text);
+        margin-bottom: 40px;
+        padding: 0;
+    }
+    &--avomobility {
+        margin: auto;
+        width: 80%;
+        background-image: linear-gradient(var(--secondary-opacity),var(--secondary-opacity)), url(../../../images/content/avo_mobility.jpeg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+        text-align: center;
+        padding: 100px 0;
+        h1 {
+            color: var(--text);
+            margin-bottom: 40px;
+            padding: 0;
+        }
+    }
+    &--greendonors {
+        margin: auto;
+        width: 80%;
+        background-image: linear-gradient(var(--secondary-opacity),var(--secondary-opacity)), url(../../../images/content/banner.png);
+        background-position: center;
+        background-size: cover;
+        border-radius: 15px;
+        text-align: center;
+        padding: 100px 0;
+        h1 {
+            color: var(--text);
+            margin-bottom: 40px;
+            padding: 0;
+        }
+    }  
+}
+
+/* HEADER PAGINE SECONDARIE */
+.sub_header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(var(--opacity), var(--opacity)), url(../../../images/content/banner.png);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    color: var(--text);
+    h1 {
+        margin-top: 10px;
+    }
+}
+
+/* SPAZIO ORIZZONTALE PER INFO NELLE PAGINE */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    h1 {
+        margin: 0 auto;
+    }
+}
+
+/* SEZIONE PRINCIPALE DELLE PAGINE */
+.info {
+    width: 90%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+/* SPAZIO VERTICALE PER INFO NELLE PAGINE */
+.info_col {
+    flex-basis: 100%;
+    p {
+        color: var(--paragraph);
+        font-size: 25px;
+        padding: 15px 0 15px;
+        animation: fadeIn linear 1s;
+        -webkit-animation: fadeIn linear 1s; 
+    }
+    img {
+        float: right;
+        padding: 2px;
+        max-width: 50%;
+        max-height: 100%;
+        border-radius: 20px;
+    }
+    iframe {
+        float: right;
+        max-width: 1000px;
+        max-height: 100%;
+        border-radius: 20px;
+    }
+    &--web_text {
+        color: var(--logo);
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: var(--btn-hov);
+        }
+    }
+    &--map {
+        width: 100%;
+    }
+    &--center {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+    } 
+}
+
+/* TAG SELECTOR PER LE MAPPE */
+select {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+/* RIGA DI SEPARAZIONE */
+hr {
+    width: 95%;
+    margin-left: 2.5%;
+}
+
+/* GALLERIA PER LE FOTO */
+.gallery {
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+    img {
+        max-width: 100%;
+        height: 600px;
+        width: 900px;
+        flex-shrink: 0;
+        object-fit: cover;
+        position: sticky;
+    }
+    &--about {
+        border-radius: 15px;
+    }
+}
+
+/* STYLE PER LE MAPPE */
+.mappe2 {
+    position: absolute;
+    top:  14em;
+    left: 24em;
+    height: 30em;
+    width: 69em;
+    background-color: var(--maps-color1);
+    border-radius: 8px;  
+}
+.mappe {
+    position: absolute;
+    left: 32em; 
+    top: 19em;
+    height: 30em;
+    width: 69em;
+    background-color: var(--maps-color1);
+    border-radius: 8px;  
+}
+.map {
+    height: 45rem;
+}
+#graficoMap {
+    width: 50rem;
+    border-radius: 8px;
+    float: right;
+}
+.graf {
+    height: 25rem;
+}
+
+.icons {
+    .fa {
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        text-decoration: none;
+    }
+}
+
+/* FOOTER DI TUTTE LE PAGINE */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    h4 {
+        margin-bottom: 30px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    &--change {
+        font-size: 12px;
+    }
+}

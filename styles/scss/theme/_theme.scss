@@ -1,0 +1,41 @@
+/* SCHEMA DI COLORI LIGHT MODE */
+@media(prefers-color-scheme: light) {
+    :root {
+        --background:         var(--background-light);
+        --logo:               var(--logo-light);
+        --text:               var(--text-light);
+        --text2:              var(--text2-light);
+        --paragraph:          var(--paragraph-light);
+        --opacity:            var(--opacity-light); 
+        --secondary-opacity:  var(--secondary-opacity-light);
+        --menu-color:         var(--menu-color-light);
+        --btn-hov:            var(--btn-hov);
+            /*Contact color*/
+            --contact-field:  var(--contact-field-light);
+            --contact-text:   var(--contact-text-light);
+            --contact-text2:  var(--contact-text2-light);
+            /*Maps color*/
+            --maps-color1:    var(--maps-color1-light);
+    }
+}
+
+/* SCHEMA DI COLORI DARK MODE */
+@media(prefers-color-scheme: dark) {
+    :root {
+        --background:         var(--background-dark);
+        --logo:               var(--logo-dark);
+        --text:               var(--text-dark);
+        --text2:              var(--text2-dark);
+        --paragraph:          var(--paragraph-dark);
+        --opacity:            var(--opacity-dark); 
+        --secondary-opacity:  var(--secondary-opacity-dark);
+        --menu-color:         var(--menu-color-dark);
+        --btn-hov:            var(--btn-hov);
+            /*Contact color*/
+            --contact-field:  var(--contact-field-dark);
+            --contact-text:   var(--contact-text-dark);
+            --contact-text2:  var(--contact-text2-dark);
+            /*Maps color*/
+            --maps-color1:    var(--maps-color1-dark);
+    }
+}

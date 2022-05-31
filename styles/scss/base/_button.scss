@@ -1,0 +1,82 @@
+/* BOTTONI SUPERIORI */
+.nav_links {
+    flex: 1;
+    text-align: right;
+    ul li {
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+    }
+    ul li a {
+        color: var(--text);
+        text-decoration: none;
+        font-size: 13px;
+    }
+}
+nav {
+    display: flex;
+    padding: 0 1%;
+    justify-content: space-between;
+    align-items: center;
+    img {
+        width: 150px;
+    }
+    .fa {
+        display: none;
+    }
+}
+
+/* BOTTONI PRESENTI NELLE PAGINE */
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text);
+    border: 1px solid var(--text);
+    padding: 12px 28px;
+    border-radius: 15px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid var(--text);
+        background: var(--text);
+        color: var(--text2);
+        transition: 0.3s;
+    }
+}
+/* Bottoni secondari */
+.btn--sub {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--text2);
+    border: 1px solid var(--text2);
+    padding: 12px 28px;
+    border-radius: 15px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        border: 1px solid var(--text2);
+        background: var(--btn-hov);
+        color: var(--text2);
+        transition: 0.3s;
+    }
+}
+.btn--sel {
+    border: 1px solid var(--logo);
+}
+
+/* ICONE SOCIAL */
+.fa {
+    &--ig {
+        color: #5851DB;
+    }
+    &--github {
+        color: black;
+    }
+    &--yt {
+        color: red;
+    }
+}
