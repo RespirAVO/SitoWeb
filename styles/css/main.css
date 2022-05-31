@@ -59,7 +59,7 @@ body {
   color: var(--btn-hov);
 }
 
-/* BANNER PER ALTRI PORGETTI */
+/* BANNER PER ALTRI PROGETTI */
 .contact {
   margin: auto;
   width: 80%;
@@ -210,6 +210,52 @@ body {
   text-align: center;
 }
 
+/* STYLE DELLA PAGINA CONTACT */
+/*Form per l'invio dell'eamil*/
+#form {
+  margin: 0 auto;
+}
+
+/* Campo per mittente e messaggio da inviare */
+.field {
+  margin-bottom: 10%;
+}
+
+.field label {
+  display: block;
+  font-size: 25px;
+  color: var(--contact-field);
+}
+
+.field input {
+  display: block;
+  height: 50px;
+  width: 300px;
+  min-width: 250px;
+  font-size: 20px;
+  color: var(--contact-text);
+}
+
+/* Campo del messaggio */
+#message {
+  height: 200px;
+}
+
+/*Stile del bottone di invio*/
+input[type="submit"] {
+  display: block;
+  margin: 0 auto;
+  padding: 5%;
+  font-size: 20px;
+  background-color: var(--logo);
+  color: var(--contact-text2);
+  border: none;
+}
+
+nav .fa {
+  display: none;
+}
+
 /* TAG SELECTOR PER LE MAPPE */
 select {
   font-size: 15px;
@@ -331,7 +377,7 @@ hr {
   /*Maps color*/
   --maps-color1-light:    #59d3b4;
   /*Dark theme*/
-  --background-dark:         #ccc;
+  --background-dark:         yellow;
   --logo-dark:               rgb(15, 136, 0);
   --text-dark:               #fff;
   --text2-dark:              black;
@@ -370,6 +416,18 @@ hr {
 /* STYLE PER LA VISUALIZZAZIOEN DA MOBILE */
 @media (max-width: 700px) {
   /*Bottoni*/
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 1%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
   .nav_links {
     position: fixed;
     background: var(--menu-color);
@@ -382,18 +440,17 @@ hr {
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  .nav_links ul {
-    padding: 30px;
-  }
   .nav_links ul li {
     display: block;
+  }
+  .nav_links ul {
+    padding: 30px;
   }
   nav .fa {
     display: block;
     color: var(--text);
     margin: 10px;
     font-size: 22px;
-    cursor: pointer;
   }
   /*Bottoni*/
   .btn {

@@ -44,7 +44,7 @@ body {
     }
 }
 
-/* BANNER PER ALTRI PORGETTI */
+/* BANNER PER ALTRI PROGETTI */
 .contact {
     margin: auto;
     width: 80%;
@@ -122,7 +122,6 @@ body {
     padding-top: 70px;
     padding-bottom: 30px;
 }
-
 /* SPAZIO VERTICALE PER INFO NELLE PAGINE */
 .info_col {
     flex-basis: 100%;
@@ -163,6 +162,48 @@ body {
         align-items: center;
         text-align: center;
     } 
+}
+
+/* STYLE DELLA PAGINA CONTACT */
+/*Form per l'invio dell'eamil*/
+#form {
+    margin: 0 auto;
+}
+/* Campo per mittente e messaggio da inviare */
+.field {
+    margin-bottom: 10%;
+}
+.field label {
+    display: block;
+    font-size: 25px;
+    color: var(--contact-field);
+} 
+.field input {
+    display: block;
+    height: 50px;
+    width: 300px;
+    min-width: 250px;
+    font-size: 20px;
+    color: var(--contact-text);
+}
+/* Campo del messaggio */
+#message {
+    height: 200px;
+}
+
+/*Stile del bottone di invio*/  
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 5%;
+    font-size: 20px;
+    background-color: var(--logo);
+    color: var(--contact-text2);
+    border: none
+}
+
+nav .fa {
+    display: none;
 }
 
 /* TAG SELECTOR PER LE MAPPE */

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./styles/css/main.css">
-    <link rel="icon"       href="./img/detection_page.png" type="x-icon">
+    <link rel="icon"       href="./icons/detection_page.png" type="x-icon">
     <title>Rilevazioni</title>
 </head>
 
@@ -26,12 +26,12 @@
             <div class="nav_links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="media.html"        class="btn">          &nbsp;&nbsp;&nbsp;MEDIA        </a></li>
-                    <li><a href="maps.html"         class="btn">          &nbsp;&nbsp;&nbsp;MAPPE        </a></li>
-                    <li><a href="measurements.html" class="btn btn--meas">&nbsp;&nbsp;&nbsp;RILEVAZIONI  </a></li>
-                    <li><a href="costs.html"        class="btn">          &nbsp;&nbsp;&nbsp;ANALISI COSTI</a></li>
-                    <li><a href="project.html"      class="btn">          &nbsp;&nbsp;&nbsp;IL PROGETTO  </a></li>
-                    <li><a href="about.html"        class="btn">          &nbsp;&nbsp;&nbsp;CHI SIAMO    </a></li>
+                    <li><a href="media.html"        class="btn">         &nbsp;&nbsp;&nbsp;MEDIA        </a></li>
+                    <li><a href="maps.html"         class="btn">         &nbsp;&nbsp;&nbsp;MAPPE        </a></li>
+                    <li><a href="measurements.html" class="btn btn--sel">&nbsp;&nbsp;&nbsp;RILEVAZIONI  </a></li>
+                    <li><a href="costs.html"        class="btn">         &nbsp;&nbsp;&nbsp;ANALISI COSTI</a></li>
+                    <li><a href="project.html"      class="btn">         &nbsp;&nbsp;&nbsp;IL PROGETTO  </a></li>
+                    <li><a href="about.html"        class="btn">         &nbsp;&nbsp;&nbsp;CHI SIAMO    </a></li>
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i>
@@ -50,7 +50,7 @@
                     <a href="https://plumelabs.com/en/flow/" class="info_col--web_text" target="_blank">Flow by Plume Labs</a>
                 </p>
                 <iframe
-                    width="750" height="350"
+                    width="750" height="400"
                     src="https://www.youtube.com/embed/uo04h7oNb3A"
                     title="YouTube video player"
                     frameborder="0"
@@ -70,14 +70,19 @@
 
         <div class="row">
             <div class="info_col">
-                <h1>Come funziona Flow?</h1>
+                <h1>Come effetuare una rilevazione con Flow?</h1>
                 <p>
-                    Breve spiegazione di come funziona il rilevatore 
+                    Ecco un breve tutorial che spiega come effetuare una rilevazione con 
                     <a href="https://plumelabs.com/en/flow/" class="info_col--web_text" target="_blank">Flow by Plume Labs</a>
                 </p>
-                <a href="./images/rilevatori/flow2.png">
-                    <img src="./images/rilevatori/flow2.png" alt="foto di Flow"/>
-                </a>
+                <iframe 
+                    width="750" height="400" 
+                    src="https://www.youtube.com/embed/SfeMJ-nErgI" 
+                    title="YouTube video player2" 
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
             </div>
         </div>
 
@@ -149,78 +154,6 @@
         <br/>
         <br/>
 
-        <div class="row">
-            <div class="info_col">
-                <h1>Unicsv</h1>
-                <p>
-                    Che cos'è <a href="https://github.com/RespirAVO/unicsv" class="info_col--web_text" target="_blank">Unicsv</a>?
-                    &nbsp;&nbsp;&nbsp;Perchè è nato?
-                </p>
-                <a href="./images/content/unicsv.PNG"><img src="./images/content/unicsv.PNG" alt="immagine dell'interfaccia di unicsv"/></a>
-                <p>
-                    Unicsv è un programma che abbiamo scritto in C language, ed è in grado di unire due file CSV. Il programma è nato perche avevamo la necessità 
-                    di avere in un unico file i dati delle posizioni e quelli delle misure, sincronizzandoli in base al tempo di rilevazione, unendo i dati ravvicinati 
-                    di circa 30 secondi. Questo era necessario, perche per creare le mappe e i grafici delle misure dovevamo avere un unico file CSV completo di posizioni 
-                    e misure. I dati forniti da Plume Labs, infatti, sono generati su due file CSV: uno contiene i dati delle le posizioni GPS fornite dal nostro telefono, 
-                    mentre il secondo file contienei valori delle misure rilevati da Flow.
-                </p>
-                <p>
-                    Per chi vuole conoscere meglio Unicsv:<br/>
-                    <p>
-                        La struttura di Unicsv è suddivisa in livelli:<br/><br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Il livello più vicino all'utente è quello che permette all'utente di unire le misure<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Il livello più lontano, invece, comprende tutta la collezione di librerie scritte per il programma.<br/><br/><br/>
-                        Le librerie scritte sono:<br/><br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- csvlib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- assertlib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- filelib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- iolib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- siglib<br/>
-                    </p>
-                    <p>
-                        Le librerie Assertlib, filelib, e iolib sono delle librerie così dette "wrapper" ovvero librierie già presenti in C standard,
-                        ma queste hanno alcune funzioni in più; un esempio di funzione presente in queste librerie è il println, che corrisponde al printf
-                        del C standard ma in più aggiunge un \n alla fine, in modo da non doverlo scrivere ogni volta.<br/>
-                        La libreria filelib, invece, permette di apirere un file senza scrivere ogni volta fileopen e poi la modalità di apertura.
-                    </p>
-            </div>
-        </div>
-
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
-        <div class="row">
-            <div class="info_col">
-                <h1>Mappe e Grafici con Leaflet</h1>
-                <p>
-                   Per la creazione delle mappe presenti sul sito abbiamo utilizzato una libreria di Javascript, chiamata Leaflet.
-                   (Javascript è il linguaggio utilizzato nei siti web per far si che ad ogni azione compiuta, per esempio il click di un bottone,
-                   dall'utente avvenga qualcosa sul sito)
-                </p>
-                <p>
-                    Per chi vuole conoscere meglio Leaflet:<br/>
-                </p>
-            </div>
-        </div>
-
-        <br/>
-        <br/>
-        <br/>
-        <br/>
-
-        <div class="row">
-            <div class="info_col">
-                <h1>OpenStreetMap</h1>
-                <p>
-                   Spiegare qui cos'è OpenStreetMap
-                </p>
-                <p>
-                    Per chi vuole conoscere meglio Open Street Map:<br/>
-                </p>
-            </div>
-        </div>
     </section>
 
     <!--Footer-->
