@@ -1,5 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
 body {
-    background-color: var(--background-light);
+    background-color: var(--background);
 }
 
 /* LOGO */
@@ -28,6 +36,7 @@ body {
     h1 {
         font-size: 62px;
         color: var(--logo);
+        text-decoration: none;
     }
     p {
         margin: 10px 0 40px;
@@ -271,6 +280,7 @@ hr {
 }
 
 .icons {
+    font-size: 20px;
     .fa {
         margin: 0 13px;
         cursor: pointer;

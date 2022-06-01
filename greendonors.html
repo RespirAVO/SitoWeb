@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/css/main.css">
+    <link rel="icon"       href="./icons/greendonors_page.png" type="x-icon">
+    <title>I(N)SPIRIAMO il futuro</title>
+</head>
+
+<body>
+    <!--Header-->
+    <section class="sub_header">
+        <nav>
+            <a href="index.html">
+                <img 
+                    src="./images/loghi/logo_bas.png" 
+                    onmouseover="this.src='./images/loghi/logo_green.png';" 
+                    onmouseout="this.src='./images/loghi/logo_bas.png';" 
+                    class="logo"
+                    alt="immagini dei due tipi di loghi"
+                />
+            </a>
+            <div class="nav_links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="media.html"        class="btn">&nbsp;&nbsp;&nbsp;MEDIA        </a></li>
+                    <li><a href="maps.html"         class="btn">&nbsp;&nbsp;&nbsp;MAPPE        </a></li>
+                    <li><a href="measurements.html" class="btn">&nbsp;&nbsp;&nbsp;RILEVAZIONI  </a></li>
+                    <li><a href="costs.html"        class="btn">&nbsp;&nbsp;&nbsp;ANALISI COSTI</a></li>
+                    <li><a href="project.html"      class="btn">&nbsp;&nbsp;&nbsp;IL PROGETTO  </a></li>
+                    <li><a href="about.html"        class="btn">&nbsp;&nbsp;&nbsp;CHI SIAMO    </a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <h1>Il progetto I(N)SPIRIAMO il futuro</h1>
+    </section>
+
+    <!--Central section-->
+    <section class="info">
+        <div class="row">
+            <div class="info_col">
+                <h1>Cos'è il progetto I(N)SPIRIAMO IL FUTURO?</h1>
+                <p>
+                    Grazie alla classe 
+                </p>
+            </div>
+            
+        </div>
+    </section>
+
+
+    <!--Javascript per il menu da mobile-->
+    <script>
+        let nav_Links = document.getElementById("navLinks");
+        // Funzione che fa comparire il menu
+        function showMenu() {
+            nav_Links.style.right = "0";
+        }
+        // Funzione che nasconde il menu
+        function hideMenu() {
+            nav_Links.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>

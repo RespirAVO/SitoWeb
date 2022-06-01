@@ -1,13 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap");
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'Roboto Condensed', sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 body {
-  background-color: var(--background-light);
+  background-color: var(--background);
 }
 
 /* LOGO */
@@ -41,6 +40,7 @@ body {
 .text h1 {
   font-size: 62px;
   color: var(--logo);
+  text-decoration: none;
 }
 
 .text p {
@@ -334,6 +334,10 @@ hr {
   height: 25rem;
 }
 
+.icons {
+  font-size: 20px;
+}
+
 .icons .fa {
   margin: 0 13px;
   cursor: pointer;
@@ -377,7 +381,7 @@ hr {
   /*Maps color*/
   --maps-color1-light:    #59d3b4;
   /*Dark theme*/
-  --background-dark:         yellow;
+  --background-dark:         #ccc;
   --logo-dark:               rgb(15, 136, 0);
   --text-dark:               #fff;
   --text2-dark:              black;
@@ -428,6 +432,12 @@ hr {
         -ms-flex-align: center;
             align-items: center;
   }
+  nav .fa {
+    display: block;
+    color: var(--text);
+    margin: 10px;
+    font-size: 22px;
+  }
   .nav_links {
     position: fixed;
     background: var(--menu-color);
@@ -445,12 +455,6 @@ hr {
   }
   .nav_links ul {
     padding: 30px;
-  }
-  nav .fa {
-    display: block;
-    color: var(--text);
-    margin: 10px;
-    font-size: 22px;
   }
   /*Bottoni*/
   .btn {
