@@ -56,7 +56,16 @@ body {
 }
 
 .text--web_text:hover {
-  color: var(--btn-hov);
+  color: var(--text);
+}
+
+/* SOTTOTITOLI PAGINA MAPS */
+h1 {
+  color: var(--text);
+}
+
+h4 {
+  color: var(--text);
 }
 
 /* BANNER PER ALTRI PROGETTI */
@@ -160,7 +169,6 @@ body {
 }
 
 .info_col h1 {
-  font-size: 40px;
   color: var(--text);
 }
 
@@ -194,7 +202,7 @@ body {
 }
 
 .info_col--web_text:hover {
-  color: var(--btn-hov);
+  color: var(--text);
 }
 
 .info_col--map {
@@ -358,9 +366,14 @@ hr {
 }
 
 .footer h4 {
+  color: var(--text);
   margin-bottom: 30px;
   margin-top: 20px;
   font-weight: 600;
+}
+
+.footer p {
+  color: var(--text);
 }
 
 .footer--change {
@@ -372,13 +385,12 @@ hr {
   /*Light Theme*/
   --background-light:         white;
   --logo-light:               rgb(15, 136, 0);
-  --text-light:               #fff;
+  --text-light:               black;
   --text2-light:              black;
   --paragraph-light:          rgb(125, 123, 123);
   --opacity-light:            rgba(4,9,30,0.7);
   --secondary-opacity-light:  rgba(0,0,0,0.7);
   --menu-color-light:         #aaa;
-  --btn-hov:                  red;
   /*Contact color*/
   --contact-field-light:  rgb(101, 101, 101);
   --contact-text-light:   #aaa;
@@ -386,15 +398,14 @@ hr {
   /*Maps color*/
   --maps-color1-light:    #59d3b4;
   /*Dark theme*/
-  --background-dark:         rgb(37, 37, 37);
+  --background-dark:         rgb(37,37,37);
   --logo-dark:               rgb(15, 136, 0);
-  --text-dark:               white;
-  --text2-dark:              white;
-  --paragraph-dark:          rgb(210, 208, 208);
+  --text-dark:               #fff;
+  --text2-dark:              rgb(192, 192, 192);
+  --paragraph-dark:          rgb(125, 123, 123);
   --opacity-dark:            rgba(4,9,30,0.7);
   --secondary-opacity-dark:  rgba(0,0,0,0.7);
   --menu-color-dark:         #aaa;
-  --btn-hov:                 red;
   /*Contact color*/
   --contact-field-dark:  rgb(101, 101, 101);
   --contact-text-dark:   #aaa;
@@ -425,8 +436,23 @@ hr {
 /* STYLE PER LA VISUALIZZAZIOEN DA MOBILE */
 @media (max-width: 700px) {
   /*Bottoni*/
-  .nav_links ul li {
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 0 1%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  nav .fa {
     display: block;
+    color: var(--text);
+    margin: 10px;
+    font-size: 22px;
   }
   .nav_links {
     position: fixed;
@@ -437,13 +463,11 @@ hr {
     right: -200px;
     text-align: left;
     z-index: 2;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
-  nav .fa {
+  .nav_links ul li {
     display: block;
-    color: red;
-    margin: 10px;
-    font-size: 22px;
   }
   .nav_links ul {
     padding: 30px;
@@ -540,14 +564,10 @@ hr {
 
 /* BOTTONI SUPERIORI */
 .nav_links {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   text-align: right;
-}
-nav {
-  display: flex;
-  padding: 0 1%;
-  justify-content: space-between;
-  align-items: center;
 }
 
 .nav_links ul li {
@@ -563,7 +583,18 @@ nav {
   font-size: 13px;
 }
 
-
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 1%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 
 nav img {
   width: 150px;
@@ -610,7 +641,7 @@ nav .fa {
 
 .btn--sub:hover {
   border: 1px solid var(--text2);
-  background: var(--btn-hov);
+  background: var(--text);
   color: var(--text2);
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -644,7 +675,6 @@ nav .fa {
     --opacity:            var(--opacity-light);
     --secondary-opacity:  var(--secondary-opacity-light);
     --menu-color:         var(--menu-color-light);
-    --btn-hov:            var(--btn-hov);
     /*Contact color*/
     --contact-field:  var(--contact-field-light);
     --contact-text:   var(--contact-text-light);
@@ -665,7 +695,6 @@ nav .fa {
     --opacity:            var(--opacity-dark);
     --secondary-opacity:  var(--secondary-opacity-dark);
     --menu-color:         var(--menu-color-dark);
-    --btn-hov:            var(--btn-hov);
     /*Contact color*/
     --contact-field:  var(--contact-field-dark);
     --contact-text:   var(--contact-text-dark);
