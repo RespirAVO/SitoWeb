@@ -134,6 +134,10 @@ body {
 /* SPAZIO VERTICALE PER INFO NELLE PAGINE */
 .info_col {
     flex-basis: 100%;
+    h1 {
+        font-size: 20px;
+        color: var(--text);
+    }
     p {
         color: var(--paragraph);
         font-size: 25px;
