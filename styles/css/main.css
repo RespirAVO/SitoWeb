@@ -55,6 +55,7 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: var(--radius);
+  border: 1px solid var(--buttonBorder);
   text-align: center;
   padding: 100px 0;
 }
@@ -70,6 +71,7 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: var(--radius);
+  border: 1px solid var(--buttonBorder);
   text-align: center;
   padding: 100px 0;
 }
@@ -85,6 +87,7 @@ body {
   background-position: center;
   background-size: cover;
   border-radius: var(--radius);
+  border: 1px solid var(--buttonBorder);
   text-align: center;
   padding: 100px 0;
 }
@@ -116,6 +119,7 @@ body {
 }
 .row h1 {
   margin: 0 auto;
+  color: var(--secondaryColor);
 }
 
 /* SEZIONE PRINCIPALE DELLE PAGINE */
@@ -124,6 +128,10 @@ body {
   margin: auto;
   padding-top: 70px;
   padding-bottom: 30px;
+}
+.info h1 {
+  font-size: var(--secondaryTitle);
+  color: var(--secondaryColor);
 }
 .info h4 {
   color: var(--mainColor);
@@ -189,7 +197,7 @@ body {
 .field label {
   display: block;
   font-size: var(--mainParagraph);
-  color: var(--contact-field);
+  color: var(--contact-text);
 }
 
 .field input {
@@ -293,6 +301,92 @@ hr {
   font-size: var(--smallText);
 }
 
+/* BOTTONI SUPERIORI PER LA SCELTA DELLE PAGINE*/
+.nav_links {
+  flex: 1;
+  text-align: right;
+}
+.nav_links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.nav_links ul li a {
+  color: var(--buttonText);
+  text-decoration: none;
+  font-size: var(--smallText);
+}
+
+nav {
+  display: flex;
+  padding: 0 1%;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+nav img {
+  width: 150px;
+}
+nav .fa-solid {
+  display: none;
+}
+
+/* BOTTONI PRESENTI NELLE PAGINE */
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  color: var(--secondaryColor);
+  border: 1px solid var(--buttonBorder);
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-size: var(--smallText);
+  background: transparent;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid var(--logo);
+  background: var(--buttonHover);
+  color: var(--mainColor);
+  transition: 0.3s;
+}
+
+/* Bottoni secondari */
+.btn--sub {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
+  padding: 12px 28px;
+  border-radius: var(--radius);
+  font-size: var(--smallText);
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.btn--sub:hover {
+  border: 1px solid var(--secondaryColor);
+  background: var(--mainColor);
+  color: var(--secondaryColor);
+  transition: 0.3s;
+}
+
+.btn--sel {
+  border: 1px solid var(--logo);
+}
+
+/* ICONE SOCIAL */
+.fa--ig {
+  color: #5851DB;
+}
+.fa--github {
+  color: black;
+}
+.fa--yt {
+  color: red;
+}
+
 /*COLOR PALETTE DELLE PAGINE*/
 :root {
   /*Light Theme*/
@@ -316,7 +410,7 @@ hr {
   /*Dark theme*/
   --background-dark: rgb(37,37,37);
   --logo-dark: rgb(15, 136, 0);
-  --mainColor-dark: #fff;
+  --mainColor-dark: rgb(192, 192, 192);
   --secondaryColor-dark: rgb(192, 192, 192);
   --paragraphColor-dark: rgb(125, 123, 123);
   --opacity-dark: rgba(4,9,30,0.7);
@@ -367,20 +461,20 @@ hr {
   /*Bottoni*/
   nav {
     display: flex;
-    padding: 0 1%;
+    padding: 10px;
     justify-content: space-between;
     align-items: center;
   }
-  nav .fa {
+  nav .fa-solid {
     display: block;
-    color: var(--text);
-    margin: 10px;
+    color: var(--secondaryColor);
+    margin: 5%;
     font-size: var(--mainParagraph);
   }
 
   .nav_links {
     position: fixed;
-    background: var(--menu-color);
+    background-color: var(--menuBar);
     height: 100vh;
     width: 200px;
     top: 0;
@@ -398,19 +492,28 @@ hr {
 
   /*Bottoni*/
   .btn {
+    color: var(--mainColor);
+    text-align: center;
     text-decoration: none;
-    color: var(--text);
-    border: 1px solid var(--text);
+    border: 1px solid var(--mainColor);
     padding: 8px 8px;
-    border-radius: 15px;
+    border-radius: var(--radius);
     font-size: var(--secondaryParagraph);
     background: transparent;
     width: 100px;
   }
 
   /*titolo spazio contattaci*/
+  .contact {
+    color: var(--mainColor);
+  }
   .contact h1 {
     font-size: var(--secondaryText);
+  }
+
+  /*Riga nella pagina*/
+  .row h1 {
+    color: var(--mainColor);
   }
 
   /*Colonna pagina*/
@@ -479,90 +582,6 @@ hr {
     position: sticky;
   }
 }
-/* BOTTONI SUPERIORI PER LA SCELTA DELLE PAGINE*/
-.nav_links {
-  flex: 1;
-  text-align: right;
-}
-.nav_links ul li {
-  list-style: none;
-  display: inline-block;
-  padding: 8px 12px;
-  position: relative;
-}
-.nav_links ul li a {
-  color: var(--buttonText);
-  text-decoration: none;
-  font-size: var(--smallText);
-}
-
-nav {
-  display: flex;
-  padding: 0 1%;
-  justify-content: space-between;
-  align-items: center;
-}
-nav img {
-  width: 150px;
-}
-nav .fa {
-  display: none;
-}
-
-/* BOTTONI PRESENTI NELLE PAGINE */
-.btn {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--secondaryColor);
-  border: 1px solid var(--buttonBorder);
-  padding: 12px 28px;
-  border-radius: var(--radius);
-  font-size: var(--smallText);
-  background: transparent;
-  cursor: pointer;
-}
-.btn:hover {
-  border: 1px solid var(--mainColor);
-  background: var(--buttonHover);
-  color: var(--mainColor);
-  transition: 0.3s;
-}
-
-/* Bottoni secondari */
-.btn--sub {
-  display: inline-block;
-  text-decoration: none;
-  color: var(--secondaryColor);
-  border: 1px solid var(--secondaryColor);
-  padding: 12px 28px;
-  border-radius: var(--radius);
-  font-size: var(--smallText);
-  background: transparent;
-  position: relative;
-  cursor: pointer;
-}
-.btn--sub:hover {
-  border: 1px solid var(--secondaryColor);
-  background: var(--mainColor);
-  color: var(--secondaryColor);
-  transition: 0.3s;
-}
-
-.btn--sel {
-  border: 1px solid var(--logo);
-}
-
-/* ICONE SOCIAL */
-.fa--ig {
-  color: #5851DB;
-}
-.fa--github {
-  color: black;
-}
-.fa--yt {
-  color: red;
-}
-
 /* SCHEMA DI COLORI LIGHT MODE */
 @media (prefers-color-scheme: light) {
   :root {
@@ -595,7 +614,7 @@ nav .fa {
     --paragraph: var(--paragraphColor-dark);
     --opacity: var(--opacity-dark);
     --secondaryOpacity: var(--secondaryOpacity-dark);
-    --menuBar: var(--menubar-dark);
+    --menuBar: var(--menuBar-dark);
     --buttonText: var(--buttonText-dark);
     --buttonBorder: var(--buttonBorder-dark);
     --buttonHover: var(--buttonHover-dark)

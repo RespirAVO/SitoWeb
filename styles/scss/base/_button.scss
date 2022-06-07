@@ -19,10 +19,11 @@ nav {
     padding: 0 1%;
     justify-content: space-between;
     align-items: center;
+    text-align: center;
     img {
         width: 150px;
     }
-    .fa {
+    .fa-solid {
         display: none;
     }
 }
@@ -31,6 +32,7 @@ nav {
 .btn {
     display: inline-block;
     text-decoration: none;
+    text-align: center;
     color: var(--secondaryColor);
     border: 1px solid var(--buttonBorder);
     padding: 12px 28px;
@@ -39,7 +41,7 @@ nav {
     background: transparent;
     cursor: pointer;
     &:hover {
-        border: 1px solid var(--mainColor);
+        border: 1px solid var(--logo);
         background: var(--buttonHover);
         color: var(--mainColor);
         transition: 0.3s;

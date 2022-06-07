@@ -55,6 +55,7 @@ body {
     background-position: center;
     background-size: cover;
     border-radius: var(--radius);
+    border: 1px solid var(--buttonBorder);
     text-align: center;
     padding: 100px 0;
     h1 {
@@ -69,6 +70,7 @@ body {
         background-position: center;
         background-size: cover;
         border-radius: var(--radius);
+        border: 1px solid var(--buttonBorder);
         text-align: center;
         padding: 100px 0;
         h1 {
@@ -84,6 +86,7 @@ body {
         background-position: center;
         background-size: cover;
         border-radius: var(--radius);
+        border: 1px solid var(--buttonBorder);
         text-align: center;
         padding: 100px 0;
         h1 {
@@ -115,6 +118,7 @@ body {
     justify-content: space-between;
     h1 {
         margin: 0 auto;
+        color: var(--secondaryColor);
     }
 }
 
@@ -124,6 +128,10 @@ body {
     margin: auto;
     padding-top: 70px;
     padding-bottom: 30px;
+    h1 {
+        font-size: var(--secondaryTitle);
+        color: var(--secondaryColor);
+    }
     h4 {
         color: var(--mainColor);
     }
@@ -186,7 +194,7 @@ body {
 .field label {
     display: block;
     font-size: var(--mainParagraph);
-    color: var(--contact-field);
+    color: var(--contact-text);
 } 
 .field input {
     display: block;

@@ -3,13 +3,13 @@
     /*Bottoni*/
     nav {
         display: flex;
-        padding: 0 1%;
+        padding: 10px;
         justify-content: space-between;
         align-items: center;
-        .fa {
+        .fa-solid {
             display: block;
-            color: var(--text);
-            margin: 10px;
+            color: var(--secondaryColor);
+            margin: 5%;
             font-size: var(--mainParagraph);
         }
     }
@@ -18,7 +18,7 @@
             display: block;
         }
         position: fixed;
-        background: var(--menu-color);
+        background-color: var(--menuBar);
         height: 100vh;
         width: 200px;
         top: 0;
@@ -33,19 +33,31 @@
 
     /*Bottoni*/
     .btn {
+        color: var(--mainColor);
+        text-align: center;
         text-decoration: none;
-        color: var(--text);
-        border: 1px solid var(--text);
+        border: 1px solid var(--mainColor);
         padding: 8px 8px;
-        border-radius: 15px;
+        border-radius: var(--radius);
         font-size: var(--secondaryParagraph);
         background: transparent;
         width: 100px;
     }
     /*titolo spazio contattaci*/
-    .contact h1 {
-        font-size: var(--secondaryText);
+    .contact {
+        color: var(--mainColor);
+        h1 {
+            font-size: var(--secondaryText);
+        }
     }
+    
+    /*Riga nella pagina*/
+    .row {
+        h1 {
+            color: var(--mainColor);
+        }
+    }
+
     /*Colonna pagina*/
     /*Titolo style*/
     .info_col {
