@@ -3,12 +3,15 @@
     /*Light Theme*/
     --background-light:         white;
     --logo-light:               rgb(15, 136, 0);
-    --text-light:               #fff;
-    --text2-light:              #fff;
-    --paragraph-light:          rgb(125, 123, 123);
-    --opacity-light:            rgba(4,9,30,0.7); 
-    --secondary-opacity-light:  rgba(0,0,0,0.7);
-    --menu-color-light:         #aaa;
+    --mainColor-light:          black;
+    --secondaryColor-light:     #fff;
+    --paragraphColor-light:     rgb(125, 123, 123);
+    --opacity-light:            rgba(4, 9, 30, 0.7); 
+    --secondaryOpacity-light:   rgba(0, 0, 0 , 0.7);
+    --menuBar-light:            #aaa;
+    --buttonText-light:         #fff;
+    --buttonBorder-light:       #fff;
+    --buttonHover-light:        #ccc;
         /*Contact color*/
         --contact-field-light:  rgb(101, 101, 101);
         --contact-text-light:   #aaa;
@@ -20,18 +23,33 @@
     /*Dark theme*/
     --background-dark:         rgb(37,37,37);
     --logo-dark:               rgb(15, 136, 0);
-    --text-dark:               #fff;
-    --text2-dark:              rgb(192, 192, 192);
-    --paragraph-dark:          rgb(125, 123, 123);
+    --mainColor-dark:          #fff;
+    --secondaryColor-dark:     rgb(192, 192, 192);
+    --paragraphColor-dark:     rgb(125, 123, 123);
     --opacity-dark:            rgba(4,9,30,0.7); 
-    --secondary-opacity-dark:  rgba(0,0,0,0.7);
-    --menu-color-dark:         #aaa;
+    --secondaryOpacity-dark:   rgba(0,0,0,0.7);
+    --menuBar-dark:            #aaa;
+    --buttonText-dark:         #fff;
+    --buttonBorder-dark:       #fff;
+    --buttonHover-dark:        #ccc;
         /*Contact color*/
         --contact-field-dark:  rgb(101, 101, 101);
         --contact-text-dark:   #aaa;
         --contact-text2-dark:  #fff;
         /*Maps color*/
         --maps-color1-dark:    #59d3b4;
+}
+
+/* GRANDEZZA DEL TESTO E ALTRO */
+:root {
+    --title: 62px;
+    --secondaryTitle: 30px;
+    --mainParagraph: 25px;
+    --secondaryText: 20px;
+    --mapsSelector: 15px;
+    --radius: 15px;
+    --secondaryParagraph: 14px;
+    --smallText: 12px;
 }
 
 /* KEYFRAMES PER IL FADE IN DEL TESTO */

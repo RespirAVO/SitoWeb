@@ -10,16 +10,11 @@ body {
     background-color: var(--background);
 }
 
-/* LOGO */
-.logo {
-    border-radius: 20px;
-}
-
 /* HEADER DELLA HOME */
 .header {
     min-height: 100vh;
     width: 100%;
-    background-image: linear-gradient(var(--opacity),var(--opacity)),url(../../../images/content/banner.png);
+    background-image: linear-gradient(var(--opacity), var(--opacity)),url(../../../images/content/banner.png);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -27,66 +22,57 @@ body {
 /* TITOLO */
 .text {
     width: 90%;
-    color: var(--text);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     h1 {
-        font-size: 62px;
+        font-size: var(--title);
         color: var(--logo);
         text-decoration: none;
     }
     p {
         margin: 10px 0 40px;
-        font-size: 14px;
-        color: var(--text);
+        font-size: var(--secondaryParagraph);
+        color: var(--secondaryColor);
     }
     &--web_text {
         color: var(--logo);
         text-decoration: none;
         cursor: pointer;
         &:hover {
-            color: var(--text);
+            color: var(--buttonHover);
         }
     }
-}
-
-/* SOTTOTITOLI PAGINA MAPS */
-h1 {
-    color: var(--text);
-}
-h4 {
-    color: var(--text);
 }
 
 /* BANNER PER ALTRI PROGETTI */
 .contact {
     margin: auto;
     width: 80%;
-    background-image: linear-gradient(var(--secondary-opacity),var(--secondary-opacity)), url(../../../images/content/banner.png);
+    background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/banner.png);
     background-position: center;
     background-size: cover;
-    border-radius: 15px;
+    border-radius: var(--radius);
     text-align: center;
     padding: 100px 0;
     h1 {
-        color: var(--text);
+        color: var(--secondaryColor);
         margin-bottom: 40px;
         padding: 0;
     }
     &--avomobility {
         margin: auto;
         width: 80%;
-        background-image: linear-gradient(var(--secondary-opacity),var(--secondary-opacity)), url(../../../images/content/avo_mobility.jpeg);
+        background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/avo_mobility.jpeg);
         background-position: center;
         background-size: cover;
-        border-radius: 15px;
+        border-radius: var(--radius);
         text-align: center;
         padding: 100px 0;
         h1 {
-            color: var(--text);
+            color: var(--secondaryColor);
             margin-bottom: 40px;
             padding: 0;
         }
@@ -94,14 +80,14 @@ h4 {
     &--greendonors {
         margin: auto;
         width: 80%;
-        background-image: linear-gradient(var(--secondary-opacity),var(--secondary-opacity)), url(../../../images/content/banner.png);
+        background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/banner.png);
         background-position: center;
         background-size: cover;
-        border-radius: 15px;
+        border-radius: var(--radius);
         text-align: center;
         padding: 100px 0;
         h1 {
-            color: var(--text);
+            color: var(--secondaryColor);
             margin-bottom: 40px;
             padding: 0;
         }
@@ -116,8 +102,8 @@ h4 {
     background-position: center;
     background-size: cover;
     text-align: center;
-    color: var(--text);
     h1 {
+        color: var(--secondaryColor);
         margin-top: 10px;
     }
 }
@@ -138,16 +124,20 @@ h4 {
     margin: auto;
     padding-top: 70px;
     padding-bottom: 30px;
+    h4 {
+        color: var(--mainColor);
+    }
 }
 /* SPAZIO VERTICALE PER INFO NELLE PAGINE */
 .info_col {
     flex-basis: 100%;
     h1 {
-        color: var(--text);
+        font-size: var(--mainParagraph);
+        color: var(--mainColor);
     }
     p {
         color: var(--paragraph);
-        font-size: 25px;
+        font-size: var(--mainParagraph);
         padding: 15px 0 15px;
         animation: fadeIn linear 1s;
         -webkit-animation: fadeIn linear 1s; 
@@ -170,7 +160,7 @@ h4 {
         text-decoration: none;
         cursor: pointer;
         &:hover {
-            color: var(--text);
+            color: var(--mainColor);
         }
     }
     &--map {
@@ -195,7 +185,7 @@ h4 {
 }
 .field label {
     display: block;
-    font-size: 25px;
+    font-size: var(--mainParagraph);
     color: var(--contact-field);
 } 
 .field input {
@@ -203,34 +193,29 @@ h4 {
     height: 50px;
     width: 300px;
     min-width: 250px;
-    font-size: 20px;
+    font-size: var(--secondaryText);
     color: var(--contact-text);
 }
 /* Campo del messaggio */
 #message {
     height: 200px;
 }
-
 /*Stile del bottone di invio*/  
 input[type="submit"] {
     display: block;
     margin: 0 auto;
     padding: 5%;
-    font-size: 20px;
+    font-size: var(--secondaryText);
     background-color: var(--logo);
     color: var(--contact-text2);
     border: none
 }
 
-nav .fa {
-    display: none;
-}
-
 /* TAG SELECTOR PER LE MAPPE */
 select {
-    font-size: 15px;
+    font-size: var(--mapsSelector);
     padding: 10px;
-    border-radius: 15px;
+    border-radius: var(--radius);
 }
 
 /* RIGA DI SEPARAZIONE */
@@ -255,29 +240,11 @@ hr {
         position: sticky;
     }
     &--about {
-        border-radius: 15px;
+        border-radius: var(--radius);
     }
 }
 
-/* STYLE PER LE MAPPE */
-.mappe2 {
-    position: absolute;
-    top:  14em;
-    left: 24em;
-    height: 30em;
-    width: 69em;
-    background-color: var(--maps-color1);
-    border-radius: 8px;  
-}
-.mappe {
-    position: absolute;
-    left: 32em; 
-    top: 19em;
-    height: 30em;
-    width: 69em;
-    background-color: var(--maps-color1);
-    border-radius: 8px;  
-}
+/* STYLE PER LE MAPPE e I GRAFICI */
 .map {
     height: 45rem;
 }
@@ -286,12 +253,10 @@ hr {
     border-radius: 8px;
     float: right;
 }
-.graf {
-    height: 25rem;
-}
 
+/* ICONE DEI SOCIAL */
 .icons {
-    font-size: 20px;
+    font-size: var(--secondaryText);
     .fa {
         margin: 0 13px;
         cursor: pointer;
@@ -306,15 +271,15 @@ hr {
     text-align: center;
     padding: 30px 0;
     h4 {
-        color: var(--text);
+        color: var(--mainColor);
         margin-bottom: 30px;
         margin-top: 20px;
         font-weight: 600;
     }
     p {
-        color: var(--text);
+        color: var(--mainColor);
     }
     &--change {
-        font-size: 12px;
+        font-size: var(--smallText);
     }
 }

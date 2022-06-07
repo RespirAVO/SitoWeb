@@ -1,4 +1,4 @@
-/* BOTTONI SUPERIORI */
+/* BOTTONI SUPERIORI PER LA SCELTA DELLE PAGINE*/
 .nav_links {
     flex: 1;
     text-align: right;
@@ -9,9 +9,9 @@
         position: relative;
     }
     ul li a {
-        color: var(--text);
+        color: var(--buttonText);
         text-decoration: none;
-        font-size: 13px;
+        font-size: var(--smallText);
     }
 }
 nav {
@@ -31,17 +31,17 @@ nav {
 .btn {
     display: inline-block;
     text-decoration: none;
-    color: var(--text);
-    border: 1px solid var(--text);
+    color: var(--secondaryColor);
+    border: 1px solid var(--buttonBorder);
     padding: 12px 28px;
-    border-radius: 15px;
-    font-size: 13px;
+    border-radius: var(--radius);
+    font-size: var(--smallText);
     background: transparent;
     cursor: pointer;
     &:hover {
-        border: 1px solid var(--text);
-        background: var(--text);
-        color: var(--text2);
+        border: 1px solid var(--mainColor);
+        background: var(--buttonHover);
+        color: var(--mainColor);
         transition: 0.3s;
     }
 }
@@ -49,18 +49,18 @@ nav {
 .btn--sub {
     display: inline-block;
     text-decoration: none;
-    color: var(--text2);
-    border: 1px solid var(--text2);
+    color: var(--secondaryColor);
+    border: 1px solid var(--secondaryColor);
     padding: 12px 28px;
-    border-radius: 15px;
-    font-size: 13px;
+    border-radius: var(--radius);
+    font-size: var(--smallText);
     background: transparent;
     position: relative;
     cursor: pointer;
     &:hover {
-        border: 1px solid var(--text2);
-        background: var(--text);
-        color: var(--text2);
+        border: 1px solid var(--secondaryColor);
+        background: var(--mainColor);
+        color: var(--secondaryColor);
         transition: 0.3s;
     }
 }

@@ -10,7 +10,7 @@
             display: block;
             color: var(--text);
             margin: 10px;
-            font-size: 22px;
+            font-size: var(--mainParagraph);
         }
     }
     .nav_links {
@@ -38,22 +38,22 @@
         border: 1px solid var(--text);
         padding: 8px 8px;
         border-radius: 15px;
-        font-size: 15px;
+        font-size: var(--secondaryParagraph);
         background: transparent;
         width: 100px;
     }
     /*titolo spazio contattaci*/
     .contact h1 {
-        font-size: 20px;
+        font-size: var(--secondaryText);
     }
     /*Colonna pagina*/
     /*Titolo style*/
     .info_col {
         h1 {
-            font-size: 30px;
+            font-size: var(--secondaryTitle);
         }
         p {
-            font-size: 20px;
+            font-size: var(--secondaryText);
         }
         iframe {
             max-width: 350px;

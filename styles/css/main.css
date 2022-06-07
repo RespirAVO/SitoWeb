@@ -2,23 +2,17 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 body {
   background-color: var(--background);
 }
 
-/* LOGO */
-.logo {
-  border-radius: 20px;
-}
-
 /* HEADER DELLA HOME */
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--opacity)), to(var(--opacity))), url(../../../images/content/banner.png);
   background-image: linear-gradient(var(--opacity), var(--opacity)), url(../../../images/content/banner.png);
   background-position: center;
   background-size: cover;
@@ -28,97 +22,74 @@ body {
 /* TITOLO */
 .text {
   width: 90%;
-  color: var(--text);
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
-
 .text h1 {
-  font-size: 62px;
+  font-size: var(--title);
   color: var(--logo);
   text-decoration: none;
 }
-
 .text p {
   margin: 10px 0 40px;
-  font-size: 14px;
-  color: var(--text);
+  font-size: var(--secondaryParagraph);
+  color: var(--secondaryColor);
 }
-
 .text--web_text {
   color: var(--logo);
   text-decoration: none;
   cursor: pointer;
 }
-
 .text--web_text:hover {
-  color: var(--text);
-}
-
-/* SOTTOTITOLI PAGINA MAPS */
-h1 {
-  color: var(--text);
-}
-
-h4 {
-  color: var(--text);
+  color: var(--buttonHover);
 }
 
 /* BANNER PER ALTRI PROGETTI */
 .contact {
   margin: auto;
   width: 80%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondary-opacity)), to(var(--secondary-opacity))), url(../../../images/content/banner.png);
-  background-image: linear-gradient(var(--secondary-opacity), var(--secondary-opacity)), url(../../../images/content/banner.png);
+  background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/banner.png);
   background-position: center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: var(--radius);
   text-align: center;
   padding: 100px 0;
 }
-
 .contact h1 {
-  color: var(--text);
+  color: var(--secondaryColor);
   margin-bottom: 40px;
   padding: 0;
 }
-
 .contact--avomobility {
   margin: auto;
   width: 80%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondary-opacity)), to(var(--secondary-opacity))), url(../../../images/content/avo_mobility.jpeg);
-  background-image: linear-gradient(var(--secondary-opacity), var(--secondary-opacity)), url(../../../images/content/avo_mobility.jpeg);
+  background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/avo_mobility.jpeg);
   background-position: center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: var(--radius);
   text-align: center;
   padding: 100px 0;
 }
-
 .contact--avomobility h1 {
-  color: var(--text);
+  color: var(--secondaryColor);
   margin-bottom: 40px;
   padding: 0;
 }
-
 .contact--greendonors {
   margin: auto;
   width: 80%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--secondary-opacity)), to(var(--secondary-opacity))), url(../../../images/content/banner.png);
-  background-image: linear-gradient(var(--secondary-opacity), var(--secondary-opacity)), url(../../../images/content/banner.png);
+  background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/banner.png);
   background-position: center;
   background-size: cover;
-  border-radius: 15px;
+  border-radius: var(--radius);
   text-align: center;
   padding: 100px 0;
 }
-
 .contact--greendonors h1 {
-  color: var(--text);
+  color: var(--secondaryColor);
   margin-bottom: 40px;
   padding: 0;
 }
@@ -127,29 +98,22 @@ h4 {
 .sub_header {
   height: 50vh;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(var(--opacity)), to(var(--opacity))), url(../../../images/content/banner.png);
   background-image: linear-gradient(var(--opacity), var(--opacity)), url(../../../images/content/banner.png);
   background-position: center;
   background-size: cover;
   text-align: center;
-  color: var(--text);
 }
-
 .sub_header h1 {
+  color: var(--secondaryColor);
   margin-top: 10px;
 }
 
 /* SPAZIO ORIZZONTALE PER INFO NELLE PAGINE */
 .row {
   margin-top: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
 }
-
 .row h1 {
   margin: 0 auto;
 }
@@ -161,25 +125,25 @@ h4 {
   padding-top: 70px;
   padding-bottom: 30px;
 }
+.info h4 {
+  color: var(--mainColor);
+}
 
 /* SPAZIO VERTICALE PER INFO NELLE PAGINE */
 .info_col {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
+  flex-basis: 100%;
 }
-
 .info_col h1 {
-  color: var(--text);
+  font-size: var(--mainParagraph);
+  color: var(--mainColor);
 }
-
 .info_col p {
   color: var(--paragraph);
-  font-size: 25px;
+  font-size: var(--mainParagraph);
   padding: 15px 0 15px;
   animation: fadeIn linear 1s;
   -webkit-animation: fadeIn linear 1s;
 }
-
 .info_col img {
   float: right;
   padding: 2px;
@@ -187,39 +151,27 @@ h4 {
   max-height: 100%;
   border-radius: 20px;
 }
-
 .info_col iframe {
   float: right;
   max-width: 1000px;
   max-height: 100%;
   border-radius: 20px;
 }
-
 .info_col--web_text {
   color: var(--logo);
   text-decoration: none;
   cursor: pointer;
 }
-
 .info_col--web_text:hover {
-  color: var(--text);
+  color: var(--mainColor);
 }
-
 .info_col--map {
   width: 100%;
 }
-
 .info_col--center {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  flex-direction: row;
+  align-items: center;
   text-align: center;
 }
 
@@ -236,7 +188,7 @@ h4 {
 
 .field label {
   display: block;
-  font-size: 25px;
+  font-size: var(--mainParagraph);
   color: var(--contact-field);
 }
 
@@ -245,7 +197,7 @@ h4 {
   height: 50px;
   width: 300px;
   min-width: 250px;
-  font-size: 20px;
+  font-size: var(--secondaryText);
   color: var(--contact-text);
 }
 
@@ -255,25 +207,21 @@ h4 {
 }
 
 /*Stile del bottone di invio*/
-input[type="submit"] {
+input[type=submit] {
   display: block;
   margin: 0 auto;
   padding: 5%;
-  font-size: 20px;
+  font-size: var(--secondaryText);
   background-color: var(--logo);
   color: var(--contact-text2);
   border: none;
 }
 
-nav .fa {
-  display: none;
-}
-
 /* TAG SELECTOR PER LE MAPPE */
 select {
-  font-size: 15px;
+  font-size: var(--mapsSelector);
   padding: 10px;
-  border-radius: 15px;
+  border-radius: var(--radius);
 }
 
 /* RIGA DI SEPARAZIONE */
@@ -286,53 +234,25 @@ hr {
 .gallery {
   margin: 0 auto;
   width: 900px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
   overflow: auto;
 }
-
 .gallery img {
   max-width: 100%;
   height: 600px;
   width: 900px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
   -o-object-fit: cover;
      object-fit: cover;
   position: -webkit-sticky;
   position: sticky;
 }
-
 .gallery--about {
-  border-radius: 15px;
+  border-radius: var(--radius);
 }
 
-/* STYLE PER LE MAPPE */
-.mappe2 {
-  position: absolute;
-  top: 14em;
-  left: 24em;
-  height: 30em;
-  width: 69em;
-  background-color: var(--maps-color1);
-  border-radius: 8px;
-}
-
-.mappe {
-  position: absolute;
-  left: 32em;
-  top: 19em;
-  height: 30em;
-  width: 69em;
-  background-color: var(--maps-color1);
-  border-radius: 8px;
-}
-
+/* STYLE PER LE MAPPE e I GRAFICI */
 .map {
   height: 45rem;
 }
@@ -343,14 +263,10 @@ hr {
   float: right;
 }
 
-.graf {
-  height: 25rem;
-}
-
+/* ICONE DEI SOCIAL */
 .icons {
-  font-size: 20px;
+  font-size: var(--secondaryText);
 }
-
 .icons .fa {
   margin: 0 13px;
   cursor: pointer;
@@ -364,54 +280,69 @@ hr {
   text-align: center;
   padding: 30px 0;
 }
-
 .footer h4 {
-  color: var(--text);
+  color: var(--mainColor);
   margin-bottom: 30px;
   margin-top: 20px;
   font-weight: 600;
 }
-
 .footer p {
-  color: var(--text);
+  color: var(--mainColor);
 }
-
 .footer--change {
-  font-size: 12px;
+  font-size: var(--smallText);
 }
 
 /*COLOR PALETTE DELLE PAGINE*/
 :root {
   /*Light Theme*/
-  --background-light:         white;
-  --logo-light:               rgb(15, 136, 0);
-  --text-light:               #fff;
-  --text2-light:              #fff;
-  --paragraph-light:          rgb(125, 123, 123);
-  --opacity-light:            rgba(4,9,30,0.7);
-  --secondary-opacity-light:  rgba(0,0,0,0.7);
-  --menu-color-light:         #aaa;
+  --background-light: white;
+  --logo-light: rgb(15, 136, 0);
+  --mainColor-light: black;
+  --secondaryColor-light: #fff;
+  --paragraphColor-light: rgb(125, 123, 123);
+  --opacity-light: rgba(4, 9, 30, 0.7);
+  --secondaryOpacity-light: rgba(0, 0, 0 , 0.7);
+  --menuBar-light: #aaa;
+  --buttonText-light: #fff;
+  --buttonBorder-light: #fff;
+  --buttonHover-light: #ccc;
   /*Contact color*/
-  --contact-field-light:  rgb(101, 101, 101);
-  --contact-text-light:   #aaa;
-  --contact-text2-light:  #fff;
+  --contact-field-light: rgb(101, 101, 101);
+  --contact-text-light: #aaa;
+  --contact-text2-light: #fff;
   /*Maps color*/
-  --maps-color1-light:    #59d3b4;
+  --maps-color1-light: #59d3b4;
   /*Dark theme*/
-  --background-dark:         rgb(37,37,37);
-  --logo-dark:               rgb(15, 136, 0);
-  --text-dark:               #fff;
-  --text2-dark:              rgb(192, 192, 192);
-  --paragraph-dark:          rgb(125, 123, 123);
-  --opacity-dark:            rgba(4,9,30,0.7);
-  --secondary-opacity-dark:  rgba(0,0,0,0.7);
-  --menu-color-dark:         #aaa;
+  --background-dark: rgb(37,37,37);
+  --logo-dark: rgb(15, 136, 0);
+  --mainColor-dark: #fff;
+  --secondaryColor-dark: rgb(192, 192, 192);
+  --paragraphColor-dark: rgb(125, 123, 123);
+  --opacity-dark: rgba(4,9,30,0.7);
+  --secondaryOpacity-dark: rgba(0,0,0,0.7);
+  --menuBar-dark: #aaa;
+  --buttonText-dark: #fff;
+  --buttonBorder-dark: #fff;
+  --buttonHover-dark: #ccc;
   /*Contact color*/
-  --contact-field-dark:  rgb(101, 101, 101);
-  --contact-text-dark:   #aaa;
-  --contact-text2-dark:  #fff;
+  --contact-field-dark: rgb(101, 101, 101);
+  --contact-text-dark: #aaa;
+  --contact-text2-dark: #fff;
   /*Maps color*/
-  --maps-color1-dark:    #59d3b4;
+  --maps-color1-dark: #59d3b4;
+}
+
+/* GRANDEZZA DEL TESTO E ALTRO */
+:root {
+  --title: 62px;
+  --secondaryTitle: 30px;
+  --mainParagraph: 25px;
+  --secondaryText: 20px;
+  --mapsSelector: 15px;
+  --radius: 15px;
+  --secondaryParagraph: 14px;
+  --smallText: 12px;
 }
 
 /* KEYFRAMES PER IL FADE IN DEL TESTO */
@@ -423,7 +354,6 @@ hr {
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
@@ -432,28 +362,22 @@ hr {
     opacity: 1;
   }
 }
-
 /* STYLE PER LA VISUALIZZAZIOEN DA MOBILE */
 @media (max-width: 700px) {
   /*Bottoni*/
   nav {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     padding: 0 1%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
   }
   nav .fa {
     display: block;
     color: var(--text);
     margin: 10px;
-    font-size: 22px;
+    font-size: var(--mainParagraph);
   }
+
   .nav_links {
     position: fixed;
     background: var(--menu-color);
@@ -463,7 +387,6 @@ hr {
     right: -200px;
     text-align: left;
     z-index: 2;
-    -webkit-transition: 0.5s;
     transition: 0.5s;
   }
   .nav_links ul li {
@@ -472,6 +395,7 @@ hr {
   .nav_links ul {
     padding: 30px;
   }
+
   /*Bottoni*/
   .btn {
     text-decoration: none;
@@ -479,21 +403,23 @@ hr {
     border: 1px solid var(--text);
     padding: 8px 8px;
     border-radius: 15px;
-    font-size: 15px;
+    font-size: var(--secondaryParagraph);
     background: transparent;
     width: 100px;
   }
+
   /*titolo spazio contattaci*/
   .contact h1 {
-    font-size: 20px;
+    font-size: var(--secondaryText);
   }
+
   /*Colonna pagina*/
   /*Titolo style*/
   .info_col h1 {
-    font-size: 30px;
+    font-size: var(--secondaryTitle);
   }
   .info_col p {
-    font-size: 20px;
+    font-size: var(--secondaryText);
   }
   .info_col iframe {
     max-width: 350px;
@@ -505,101 +431,80 @@ hr {
     max-width: 350px;
     max-height: 200px;
   }
+
   /*Pagina maps style*/
   #graficoMap {
     width: 350px;
   }
+
   .map {
     width: 300px;
     height: 300px;
     margin-top: 300px;
   }
+
   /*Galleria pagina media*/
   .gallery {
     height: 230px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     overflow: auto;
   }
   .gallery img {
     height: 230px;
     width: 100%;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     -o-object-fit: cover;
        object-fit: cover;
     position: -webkit-sticky;
     position: sticky;
   }
+
   /*Galleria pagina maps*/
   .gallery--maps {
     height: 230px;
     width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    flex-direction: row;
     overflow: auto;
   }
   .gallery--maps img {
     height: 230px;
     width: 100%;
-    -ms-flex-negative: 0;
-        flex-shrink: 0;
+    flex-shrink: 0;
     -o-object-fit: cover;
        object-fit: cover;
     position: -webkit-sticky;
     position: sticky;
   }
 }
-
-/* BOTTONI SUPERIORI */
+/* BOTTONI SUPERIORI PER LA SCELTA DELLE PAGINE*/
 .nav_links {
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  flex: 1;
   text-align: right;
 }
-
 .nav_links ul li {
   list-style: none;
   display: inline-block;
   padding: 8px 12px;
   position: relative;
 }
-
 .nav_links ul li a {
-  color: var(--text);
+  color: var(--buttonText);
   text-decoration: none;
-  font-size: 13px;
+  font-size: var(--smallText);
 }
 
 nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 0 1%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
 }
-
 nav img {
   width: 150px;
 }
-
 nav .fa {
   display: none;
 }
@@ -608,20 +513,18 @@ nav .fa {
 .btn {
   display: inline-block;
   text-decoration: none;
-  color: var(--text);
-  border: 1px solid var(--text);
+  color: var(--secondaryColor);
+  border: 1px solid var(--buttonBorder);
   padding: 12px 28px;
-  border-radius: 15px;
-  font-size: 13px;
+  border-radius: var(--radius);
+  font-size: var(--smallText);
   background: transparent;
   cursor: pointer;
 }
-
 .btn:hover {
-  border: 1px solid var(--text);
-  background: var(--text);
-  color: var(--text2);
-  -webkit-transition: 0.3s;
+  border: 1px solid var(--mainColor);
+  background: var(--buttonHover);
+  color: var(--mainColor);
   transition: 0.3s;
 }
 
@@ -629,21 +532,19 @@ nav .fa {
 .btn--sub {
   display: inline-block;
   text-decoration: none;
-  color: var(--text2);
-  border: 1px solid var(--text2);
+  color: var(--secondaryColor);
+  border: 1px solid var(--secondaryColor);
   padding: 12px 28px;
-  border-radius: 15px;
-  font-size: 13px;
+  border-radius: var(--radius);
+  font-size: var(--smallText);
   background: transparent;
   position: relative;
   cursor: pointer;
 }
-
 .btn--sub:hover {
-  border: 1px solid var(--text2);
-  background: var(--text);
-  color: var(--text2);
-  -webkit-transition: 0.3s;
+  border: 1px solid var(--secondaryColor);
+  background: var(--mainColor);
+  color: var(--secondaryColor);
   transition: 0.3s;
 }
 
@@ -655,11 +556,9 @@ nav .fa {
 .fa--ig {
   color: #5851DB;
 }
-
 .fa--github {
   color: black;
 }
-
 .fa--yt {
   color: red;
 }
@@ -667,40 +566,44 @@ nav .fa {
 /* SCHEMA DI COLORI LIGHT MODE */
 @media (prefers-color-scheme: light) {
   :root {
-    --background:         var(--background-light);
-    --logo:               var(--logo-light);
-    --text:               var(--text-light);
-    --text2:              var(--text2-light);
-    --paragraph:          var(--paragraph-light);
-    --opacity:            var(--opacity-light);
-    --secondary-opacity:  var(--secondary-opacity-light);
-    --menu-color:         var(--menu-color-light);
+    --background: var(--background-light);
+    --logo: var(--logo-light);
+    --mainColor: var(--mainColor-light);
+    --secondaryColor: var(--secondaryColor-light);
+    --paragraph: var(--paragraphColor-light);
+    --opacity: var(--opacity-light);
+    --secondaryOpacity: var(--secondaryOpacity-light);
+    --menuBar: var(--menuBar-light);
+    --buttonText: var(--buttonText-light);
+    --buttonBorder: var(--buttonBorder-light);
+    --buttonHover: var(--buttonHover-light);
     /*Contact color*/
-    --contact-field:  var(--contact-field-light);
-    --contact-text:   var(--contact-text-light);
-    --contact-text2:  var(--contact-text2-light);
+    --contact-field: var(--contact-field-light);
+    --contact-text: var(--contact-text-light);
+    --contact-text2: var(--contact-text2-light);
     /*Maps color*/
-    --maps-color1:    var(--maps-color1-light);
+    --maps-color1: var(--maps-color1-light);
   }
 }
-
 /* SCHEMA DI COLORI DARK MODE */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background:         var(--background-dark);
-    --logo:               var(--logo-dark);
-    --text:               var(--text-dark);
-    --text2:              var(--text2-dark);
-    --paragraph:          var(--paragraph-dark);
-    --opacity:            var(--opacity-dark);
-    --secondary-opacity:  var(--secondary-opacity-dark);
-    --menu-color:         var(--menu-color-dark);
-    /*Contact color*/
-    --contact-field:  var(--contact-field-dark);
-    --contact-text:   var(--contact-text-dark);
-    --contact-text2:  var(--contact-text2-dark);
+    --background: var(--background-dark);
+    --logo: var(--logo-dark);
+    --mainColor: var(--mainColor-dark);
+    --secondaryColor: var(--secondaryColor-dark);
+    --paragraph: var(--paragraphColor-dark);
+    --opacity: var(--opacity-dark);
+    --secondaryOpacity: var(--secondaryOpacity-dark);
+    --menuBar: var(--menubar-dark);
+    --buttonText: var(--buttonText-dark);
+    --buttonBorder: var(--buttonBorder-dark);
+    --buttonHover: var(--buttonHover-dark)
+        /*Contact color*/
+        --contact-field: var(--contact-field-dark);
+    --contact-text: var(--contact-text-dark);
+    --contact-text2: var(--contact-text2-dark);
     /*Maps color*/
-    --maps-color1:    var(--maps-color1-dark);
+    --maps-color1: var(--maps-color1-dark);
   }
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

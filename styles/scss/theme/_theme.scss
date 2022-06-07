@@ -3,12 +3,15 @@
     :root {
         --background:         var(--background-light);
         --logo:               var(--logo-light);
-        --text:               var(--text-light);
-        --text2:              var(--text2-light);
-        --paragraph:          var(--paragraph-light);
+        --mainColor:          var(--mainColor-light);
+        --secondaryColor:     var(--secondaryColor-light);
+        --paragraph:          var(--paragraphColor-light);
         --opacity:            var(--opacity-light); 
-        --secondary-opacity:  var(--secondary-opacity-light);
-        --menu-color:         var(--menu-color-light);
+        --secondaryOpacity:   var(--secondaryOpacity-light);
+        --menuBar:            var(--menuBar-light);
+        --buttonText:         var(--buttonText-light);
+        --buttonBorder:       var(--buttonBorder-light);
+        --buttonHover:        var(--buttonHover-light);
             /*Contact color*/
             --contact-field:  var(--contact-field-light);
             --contact-text:   var(--contact-text-light);
@@ -23,12 +26,15 @@
     :root {
         --background:         var(--background-dark);
         --logo:               var(--logo-dark);
-        --text:               var(--text-dark);
-        --text2:              var(--text2-dark);
-        --paragraph:          var(--paragraph-dark);
+        --mainColor:          var(--mainColor-dark);
+        --secondaryColor:     var(--secondaryColor-dark);
+        --paragraph:          var(--paragraphColor-dark);
         --opacity:            var(--opacity-dark); 
-        --secondary-opacity:  var(--secondary-opacity-dark);
-        --menu-color:         var(--menu-color-dark);
+        --secondaryOpacity:   var(--secondaryOpacity-dark);
+        --menuBar:            var(--menubar-dark);
+        --buttonText:         var(--buttonText-dark);
+        --buttonBorder:       var(--buttonBorder-dark);
+        --buttonHover:        var(--buttonHover-dark)
             /*Contact color*/
             --contact-field:  var(--contact-field-dark);
             --contact-text:   var(--contact-text-dark);
