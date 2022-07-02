@@ -35,7 +35,7 @@ body {
     p {
         margin: 10px 0 40px;
         font-size: var(--secondaryParagraph);
-        color: var(--secondaryColor);
+        color: var(--secondary);
     }
     &--web_text {
         color: var(--logo);
@@ -59,7 +59,7 @@ body {
     text-align: center;
     padding: 100px 0;
     h1 {
-        color: var(--secondaryColor);
+        color: var(--secondary);
         margin-bottom: 40px;
         padding: 0;
     }
@@ -74,7 +74,7 @@ body {
         text-align: center;
         padding: 100px 0;
         h1 {
-            color: var(--secondaryColor);
+            color: var(--secondary);
             margin-bottom: 40px;
             padding: 0;
         }
@@ -90,7 +90,7 @@ body {
         text-align: center;
         padding: 100px 0;
         h1 {
-            color: var(--secondaryColor);
+            color: var(--secondary);
             margin-bottom: 40px;
             padding: 0;
         }
@@ -106,7 +106,7 @@ body {
     background-size: cover;
     text-align: center;
     h1 {
-        color: var(--secondaryColor);
+        color: var(--secondary);
         margin-top: 10px;
     }
 }
@@ -118,7 +118,7 @@ body {
     justify-content: space-between;
     h1 {
         margin: 0 auto;
-        color: var(--secondaryColor);
+        color: var(--secondary);
     }
 }
 
@@ -130,10 +130,10 @@ body {
     padding-bottom: 30px;
     h1 {
         font-size: var(--secondaryTitle);
-        color: var(--secondaryColor);
+        color: var(--secondary);
     }
     h4 {
-        color: var(--mainColor);
+        color: var(--main);
     }
 }
 /* SPAZIO VERTICALE PER INFO NELLE PAGINE */
@@ -141,7 +141,7 @@ body {
     flex-basis: 100%;
     h1 {
         font-size: var(--mainParagraph);
-        color: var(--mainColor);
+        color: var(--main);
     }
     p {
         color: var(--paragraph);
@@ -168,7 +168,7 @@ body {
         text-decoration: none;
         cursor: pointer;
         &:hover {
-            color: var(--mainColor);
+            color: var(--main);
         }
     }
     &--map {
@@ -279,13 +279,13 @@ hr {
     text-align: center;
     padding: 30px 0;
     h4 {
-        color: var(--mainColor);
+        color: var(--main);
         margin-bottom: 30px;
         margin-top: 20px;
         font-weight: 600;
     }
     p {
-        color: var(--mainColor);
+        color: var(--main);
     }
     &--change {
         font-size: var(--smallText);

@@ -8,7 +8,7 @@
         align-items: center;
         .fa-solid {
             display: block;
-            color: var(--secondaryColor);
+            color: var(--secondary);
             margin: 5%;
             font-size: var(--mainParagraph);
         }
@@ -33,10 +33,10 @@
 
     /*Bottoni*/
     .btn {
-        color: var(--mainColor);
+        color: var(--main);
         text-align: center;
         text-decoration: none;
-        border: 1px solid var(--mainColor);
+        border: 1px solid var(--main);
         padding: 8px 8px;
         border-radius: var(--radius);
         font-size: var(--secondaryParagraph);
@@ -45,7 +45,7 @@
     }
     /*titolo spazio contattaci*/
     .contact {
-        color: var(--mainColor);
+        color: var(--main);
         h1 {
             font-size: var(--secondaryText);
         }
@@ -54,7 +54,7 @@
     /*Riga nella pagina*/
     .row {
         h1 {
-            color: var(--mainColor);
+            color: var(--main);
         }
     }
 

@@ -33,7 +33,7 @@ nav {
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    color: var(--secondaryColor);
+    color: var(--secondary);
     border: 1px solid var(--buttonBorder);
     padding: 12px 28px;
     border-radius: var(--radius);
@@ -43,7 +43,7 @@ nav {
     &:hover {
         border: 1px solid var(--logo);
         background: var(--buttonHover);
-        color: var(--mainColor);
+        color: var(--main);
         transition: 0.3s;
     }
 }
@@ -51,8 +51,8 @@ nav {
 .btn--sub {
     display: inline-block;
     text-decoration: none;
-    color: var(--secondaryColor);
-    border: 1px solid var(--secondaryColor);
+    color: var(--secondary);
+    border: 1px solid var(--secondary);
     padding: 12px 28px;
     border-radius: var(--radius);
     font-size: var(--smallText);
@@ -60,9 +60,9 @@ nav {
     position: relative;
     cursor: pointer;
     &:hover {
-        border: 1px solid var(--secondaryColor);
-        background: var(--mainColor);
-        color: var(--secondaryColor);
+        border: 1px solid var(--secondary);
+        background: var(--main);
+        color: var(--secondary);
         transition: 0.3s;
     }
 }

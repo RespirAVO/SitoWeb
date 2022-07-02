@@ -3,8 +3,8 @@
     :root {
         --background:         var(--background-light);
         --logo:               var(--logo-light);
-        --mainColor:          var(--mainColor-light);
-        --secondaryColor:     var(--secondaryColor-light);
+        --main:               var(--main-light);
+        --secondary:          var(--secondary-light);
         --paragraph:          var(--paragraphColor-light);
         --opacity:            var(--opacity-light); 
         --secondaryOpacity:   var(--secondaryOpacity-light);
@@ -26,9 +26,9 @@
     :root {
         --background:         var(--background-dark);
         --logo:               var(--logo-dark);
-        --mainColor:          var(--mainColor-dark);
-        --secondaryColor:     var(--secondaryColor-dark);
-        --paragraph:          var(--paragraphColor-dark);
+        --main:               var(--main-dark);
+        --secondary:          var(--secondary-dark);
+        --paragraph:          var(--paragraph-dark);
         --opacity:            var(--opacity-dark); 
         --secondaryOpacity:   var(--secondaryOpacity-dark);
         --menuBar:            var(--menuBar-dark);
