@@ -45,7 +45,7 @@
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>Mappe e grafici</h1>
+        <h2>Mappe e grafici</h2>
     </section>
 
     <!--Central section-->
@@ -87,23 +87,23 @@
         <br/>
 
         <!--Selector per la visualizzazione delle mappe-->
-        <h4>Scegli la mappa del:</h4>
-        <br/>
-        <select id="fileList">
-            <option value="Carlone_2022_04_24_all"   nFoto="3">         24 Aprile 2022</option>
-            <option value="Dagostino_2022_03_15_all" nFoto="3">         15 Marzo 2022 </option>
-            <option value="Dagostino_2022_03_16_all" nFoto="3">         16 Marzo 2022 </option>
-            <option value="Delarosa_2022_03_18"      nFoto="3">         18 Marzo 2022 </option>
-            <option value="Delarosa_2022_03_24"      nFoto="3">         24 Marzo 2022 </option>
-            <option value="Delarosa_2022_03_25"      nFoto="3">         25 Marzo 2022 </option>
-            <option value="Carlone_2022_05_06_all"   nFoto="3">         06 Maggio 2022</option>
-        </select>
-        <br/>
-        <br/>
-        <br/>
-        <h4>Scegli cosa visualizzare</h4>
-        <br/>
-        <select id="optionList"></select>
+        <div class="mapSelector-text">
+            <h4>Scegli la data</h4>
+            <h4>Scegli l'inquinante</h4>
+        </div>
+        <div class="mapSelector-selector">
+            <select id="fileList">
+                <option value="Carlone_2022_04_24_all" nFoto="3"> 24 Aprile 2022</option>
+                <option value="Dagostino_2022_03_15_all" nFoto="3"> 15 Marzo 2022 </option>
+                <option value="Dagostino_2022_03_16_all" nFoto="3"> 16 Marzo 2022 </option>
+                <option value="Delarosa_2022_03_18" nFoto="3"> 18 Marzo 2022 </option>
+                <option value="Delarosa_2022_03_24" nFoto="3"> 24 Marzo 2022 </option>
+                <option value="Delarosa_2022_03_25" nFoto="3"> 25 Marzo 2022 </option>
+                <option value="Carlone_2022_05_06_all" nFoto="3"> 06 Maggio 2022</option>
+            </select>
+            &nbsp;&nbsp;&nbsp;&nbsp;
+            <select id="optionList"></select>
+        </div>
         
         <!--Riga per la mappa-->
         <div class="row">

@@ -1,0 +1,76 @@
+/*Form per l'invio dell'eamil*/
+#form {
+    margin: 0 auto;
+    input[type="text"], [type="email"], textarea {
+        font-size: var(--secondaryParagraph);
+    }
+    .form__label {
+        margin: 5% 0 0 0 ;
+        padding: 2%;
+        text-align: start;
+        label {
+            font-size: var(--thirdText);
+            padding: 1%;
+        }
+        #email {
+            float: right;
+        }
+    }
+    .form__email {
+        &-nameEmail {
+            @include spaceEvenly;
+            padding: 1%;
+            input {
+                height: 30px;
+                width: 300px;
+                margin: 0 2% 0 2%;
+            }
+        }
+
+        &-object {
+            margin: 2% 0;
+            @include center;
+            input {
+                height: 30px;
+                width: 100%;
+                margin: 0 2% 0 2%;
+            }
+        }
+
+        &-message {
+            @include center;
+            padding: 2%;
+            textarea {
+                width: 100%;
+                max-width: 600px;
+                min-width: 550px;
+                height: 300px;
+                max-height: 300px;
+                min-height: 250px;
+            }
+        }
+    }
+}
+
+/* Campo per mittente e messaggio da inviare */
+.field {
+    margin-bottom: 10%;
+    & label {
+        display: block;
+        font-size: var(--mainParagraph);
+        color: var(--contact-text);
+    }
+    & input {
+        display: block;
+        height: 50px;
+        width: 300px;
+        min-width: 250px;
+        font-size: var(--secondaryText);
+        color: var(--contact-text);
+    }
+}
+
+/* Campo del messaggio */
+#message {
+    height: 200px;
+}

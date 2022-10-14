@@ -1,4 +1,19 @@
-@import 'layout/index';
-@import 'base/index';
-@import 'abstract/index';
-@import 'theme/index';
+@import './abstract/variables';
+@import './abstract/mixins';
+
+@import './base/reset';
+@import './base/typography';
+
+@import './components/button';
+@import './components/form';
+@import './components/gallery';
+@import './components/header';
+@import './components/struct';
+@import './components/map';
+
+@import './layout/footer';
+@import './layout/mobile';
+
+@import './pages/home';
+
+@import './theme/theme';

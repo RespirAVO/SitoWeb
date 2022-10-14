@@ -1,0 +1,31 @@
+/* FOOTER DI TUTTE LE PAGINE */
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+    h4 {
+        color: var(--main);
+        margin-bottom: 30px;
+        margin-top: 20px;
+        font-weight: 600;
+    }
+    p {
+        color: var(--main);
+    }
+    &--change {
+        font-size: var(--smallText);
+    }
+    iframe {
+        border: none;
+    }
+}
+/* ICONE DEI SOCIAL */
+.icons {
+    font-size: var(--secondaryText);
+    .fa {
+        margin: 0 13px;
+        cursor: pointer;
+        padding: 18px 0;
+        text-decoration: none;
+    }
+}

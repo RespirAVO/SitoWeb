@@ -1,0 +1,77 @@
+/* TITOLO */
+.text {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    h1 {
+        font-size: var(--title);
+        color: var(--logo);
+        text-decoration: none;
+    }
+    p {
+        margin: 10px 0 40px;
+        font-size: var(--secondaryParagraph);
+        color: var(--secondary);
+    }
+    
+    &--web_text {
+        color: var(--logo);
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: var(--buttonHover);
+        }
+    }
+}
+
+/* BANNER PER ALTRI PROGETTI */
+.contact {
+    margin: auto;
+    width: 80%;
+    background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/banner.png);
+    @include bgImage-two;
+    border-radius: var(--radius);
+    border: 1px solid var(--buttonBorder);
+    text-align: center;
+    padding: 100px 0;
+    h1 {
+        color: var(--secondary);
+        margin-bottom: 40px;
+        padding: 0;
+    }
+
+    &--avomobility {
+        margin: auto;
+        width: 80%;
+        background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/avo_mobility.jpeg);
+        @include bgImage-two;
+        border-radius: var(--radius);
+        border: 1px solid var(--buttonBorder);
+        text-align: center;
+        padding: 100px 0;
+        h1 {
+            color: var(--secondary);
+            margin-bottom: 40px;
+            padding: 0;
+        }
+    }
+
+    &--greendonors {
+        margin: auto;
+        width: 80%;
+        background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/banner.png);
+        @include bgImage-two;
+        border-radius: var(--radius);
+        border: 1px solid var(--buttonBorder);
+        text-align: center;
+        padding: 100px 0;
+        h1 {
+            color: var(--secondary);
+            margin-bottom: 40px;
+            padding: 0;
+        }
+    }
+}

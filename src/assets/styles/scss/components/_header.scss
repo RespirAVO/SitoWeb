@@ -1,0 +1,16 @@
+/* HEADER DELLA HOME */
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(var(--opacity), var(--opacity)), url(../../../images/content/banner.png);
+    @include bgImage;
+}
+
+/* HEADER PAGINE SECONDARIE */
+.sub_header {
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(var(--opacity), var(--opacity)), url(../../../images/content/banner.png);
+    @include bgImage;
+    text-align: center;
+}

@@ -15,9 +15,8 @@
     }
 }
 nav {
-    display: flex;
+    @include spaceBetween;
     padding: 0 1%;
-    justify-content: space-between;
     align-items: center;
     text-align: center;
     img {
@@ -68,6 +67,22 @@ nav {
 }
 .btn--sel {
     border: 1px solid var(--logo);
+}
+
+/*Stile del bottone di invio*/
+input[type="submit"] {
+    display: block;
+    margin: 0 auto;
+    padding: 2%;
+    font-size: var(--secondaryText);
+    background-color: var(--logo);
+    color: var(--contact-text2);
+    border: none;
+    transition: .2s linear;
+    &:hover {
+        color: var(--main);
+        transition: .2s linear;
+    }
 }
 
 /* ICONE SOCIAL */

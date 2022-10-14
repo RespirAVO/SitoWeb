@@ -1,0 +1,38 @@
+@mixin spaceBetween {
+    display: flex;
+    justify-content: space-between;
+}
+
+@mixin spaceEvenly {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+@mixin center {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin middleAlignment {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+@mixin gallery {
+    display: flex;
+    flex-direction: row;
+    overflow: auto;
+}
+
+@mixin bgImage {
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+@mixin bgImage-two {
+    background-position: center;
+    background-size: cover;
+}

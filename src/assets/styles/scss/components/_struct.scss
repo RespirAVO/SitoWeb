@@ -1,0 +1,58 @@
+/* SPAZIO ORIZZONTALE PER INFO NELLE PAGINE */
+.row {
+    margin-top: 5%;
+    @include spaceBetween;
+}
+
+/* SEZIONE PRINCIPALE DELLE PAGINE */
+.info {
+    width: 90%;
+    margin: auto;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+/* SPAZIO VERTICALE PER INFO NELLE PAGINE */
+.info_col {
+    flex-basis: 100%;
+    p {
+        color: var(--paragraph);
+        font-size: var(--mainParagraph);
+        padding: 15px 0 15px;
+        animation: fadeIn linear 1s;
+        -webkit-animation: fadeIn linear 1s;
+    }
+    img {
+        float: right;
+        padding: 2px;
+        max-width: 50%;
+        max-height: 100%;
+        border-radius: 20px;
+    }
+    iframe {
+        float: right;
+        max-width: 1000px;
+        max-height: 100%;
+        border-radius: 20px;
+    }
+    &--web_text {
+        color: var(--logo);
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+            color: var(--main);
+        }
+    }
+    &--map {
+        width: 100%;
+    }
+    &--center {
+        @include middleAlignment;
+    }
+}
+
+/* RIGA DI SEPARAZIONE */
+hr {
+    width: 95%;
+    margin-left: 2.5%;
+}

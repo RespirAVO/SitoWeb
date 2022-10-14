@@ -1,0 +1,17 @@
+/* GALLERIA PER LE FOTO */
+.gallery {
+    margin: 0 auto;
+    width: 900px;
+    @include gallery;
+    img {
+        max-width: 100%;
+        height: 600px;
+        width: 900px;
+        flex-shrink: 0;
+        object-fit: cover;
+        position: sticky;
+    }
+    &--about {
+        border-radius: var(--radius);
+    }
+}

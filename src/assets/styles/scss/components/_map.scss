@@ -1,0 +1,42 @@
+/* STYLE PER LE MAPPE e I GRAFICI */
+.mapSelector {
+    &-text {
+        display: flex;
+        justify-content: center;
+        h4 {
+            padding: 0 2% 0 2%;
+        }
+    }
+    &-selector {
+        width: fit-content;
+        @include spaceEvenly;
+        padding: 1%;
+        display: block;
+        margin: 0 auto;
+        select {
+            font-size: var(--mapsSelector);
+            border-radius: var(--radius);
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
+
+.map {
+    height: 45rem;
+}
+
+#graficoMap {
+    width: 50rem;
+    border-radius: 8px;
+    float: right;
+}
+
+#gallery {
+    @include spaceEvenly;
+}
+
+#mapImages {
+    height: 900px;
+    width: 500px;
+}

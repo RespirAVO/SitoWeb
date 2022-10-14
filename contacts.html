@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/af19d86422.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/assets/styles/css/main.css">
-    <link rel="icon"       href="./icons/contacts_page.png" type="x-icon">
+    <link rel="icon"       href="src/assets/icons/contacts_page.png" type="x-icon">
     <title>Contacts</title>
 </head>
 
@@ -16,9 +16,9 @@
         <nav>
             <a href="index.html">
                 <img 
-                    src="./images/loghi/logo_bas.png" 
-                    onmouseover="this.src='./images/loghi/logo_green.png';" 
-                    onmouseout="this.src='./images/loghi/logo_bas.png';" 
+                    src="src/assets/images/loghi/logo_bas.png"
+                    onmouseover="this.src='src/assets/images/loghi/logo_green.png';" 
+                    onmouseout="this.src='src/assets/images/loghi/logo_bas.png';" 
                     class="logo"
                     alt="immagini dei due tipi di loghi"
                 />
@@ -36,21 +36,37 @@
             </div>
             <i class="fa-solid fa-bars" onclick="showMenu()"></i>
         </nav>
-        <h1>Inviaci una email</h1>
+        <h2>Inviaci una email</h2>
     </section>
 
     <!--Central section-->
     <section class="contact_col">
         <div class="row">
             <form id="form">
-                <div class="field">
-                    <label for="from_name">Mittente</label>
-                    <input type="text" name="from_name" id="from_name">
+                <div class="form__label">
+                    <label>Nome</label>
+                    <label id="email">Email</label>
                 </div>
-                <div class="field">
-                    <label for="message">Messaggio</label>
-                    <input type="text" name="message" id="message">
+                <div class="form__email-nameEmail">
+                    <input type="text" name="from_name" id="from_name" placeholder="Mario Rossi" required>
+
+                    <input type="email" name="reply_to" id="reply_to" placeholder="mario.rossi@email.it" required>
                 </div>
+
+                <div class="form__label">
+                    <label>Oggetto</label>
+                </div>
+                <div class="form__email-object">
+                    <input type="text" name="object" id="object" placeholder="Informazioni sul vostro progetto" required>
+                </div>
+
+                <div class="form__label">
+                    <label>Messaggio</label>
+                </div>
+                <div class="form__email-message">
+                    <textarea name="message" id="message" cols="80" rows="20" placeholder="Hello World!" required></textarea>
+                </div>
+
                 <input type="submit" id="button" value="Invia il messaggio">
             </form>
 
