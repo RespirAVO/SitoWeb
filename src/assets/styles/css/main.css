@@ -271,6 +271,16 @@ hr {
   float: right;
 }
 
+#gallery {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#mapImages {
+  height: 900px;
+  width: 500px;
+}
+
 /* ICONE DEI SOCIAL */
 .icons {
   font-size: var(--secondaryText);
@@ -471,7 +481,6 @@ nav .fa-solid {
     margin: 5%;
     font-size: var(--mainParagraph);
   }
-
   .nav_links {
     position: fixed;
     background-color: var(--menuBar);
@@ -489,7 +498,6 @@ nav .fa-solid {
   .nav_links ul {
     padding: 30px;
   }
-
   /*Bottoni*/
   .btn {
     color: var(--main);
@@ -502,7 +510,6 @@ nav .fa-solid {
     background: transparent;
     width: 100px;
   }
-
   /*titolo spazio contattaci*/
   .contact {
     color: var(--main);
@@ -510,12 +517,10 @@ nav .fa-solid {
   .contact h1 {
     font-size: var(--secondaryText);
   }
-
   /*Riga nella pagina*/
   .row h1 {
     color: var(--main);
   }
-
   /*Colonna pagina*/
   /*Titolo style*/
   .info_col h1 {
@@ -534,18 +539,26 @@ nav .fa-solid {
     max-width: 350px;
     max-height: 200px;
   }
-
   /*Pagina maps style*/
   #graficoMap {
     width: 350px;
   }
-
   .map {
     width: 300px;
     height: 300px;
     margin-top: 300px;
   }
-
+  #gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  #mapImages {
+    border: 1px solid red;
+    height: 80%;
+    width: 80%;
+    padding: 2%;
+  }
   /*Galleria pagina media*/
   .gallery {
     height: 230px;
@@ -563,7 +576,6 @@ nav .fa-solid {
     position: -webkit-sticky;
     position: sticky;
   }
-
   /*Galleria pagina maps*/
   .gallery--maps {
     height: 230px;

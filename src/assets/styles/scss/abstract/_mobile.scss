@@ -88,6 +88,17 @@
         height: 300px;
         margin-top: 300px;
     }
+    #gallery {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #mapImages {
+        border: 1px solid red;
+        height: 80%;
+        width: 80%;
+        padding: 2%;
+    }
 
     /*Galleria pagina media*/
     .gallery {

@@ -91,6 +91,7 @@ function loadImgs() {
     fotoContainer.innerHTML = '';
     for(let i = 0; i < numberOfFoto; i++) {
         const tmpFoto = document.createElement('img');
+        tmpFoto.id = 'mapImages';
         tmpFoto.src = './rilevazioni/' + fileList.value + '/imgs/img' + i + '.png';
 
         fotoContainer.append(tmpFoto);
