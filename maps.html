@@ -14,21 +14,21 @@
     <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
     <script src="src/assets/scripts/map.js" type="module" defer></script>
     <script src="src/assets/scripts/graph.js" type="module"  defer></script>
+    <script src="src/assets/scripts/logo.js"></script>
     <link rel="stylesheet" href="./src/assets/styles/css/main.css">
-    <link rel="icon" href="src/assets/icons/mappe_page.png" type="x-icon">
-    <title>Mappe</title>
+    <link rel="icon" href="src/assets/images/loghi/logo_green.png" type="x-icon">
+    <title>RespirAVO</title>
 </head>
 
-<body>
+<body onload="changeLogo()">
     <!--Header-->
     <section class="sub_header">
         <nav>
             <a href="index.html">
                 <img 
                     src="src/assets/images/loghi/logo_bas.png"
-                    onmouseover="this.src='src/assets/images/loghi/logo_green.png';" 
-                    onmouseout="this.src='src/assets/images/loghi/logo_bas.png';" 
                     class="logo"
+                    id="logoImg"
                     alt="immagini dei due tipi di loghi"
                 />
             </a>
@@ -66,7 +66,7 @@
                 <p>
                     <p></p>
                     <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-green.png"/>
-                    <p>indica che il limite non è superato</p>
+                    <p>indica che il limite non è stato superato</p>
                 </p>
                 <p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</p>
                 <p>
@@ -78,7 +78,7 @@
                 <p>
                     <p></p>
                     <img src="https://raw.githubusercontent.com/pointhi/leaflet-color-markers/master/img/marker-icon-grey.png"/>
-                    <p>Se sono tutti grigi allora non è stato impostato il limite per quella sostanza</p>
+                    <p>Indica che il limite non è stato impostato</p>
                 </p>
             </div>
         </div>

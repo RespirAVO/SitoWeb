@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/af19d86422.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/assets/styles/css/main.css">
-    <link rel="icon"       href="src/assets/icons/contacts_page.png" type="x-icon">
-    <title>Contacts</title>
+    <script src="src/assets/scripts/logo.js"></script>
+    <link rel="icon" href="src/assets/images/loghi/logo_green.png" type="x-icon">
+    <title>RespirAVO</title>
 </head>
 
-<body>
+<body onload="changeLogo()">
     <!--Header-->
     <section class="sub_header">
         <nav>
             <a href="index.html">
                 <img 
                     src="src/assets/images/loghi/logo_bas.png"
-                    onmouseover="this.src='src/assets/images/loghi/logo_green.png';" 
-                    onmouseout="this.src='src/assets/images/loghi/logo_bas.png';" 
                     class="logo"
+                    id="logoImg"
                     alt="immagini dei due tipi di loghi"
                 />
             </a>

@@ -2,6 +2,20 @@
 .row {
     margin-top: 5%;
     @include spaceBetween;
+    &_photo {
+        margin: 0 auto;
+        width: 1000px;
+        height: 500px;
+        &-img {
+            width: 100%;
+            height: 100%;
+            border-radius: var(--radius);
+        }
+        &-title {
+            width: 100%;
+            text-align: center;
+        }
+    }
 }
 
 /* SEZIONE PRINCIPALE DELLE PAGINE */

@@ -24,6 +24,7 @@
 
 .map {
     height: 45rem;
+    border-radius: var(--radius);
 }
 
 #graficoMap {
@@ -39,4 +40,5 @@
 #mapImages {
     height: 900px;
     width: 500px;
+    border-radius: var(--radius);
 }

@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/af19d86422.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/assets/styles/css/main.css">
-    <link rel="icon"       href="src/assets/icons/about_page.png" type="x-icon">
-    <title>Chi siamo</title>
+    <script src="src/assets/scripts/logo.js"></script>
+    <link rel="icon"       href="src/assets/images/loghi/logo_green.png" type="x-icon">
+    <title>RespirAVO</title>
 </head>
 
-<body>
+<body onload="changeLogo()">
     <!--Header-->
     <section class="sub_header">
         <nav>
             <a href="index.html">
                 <img 
-                    src="src/assets/images/loghi/logo_bas.png"
-                    onmouseover="this.src='src/assets/images/loghi/logo_green.png';" 
-                    onmouseout="this.src='src/assets/images/loghi/logo_bas.png';" 
-                    class="logo"
+                    src="src/assets/images/loghi/logo_bas.png" 
+                    class="logo" 
+                    id="logoImg" 
                     alt="immagini dei due tipi di loghi"
                 />
             </a>
@@ -66,13 +66,13 @@
         </div>
 
         <div class="row">
-            <h1>Gli studenti della classe 3C</h1>
+            <h1 class="row_photo-title">Gli studenti della classe 3C</h1>
         </div>
         <div class="row">
-            <div class="gallery gallery--about">
+            <div class="row_photo">
                 <!--IMMAGINE TEMPORAMEA-->
                 <a href="src/assets/images/content/banner.png">
-                    <img src="src/assets/images/content/banner.png" alt="immagine della classe 3C">
+                    <img class="row_photo-img" src="src/assets/images/content/banner.png" alt="immagine della classe 3C">
                 </a>
             </div>
         </div>
