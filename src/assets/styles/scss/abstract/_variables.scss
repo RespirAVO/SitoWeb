@@ -3,8 +3,8 @@
     /*Light Theme*/
     --background-light:         white;
     --logo-light:               rgb(15, 136, 0);
-    --main-light:               black;
-    --secondary-light:          #fff;
+    --black-light:              black;
+    --white-light:              #fff;
     --paragraph-light:          rgb(125, 123, 123);
     --opacity-light:            rgba(4, 9, 30, 0.7); 
     --secondaryOpacity-light:   rgba(0, 0, 0 , 0.7);
@@ -16,15 +16,16 @@
         --contact-field-light:  rgb(101, 101, 101);
         --contact-text-light:   #aaa;
         --contact-text2-light:  #fff;
+        --contact-input-light:  rgb(200,200,200);
         /*Maps color*/
         --maps-color1-light:    #59d3b4;
 
 
     /*Dark theme*/
-    --background-dark:         rgb(37,37,37);
+    --background-dark:         rgb(37, 37, 37);
     --logo-dark:               rgb(15, 136, 0);
-    --main-dark:               rgb(192, 192, 192);
-    --secondary-dark:          rgb(192, 192, 192);
+    --black-dark:              rgb(192, 192, 192);
+    --white-dark:              rgb(192, 192, 192);
     --paragraph-dark:          rgb(125, 123, 123);
     --opacity-dark:            rgba(4,9,30,0.7); 
     --secondaryOpacity-dark:   rgba(0,0,0,0.7);
@@ -36,6 +37,7 @@
         --contact-field-dark:  rgb(101, 101, 101);
         --contact-text-dark:   #aaa;
         --contact-text2-dark:  #fff;
+        --contact-input-dark:  rgb(70, 70, 70);
         /*Maps color*/
         --maps-color1-dark:    #59d3b4;
 }

@@ -11,7 +11,7 @@
         label {
             font-size: var(--thirdText);
             padding: 1%;
-            color: var(--secondary);
+            color: var(--black);
         }
         #email {
             float: right;
@@ -25,12 +25,14 @@
                 height: 30px;
                 width: 300px;
                 margin: 0 2% 0 2%;
-                border: 1px solid var(--contact-text);
+                border: none;
                 border-radius: var(--radiusTwo);
+                background: var(--contact-input);
             }
             input:focus, input::placeholder {
                 outline: none;
                 padding: 2%;
+                color: var(--paragraph);
             }
         }
 
@@ -41,12 +43,14 @@
                 height: 30px;
                 width: 100%;
                 margin: 0 2% 0 2%;
-                border: 1px solid var(--contact-text);
+                border: none;
+                background: var(--contact-input);
                 border-radius: var(--radiusTwo);
             }
             input:focus, input::placeholder {
                 outline: none;
                 padding: 2%;
+                color: var(--paragraph);
             }
         }
 
@@ -60,12 +64,14 @@
                 height: 300px;
                 max-height: 300px;
                 min-height: 250px;
-                border: 1px solid var(--contact-text);
+                border: none;
+                background: var(--contact-input);
                 border-radius: var(--radiusTwo);
             }
             textarea:focus, textarea::placeholder {
                 outline: none;
                 padding: 2%;
+                color: var(--paragraph);
             }
         }
     }

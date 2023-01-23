@@ -7,7 +7,7 @@
         align-items: center;
         .fa-solid {
             display: block;
-            color: var(--secondary);
+            color: var(--white);
             margin: 5%;
             font-size: var(--mainParagraph);
         }
@@ -32,10 +32,10 @@
 
     /*Bottoni*/
     .btn {
-        color: var(--main);
+        color: var(--black);
         text-align: center;
         text-decoration: none;
-        border: 1px solid var(--main);
+        border: 1px solid var(--black);
         padding: 8px 8px;
         border-radius: var(--radius);
         font-size: var(--secondaryParagraph);
@@ -44,7 +44,7 @@
     }
     /*titolo spazio contattaci*/
     .contact {
-        color: var(--main);
+        color: var(--black);
         h1 {
             font-size: var(--secondaryText);
         }
@@ -53,7 +53,12 @@
     /*Riga nella pagina*/
     .row {
         h1 {
-            color: var(--main);
+            color: var(--black);
+        }
+        &_photo {
+            &-img {
+                height: 250px;
+            }
         }
     }
 
@@ -84,16 +89,18 @@
     }
     .map {
         width: 300px;
-        height: 300px;
-        margin-top: 300px;
+        height: 500px;
+        margin-top: 50px;
     }
     #gallery {
         @include center;
+        height: 900px;
+        border: 1px solid red;
     }
     #mapImages {
-        height: 80%;
-        width: 80%;
-        padding: 2%;
+        height: 100%;
+        width: 100%;
+        border: 1px solid lime;
     }
 
     /*Galleria pagina media*/

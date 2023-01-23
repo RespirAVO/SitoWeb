@@ -32,7 +32,7 @@ nav {
     display: inline-block;
     text-decoration: none;
     text-align: center;
-    color: var(--secondary);
+    color: var(--white);
     border: 1px solid var(--buttonBorder);
     padding: 12px 28px;
     border-radius: var(--radius);
@@ -42,7 +42,7 @@ nav {
     &:hover {
         border: 1px solid var(--logo);
         background: var(--buttonHover);
-        color: var(--main);
+        color: var(--black);
         transition: 0.3s;
     }
 }
@@ -50,8 +50,8 @@ nav {
 .btn--sub {
     display: inline-block;
     text-decoration: none;
-    color: var(--secondary);
-    border: 1px solid var(--secondary);
+    color: var(--white);
+    border: 1px solid var(--white);
     padding: 12px 28px;
     border-radius: var(--radius);
     font-size: var(--smallText);
@@ -59,9 +59,9 @@ nav {
     position: relative;
     cursor: pointer;
     &:hover {
-        border: 1px solid var(--secondary);
-        background: var(--main);
-        color: var(--secondary);
+        border: 1px solid var(--white);
+        background: var(--black);
+        color: var(--white);
         transition: 0.3s;
     }
 }
@@ -80,7 +80,7 @@ input[type="submit"] {
     border: none;
     transition: .2s linear;
     &:hover {
-        color: var(--main);
+        color: var(--black);
         transition: .2s linear;
     }
 }

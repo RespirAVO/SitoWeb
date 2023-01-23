@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&family=Raleway:wght@100;200&family=Roboto+Condensed:ital,wght@0,400;1,300&family=Roboto+Mono:ital,wght@0,200;1,200&display=swap');
 
 h1 {
-    color: var(--main);
-    font-weight: 1000;
+    color: var(--black);
+    font-size: var(--secondaryTitle);
+    font-weight: 1200;
 }
 
-h2, h3 {
-    color: var(--secondary);
-    font-weight: 500;
-    font-size: 30px;
+h2 {
+    color: var(--white);
+    font-weight: 1000;
+    font-size: var(--secondaryTitle);
+}
+
+h3 {
+    color: var(--black);
+    font-weight: 800;
+    font-size: var(--secondaryTitle);
 }

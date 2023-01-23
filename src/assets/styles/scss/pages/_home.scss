@@ -14,7 +14,7 @@
     p {
         margin: 10px 0 40px;
         font-size: var(--secondaryParagraph);
-        color: var(--secondary);
+        color: var(--white);
     }
     
     &--web_text {
@@ -38,7 +38,7 @@
     text-align: center;
     padding: 100px 0;
     h1 {
-        color: var(--secondary);
+        color: var(--white);
         margin-bottom: 40px;
         padding: 0;
     }
@@ -53,7 +53,7 @@
         text-align: center;
         padding: 100px 0;
         h1 {
-            color: var(--secondary);
+            color: var(--white);
             margin-bottom: 40px;
             padding: 0;
         }
@@ -62,14 +62,14 @@
     &--greendonors {
         margin: auto;
         width: 80%;
-        background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/banner.png);
+        background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../images/content/banner.png);
         @include bgImage-two;
         border-radius: var(--radius);
         border: 1px solid var(--buttonBorder);
         text-align: center;
         padding: 100px 0;
         h1 {
-            color: var(--secondary);
+            color: var(--white);
             margin-bottom: 40px;
             padding: 0;
         }

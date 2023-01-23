@@ -4,8 +4,8 @@
   /*Light Theme*/
   --background-light: white;
   --logo-light: rgb(15, 136, 0);
-  --main-light: black;
-  --secondary-light: #fff;
+  --black-light: black;
+  --white-light: #fff;
   --paragraph-light: rgb(125, 123, 123);
   --opacity-light: rgba(4, 9, 30, 0.7);
   --secondaryOpacity-light: rgba(0, 0, 0 , 0.7);
@@ -17,13 +17,14 @@
   --contact-field-light: rgb(101, 101, 101);
   --contact-text-light: #aaa;
   --contact-text2-light: #fff;
+  --contact-input-light: rgb(200,200,200);
   /*Maps color*/
   --maps-color1-light: #59d3b4;
   /*Dark theme*/
-  --background-dark: rgb(37,37,37);
+  --background-dark: rgb(37, 37, 37);
   --logo-dark: rgb(15, 136, 0);
-  --main-dark: rgb(192, 192, 192);
-  --secondary-dark: rgb(192, 192, 192);
+  --black-dark: rgb(192, 192, 192);
+  --white-dark: rgb(192, 192, 192);
   --paragraph-dark: rgb(125, 123, 123);
   --opacity-dark: rgba(4,9,30,0.7);
   --secondaryOpacity-dark: rgba(0,0,0,0.7);
@@ -35,6 +36,7 @@
   --contact-field-dark: rgb(101, 101, 101);
   --contact-text-dark: #aaa;
   --contact-text2-dark: #fff;
+  --contact-input-dark: rgb(70, 70, 70);
   /*Maps color*/
   --maps-color1-dark: #59d3b4;
 }
@@ -82,14 +84,21 @@ body {
 }
 
 h1 {
-  color: var(--main);
-  font-weight: 1000;
+  color: var(--black);
+  font-size: var(--secondaryTitle);
+  font-weight: 1200;
 }
 
-h2, h3 {
-  color: var(--secondary);
-  font-weight: 500;
-  font-size: 30px;
+h2 {
+  color: var(--white);
+  font-weight: 1000;
+  font-size: var(--secondaryTitle);
+}
+
+h3 {
+  color: var(--black);
+  font-weight: 800;
+  font-size: var(--secondaryTitle);
 }
 
 /* BOTTONI SUPERIORI PER LA SCELTA DELLE PAGINE*/
@@ -128,7 +137,7 @@ nav .fa-solid {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  color: var(--secondary);
+  color: var(--white);
   border: 1px solid var(--buttonBorder);
   padding: 12px 28px;
   border-radius: var(--radius);
@@ -139,7 +148,7 @@ nav .fa-solid {
 .btn:hover {
   border: 1px solid var(--logo);
   background: var(--buttonHover);
-  color: var(--main);
+  color: var(--black);
   transition: 0.3s;
 }
 
@@ -147,8 +156,8 @@ nav .fa-solid {
 .btn--sub {
   display: inline-block;
   text-decoration: none;
-  color: var(--secondary);
-  border: 1px solid var(--secondary);
+  color: var(--white);
+  border: 1px solid var(--white);
   padding: 12px 28px;
   border-radius: var(--radius);
   font-size: var(--smallText);
@@ -157,9 +166,9 @@ nav .fa-solid {
   cursor: pointer;
 }
 .btn--sub:hover {
-  border: 1px solid var(--secondary);
-  background: var(--main);
-  color: var(--secondary);
+  border: 1px solid var(--white);
+  background: var(--black);
+  color: var(--white);
   transition: 0.3s;
 }
 
@@ -179,7 +188,7 @@ input[type=submit] {
   transition: 0.2s linear;
 }
 input[type=submit]:hover {
-  color: var(--main);
+  color: var(--black);
   transition: 0.2s linear;
 }
 
@@ -209,7 +218,7 @@ input[type=submit]:hover {
 #form .form__label label {
   font-size: var(--thirdText);
   padding: 1%;
-  color: var(--secondary);
+  color: var(--black);
 }
 #form .form__label #email {
   float: right;
@@ -223,20 +232,24 @@ input[type=submit]:hover {
   height: 30px;
   width: 300px;
   margin: 0 2% 0 2%;
-  border: 1px solid var(--contact-text);
+  border: none;
   border-radius: var(--radiusTwo);
+  background: var(--contact-input);
 }
 #form .form__email-nameEmail input::-moz-placeholder {
   outline: none;
   padding: 2%;
+  color: var(--paragraph);
 }
 #form .form__email-nameEmail input:-ms-input-placeholder {
   outline: none;
   padding: 2%;
+  color: var(--paragraph);
 }
 #form .form__email-nameEmail input:focus, #form .form__email-nameEmail input::placeholder {
   outline: none;
   padding: 2%;
+  color: var(--paragraph);
 }
 #form .form__email-object {
   margin: 2% 0;
@@ -248,20 +261,24 @@ input[type=submit]:hover {
   height: 30px;
   width: 100%;
   margin: 0 2% 0 2%;
-  border: 1px solid var(--contact-text);
+  border: none;
+  background: var(--contact-input);
   border-radius: var(--radiusTwo);
 }
 #form .form__email-object input::-moz-placeholder {
   outline: none;
   padding: 2%;
+  color: var(--paragraph);
 }
 #form .form__email-object input:-ms-input-placeholder {
   outline: none;
   padding: 2%;
+  color: var(--paragraph);
 }
 #form .form__email-object input:focus, #form .form__email-object input::placeholder {
   outline: none;
   padding: 2%;
+  color: var(--paragraph);
 }
 #form .form__email-message {
   display: flex;
@@ -276,20 +293,24 @@ input[type=submit]:hover {
   height: 300px;
   max-height: 300px;
   min-height: 250px;
-  border: 1px solid var(--contact-text);
+  border: none;
+  background: var(--contact-input);
   border-radius: var(--radiusTwo);
 }
 #form .form__email-message textarea::-moz-placeholder {
   outline: none;
   padding: 2%;
+  color: var(--paragraph);
 }
 #form .form__email-message textarea:-ms-input-placeholder {
   outline: none;
   padding: 2%;
+  color: var(--paragraph);
 }
 #form .form__email-message textarea:focus, #form .form__email-message textarea::placeholder {
   outline: none;
   padding: 2%;
+  color: var(--paragraph);
 }
 
 /* Campo per mittente e messaggio da inviare */
@@ -356,6 +377,14 @@ input[type=submit]:hover {
   text-align: center;
 }
 
+/* SEZIONE PRINCIPALE DELLE PAGINE */
+.info {
+  width: 90%;
+  margin: auto;
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
 /* SPAZIO ORIZZONTALE PER INFO NELLE PAGINE */
 .row {
   margin-top: 5%;
@@ -365,7 +394,7 @@ input[type=submit]:hover {
 .row_photo {
   margin: 0 auto;
   width: 1000px;
-  height: 500px;
+  height: 650px;
 }
 .row_photo-img {
   width: 100%;
@@ -373,16 +402,9 @@ input[type=submit]:hover {
   border-radius: var(--radius);
 }
 .row_photo-title {
+  color: var(--logo);
   width: 100%;
   text-align: center;
-}
-
-/* SEZIONE PRINCIPALE DELLE PAGINE */
-.info {
-  width: 90%;
-  margin: auto;
-  padding-top: 70px;
-  padding-bottom: 30px;
 }
 
 /* SPAZIO VERTICALE PER INFO NELLE PAGINE */
@@ -415,7 +437,7 @@ input[type=submit]:hover {
   cursor: pointer;
 }
 .info_col--web_text:hover {
-  color: var(--main);
+  color: var(--black);
 }
 .info_col--map {
   width: 100%;
@@ -435,7 +457,7 @@ hr {
 
 /* STYLE PER LE MAPPE e I GRAFICI */
 h4 {
-  color: var(--secondary);
+  color: var(--black);
 }
 
 .mapSelector-text {
@@ -444,7 +466,7 @@ h4 {
 }
 .mapSelector-text h4 {
   padding: 0 2% 0 2%;
-  color: var(--secondary);
+  color: var(--black);
 }
 .mapSelector-selector {
   width: -webkit-fit-content;
@@ -492,13 +514,13 @@ h4 {
   padding: 30px 0;
 }
 .footer h4 {
-  color: var(--main);
+  color: var(--black);
   margin-bottom: 30px;
   margin-top: 20px;
   font-weight: 600;
 }
 .footer p {
-  color: var(--main);
+  color: var(--black);
 }
 .footer--change {
   font-size: var(--smallText);
@@ -529,7 +551,7 @@ h4 {
   }
   nav .fa-solid {
     display: block;
-    color: var(--secondary);
+    color: var(--white);
     margin: 5%;
     font-size: var(--mainParagraph);
   }
@@ -552,10 +574,10 @@ h4 {
   }
   /*Bottoni*/
   .btn {
-    color: var(--main);
+    color: var(--black);
     text-align: center;
     text-decoration: none;
-    border: 1px solid var(--main);
+    border: 1px solid var(--black);
     padding: 8px 8px;
     border-radius: var(--radius);
     font-size: var(--secondaryParagraph);
@@ -564,14 +586,17 @@ h4 {
   }
   /*titolo spazio contattaci*/
   .contact {
-    color: var(--main);
+    color: var(--black);
   }
   .contact h1 {
     font-size: var(--secondaryText);
   }
   /*Riga nella pagina*/
   .row h1 {
-    color: var(--main);
+    color: var(--black);
+  }
+  .row_photo-img {
+    height: 250px;
   }
   /*Colonna pagina*/
   /*Titolo style*/
@@ -597,18 +622,20 @@ h4 {
   }
   .map {
     width: 300px;
-    height: 300px;
-    margin-top: 300px;
+    height: 500px;
+    margin-top: 50px;
   }
   #gallery {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    height: 900px;
+    border: 1px solid red;
   }
   #mapImages {
-    height: 80%;
-    width: 80%;
-    padding: 2%;
+    height: 100%;
+    width: 100%;
+    border: 1px solid lime;
   }
   /*Galleria pagina media*/
   .gallery {
@@ -662,7 +689,7 @@ h4 {
 .text p {
   margin: 10px 0 40px;
   font-size: var(--secondaryParagraph);
-  color: var(--secondary);
+  color: var(--white);
 }
 .text--web_text {
   color: var(--logo);
@@ -686,7 +713,7 @@ h4 {
   padding: 100px 0;
 }
 .contact h1 {
-  color: var(--secondary);
+  color: var(--white);
   margin-bottom: 40px;
   padding: 0;
 }
@@ -702,14 +729,14 @@ h4 {
   padding: 100px 0;
 }
 .contact--avomobility h1 {
-  color: var(--secondary);
+  color: var(--white);
   margin-bottom: 40px;
   padding: 0;
 }
 .contact--greendonors {
   margin: auto;
   width: 80%;
-  background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../../images/content/banner.png);
+  background-image: linear-gradient(var(--secondaryOpacity), var(--secondaryOpacity)), url(../../images/content/banner.png);
   background-position: center;
   background-size: cover;
   border-radius: var(--radius);
@@ -718,7 +745,7 @@ h4 {
   padding: 100px 0;
 }
 .contact--greendonors h1 {
-  color: var(--secondary);
+  color: var(--white);
   margin-bottom: 40px;
   padding: 0;
 }
@@ -728,8 +755,8 @@ h4 {
   :root {
     --background: var(--background-light);
     --logo: var(--logo-light);
-    --main: var(--main-light);
-    --secondary: var(--secondary-light);
+    --black: var(--black-light);
+    --white: var(--white-light);
     --paragraph: var(--paragraph-light);
     --opacity: var(--opacity-light);
     --secondaryOpacity: var(--secondaryOpacity-light);
@@ -741,6 +768,7 @@ h4 {
     --contact-field: var(--contact-field-light);
     --contact-text: var(--contact-text-light);
     --contact-text2: var(--contact-text2-light);
+    --contact-input: var(--contact-input-light);
     /*Maps color*/
     --maps-color1: var(--maps-color1-light);
   }
@@ -750,8 +778,8 @@ h4 {
   :root {
     --background: var(--background-dark);
     --logo: var(--logo-dark);
-    --main: var(--main-dark);
-    --secondary: var(--secondary-dark);
+    --black: var(--black-dark);
+    --white: var(--white-dark);
     --paragraph: var(--paragraph-dark);
     --opacity: var(--opacity-dark);
     --secondaryOpacity: var(--secondaryOpacity-dark);
@@ -763,6 +791,7 @@ h4 {
         --contact-field: var(--contact-field-dark);
     --contact-text: var(--contact-text-dark);
     --contact-text2: var(--contact-text2-dark);
+    --contact-input: var(--contact-input-dark);
     /*Maps color*/
     --maps-color1: var(--maps-color1-dark);
   }
