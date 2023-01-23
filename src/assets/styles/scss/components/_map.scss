@@ -1,10 +1,16 @@
 /* STYLE PER LE MAPPE e I GRAFICI */
+// colore delle note delle rilevazioni
+h4 {
+    color: var(--secondary);
+}
+
 .mapSelector {
     &-text {
         display: flex;
         justify-content: center;
         h4 {
             padding: 0 2% 0 2%;
+            color: var(--secondary);
         }
     }
     &-selector {
