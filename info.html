@@ -7,11 +7,12 @@
     <script src="https://kit.fontawesome.com/af19d86422.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/assets/styles/css/main.css">
     <script src="src/assets/scripts/logo.js"></script>
+    <script src="src/assets/scripts/copyright.js"></script>
     <link rel="icon" href="src/assets/images/loghi/logo_green.png" type="x-icon">
     <title>RespirAVO</title>
 </head>
 
-<body onload="changeLogo()">
+<body onload="changeLogo(), date()">
     <!--Header-->
     <section class="sub_header">
         <nav>
@@ -47,7 +48,7 @@
                 <h3>Impostare Flow</h3>
                 <p>
                     Video tutorial per impostare il rilevatore 
-                    <a href="https://plumelabs.com/en/flow/" class="info_col--web_text" target="_blank">Flow by Plume Labs</a>
+                    <a href="https://plumelabs.com/en/flow/" class="info_col--web_text" target="_blank">Flow by Plume Labs</a>.
                 </p>
                 <iframe 
                     width="750" height="400" 
@@ -74,7 +75,7 @@
                 <h3>Come effetuare una rilevazione con Flow?</h3>
                 <p>
                     Ecco un breve tutorial che spiega come effetuare una rilevazione con 
-                    <a href="https://plumelabs.com/en/flow/" class="info_col--web_text" target="_blank">Flow by Plume Labs</a>
+                    <a href="https://plumelabs.com/en/flow/" class="info_col--web_text" target="_blank">Flow by Plume Labs</a>.
                 </p>
                 <iframe width="750" height="400" 
                     src="https://www.youtube.com/embed/SfeMJ-nErgI" 
@@ -107,24 +108,26 @@
                 </p>
                 <p>
                     Ma cosa indicano queste "sigle"? Partiamo con il VOC, questo tipo di inquinante conosciuti anche come COV (cioè Composti Organici Volatili). 
-                    I valori più alti si raggiungono in ambienti chiusi. Tra questi gas ci sono la CO2 e  CO (monossido di carbonio). Questi son conosciuti anche 
-                    come Killer Silenziosi, visto che non sono percepiti dall’olfatto. Possono portare, se ci si è esposti a lungo ad irritazioni, emicranie e 
+                    I valori più alti si raggiungono in ambienti chiusi. Tra questi gas ci sono la CO2 e  CO (monossido di carbonio). Questi sono anche conosciuti 
+                    come Killer Silenziosi, visto che non sono percepiti dall'olfatto. Possono portare, se ci si è esposti a lungo, ad irritazioni, emicranie e 
                     danneggiamento di alcuni organi interni quali fegato, sistema nervoso centrale e reni.
                 </p>
                 <p>
                     Continuando troviamo l'NO2, questo tipo di inquinante è meglio conosciuto come  Biossido di Azoto, è un gas molto tossico ed irritante. 
-                    Vista la sua alta densità tende a depositarsi al suolo. L’esposizione a tassi elevati di questo agente inquinante può portare a disfunzioni 
+                    Vista la sua alta densità tende a depositarsi sul suolo. L'esposizione a tassi elevati di questo agente inquinante può portare a disfunzioni 
                     respiratorie e un aumento di probabilità di contrarre tumore.
                 </p>
                 <p>
-                    Infine troviamo i due PM: PM 10 e PM 2.5<br/><br/>Il PM 2.5 è una classificazione numerica data alle POLVERI SOTTILI in base alle dimensioni 
-                    medie delle loro particelle. si raggruppano tutte le particelle aventi dimensioni minori o uguali a 2,5 (µm) (millesimo  di mm). 
-                    Rispetto al PM10, che grava “solamente” su bronchi, trachea e vie respiratorie, il PM2.5 penetra negli alveoli polmonari fino ad arrivare 
+                    Infine troviamo i due PM: PM 10 e PM 2.5<br/><br/>Il PM 10 è una classificazione numerica data alle polveri sottili in base alle dimensioni medie delle loro
+                    particelle.
+                    Si raggruppano tutte le particelle aventi dimensioni minori o uguali a 10 µm (millesimo di mm). Se in grandi
+                    quantità sono considerati dannose per la salute.
+                    <br/>
+                    Anche il PM 2.5 è una classificazione numerica data alle polveri sottili, ma in questo caso le particelle hanno una dimensione minore o uguale a 2,5 µm (millesimo
+                    di mm). <br/> 
+                    Rispetto al PM10, che grava “solamente” sui bronchi, trachea e vie respiratorie, il PM2.5 penetra negli alveoli polmonari
+                    fino ad arrivare
                     anche nel circolo sanguigno.
-                </p>
-                <p>
-                    Il PM 10è una classificazione numerica data alle POLVERI SOTTILI in base alle dimensioni medie delle loro particelle. 
-                    Si raggruppano tutte le particelle aventi dimensioni minori o uguali a 10 (µm) (millesimo  di mm). Se in grandi quantità sono considerati dannose per la salute.
                 </p>
             </div>            
         </div>
@@ -145,8 +148,10 @@
                     <img src="src/assets/images/content/file csv.png" alt="immagine file .csv"/>
                 </a>
                 <p>
-                    Iniziamo spiegando cosa sono i file .csv . I file Comma Separated Value (dall'acronimo csv) sono dei file nel quale i dati vengono separati 
-                    da una virgola (comma). 
+                    I file Comma Separated Value (dall'acronimo csv) sono dei file nel quale i dati vengono separati 
+                    da una virgola (comma). Qua infatti troviamo scritti tanti valori tutti separati da una virgola. <br/><br/>
+                    Grazie al nostro programma Unicsv, infatti, siamo riusciti ad avere un unico file composto da: <br/>
+                    posizioneGPS, valoreRilevato1, valoreRilevato2, valoreRilevato3, valoreRilevato4
                 </p>
             </div>
         </div>
@@ -170,10 +175,10 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <p>@2021 - 2022</p>
-        <p>Istituto tecnico industriale "A.Avogadro" di Torino</p>
+        <p>Istituto Tecnico Industriale "A.Avogadro" di Torino</p>
         <p>C.so San Maurizio 8, 10125, Torino (TO)</p>
         <br/>
-        <p class="footer--license">CC By Classe 3C Info a.s. 2021/2022 - 2022-2023 Copyright &copy;</p>
+        <p class="footer--license"></p>
 
         <!--Social-->
         <div class="icons">

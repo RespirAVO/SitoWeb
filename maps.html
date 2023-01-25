@@ -15,12 +15,13 @@
     <script src="src/assets/scripts/map.js" type="module" defer></script>
     <script src="src/assets/scripts/graph.js" type="module"  defer></script>
     <script src="src/assets/scripts/logo.js"></script>
+    <script src="src/assets/scripts/copyright.js"></script>
     <link rel="stylesheet" href="./src/assets/styles/css/main.css">
     <link rel="icon" href="src/assets/images/loghi/logo_green.png" type="x-icon">
     <title>RespirAVO</title>
 </head>
 
-<body onload="changeLogo()">
+<body onload="changeLogo(), date()">
     <!--Header-->
     <section class="sub_header">
         <nav>
@@ -55,7 +56,7 @@
             <div class="info_col">
                 <h3>Mappa del percorso delle rilevazioni</h3>
                 <p>
-                    Le mappe che seguono rappresentano i percorsi da noi effettuati e le rispettive rilevazioni
+                    Le mappe che seguono rappresentano i percorsi da noi effettuati e le rispettive rilevazioni.
                 </p>
             </div>
         </div>
@@ -137,6 +138,7 @@
         <br/>
 
         <!--Riga per il grafico delle rilevazioni-->
+    <!--
         <div class="row">
             <div class="info_col">
                 <h1>Grafico delle rilevazioni</h1>
@@ -145,6 +147,7 @@
                 </p>
             </div>
         </div>
+    -->
 
         <!--Riga 3 per il grafico delle rilevazioni-->
         <div class="row">
@@ -167,10 +170,10 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <p>@2021 - 2022</p>
-        <p>Istituto tecnico industriale "A.Avogadro" di Torino</p>
+        <p>Istituto Tecnico Industriale "A.Avogadro" di Torino</p>
         <p>C.so San Maurizio 8, 10125, Torino (TO)</p>
         <br/>
-        <p class="footer--license">CC By Classe 3C Info a.s. 2021/2022 - 2022-2023 Copyright &copy;</p>
+        <p class="footer--license"></p>
 
         <!--Social-->
         <div class="icons">

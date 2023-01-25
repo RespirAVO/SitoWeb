@@ -7,11 +7,12 @@
     <script src="https://kit.fontawesome.com/af19d86422.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./src/assets/styles/css/main.css">
     <script src="src/assets/scripts/logo.js"></script>
+    <script src="src/assets/scripts/copyright.js"></script>
     <link rel="icon" href="src/assets/images/loghi/logo_green.png" type="x-icon">
     <title>RespirAVO</title>
 </head>
 
-<body onload="changeLogo()">
+<body onload="changeLogo(), date()">
     <!--Header-->
     <section class="sub_header">
         <nav>
@@ -122,27 +123,8 @@
                     di avere in un unico file i dati delle posizioni e quelli delle misure, sincronizzandoli in base al tempo di rilevazione, unendo i dati ravvicinati 
                     di circa 30 secondi. Questo era necessario, perche per creare le mappe e i grafici delle misure dovevamo avere un unico file CSV completo di posizioni 
                     e misure. I dati forniti da Plume Labs, infatti, sono generati su due file CSV: uno contiene i dati delle le posizioni GPS fornite dal nostro telefono, 
-                    mentre il secondo file contienei valori delle misure rilevati da Flow.
+                    mentre il secondo file contiene i valori delle misure rilevati da Flow.
                 </p>
-                <p>
-                    Per chi vuole conoscere meglio Unicsv:<br/>
-                    <p>
-                        La struttura di Unicsv è suddivisa in livelli:<br/><br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Il livello più vicino all'utente è quello che permette all'utente di unire le misure<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Il livello più lontano, invece, comprende tutta la collezione di librerie scritte per il programma.<br/><br/><br/>
-                        Le librerie scritte sono:<br/><br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- csvlib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- assertlib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- filelib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- iolib<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- siglib<br/>
-                    </p>
-                    <p>
-                        Le librerie Assertlib, filelib, e iolib sono delle librerie così dette "wrapper" ovvero librierie già presenti in C standard,
-                        ma queste hanno alcune funzioni in più; un esempio di funzione presente in queste librerie è il println, che corrisponde al printf
-                        del C standard ma in più aggiunge un \n alla fine, in modo da non doverlo scrivere ogni volta.<br/>
-                        La libreria filelib, invece, permette di apirere un file senza scrivere ogni volta fileopen e poi la modalità di apertura.
-                    </p>
             </div>
         </div>
 
@@ -160,14 +142,14 @@
                 <p>
                    Per la creazione delle mappe presenti sul sito abbiamo utilizzato una libreria di Javascript, chiamata Leaflet.
                    (Javascript è il linguaggio utilizzato nei siti web per far si che ad ogni azione compiuta, per esempio il click di un bottone,
-                   dall'utente avvenga qualcosa sul sito)
+                   dall'utente avvenga qualcosa sul sito).
                 </p>   
                 <p>
                     Per chi vuole conoscere meglio Leaflet:<br/><br/>
                     Leaflet è una libreria che permette di lavorare con mappe online come (Mapbox, Open Street Map e molte altre), mettendole dentro una finestra da cui e possibile interagire con la mappa.
-                    Le interazioni possono essere zoomare, mettere figure geometriche, mettere makers e perfino immagini a cui e possibile assocciarci una didascalia, la quale spiega il marker o immagine con informazioni utili.<br/><br/>
+                    Le interazioni possono essere zoomare, mettere figure geometriche, mettere makers e perfino immagini a cui e possibile assocciarci una didascalia.<br/><br/>
 
-                    Nel sito è stata usata la tecnologia per tracciare il perscorso di una misurazione dato il suo file csv, 
+                    Nel sito è stata usata la tecnologia per tracciare il perscorso di una misurazione dato il suo file csv; 
                     dal file saranno prese informazioni che saranno rappresentate attraverso il colore del marker, che indica il superamento del limite di una sostanza,
                     selezionabile dal sito tramite il menu a tendina.
                     Per ricreare il percoro della rilevazione sulla mappa è necessario che il file che si fornisce abbia un campo timestamp che esprime il tempo in secondi dalla UNIX epoch, poi i campi per le coordinate geografiche il cui nome del campo puo essere espresso
@@ -189,9 +171,9 @@
                     <img src="src/assets/images/content/OSM.png" alt="immagine di OpenStreetMap"/>
                 </a>
                 <p>
-                   Partiamo col dire cos'è OpenStreetMap.<br/> OpenStreetMap è un progetto mondiale libero e collaborativo
+                   Cos'è OpenStreetMap?<br/> OpenStreetMap è un progetto mondiale libero e collaborativo
                    che permette la raccolta di dati geografici di città, paesi, nazioni, strade, negozi, ristoranti, e cosi via.
-                   Una delle sue caratteristiche principali è il fatto di essere libero, rendendo possibile l'accesso a tutti ai database
+                   Una delle sue caratteristiche principali è il fatto di essere libero, rendendo possibile l'accesso da parte di tutti ai suoi database.
                 </p>
                 <p>
 
@@ -211,10 +193,10 @@
             referrerpolicy="no-referrer-when-downgrade">
         </iframe>
         <p>@2021 - 2022</p>
-        <p>Istituto tecnico industriale "A.Avogadro" di Torino</p>
+        <p>Istituto Tecnico Industriale "A.Avogadro" di Torino</p>
         <p>C.so San Maurizio 8, 10125, Torino (TO)</p>
         <br/>
-        <p class="footer--license">CC By Classe 3C Info a.s. 2021/2022 - 2022-2023 Copyright &copy;</p>
+        <p class="footer--license"></p>
 
         <!--Social-->
         <div class="icons">

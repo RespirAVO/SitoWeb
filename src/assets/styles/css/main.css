@@ -574,10 +574,10 @@ h4 {
   }
   /*Bottoni*/
   .btn {
-    color: var(--black);
+    color: var(--white);
     text-align: center;
     text-decoration: none;
-    border: 1px solid var(--black);
+    border: 1px solid var(--buttonBorder);
     padding: 8px 8px;
     border-radius: var(--radius);
     font-size: var(--secondaryParagraph);
