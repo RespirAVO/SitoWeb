@@ -6,8 +6,10 @@
     --black-light:              black;
     --white-light:              #fff;
     --paragraph-light:          rgb(125, 123, 123);
+    --text-important-light:     #e7ce45;
     --opacity-light:            rgba(4, 9, 30, 0.7); 
     --secondaryOpacity-light:   rgba(0, 0, 0 , 0.7);
+    --thirdOpacity-light:       rgba(0, 0, 0, 0.554);
     --menuBar-light:            #aaa;
     --buttonText-light:         #fff;
     --buttonBorder-light:       #fff;
@@ -27,8 +29,10 @@
     --black-dark:              rgb(192, 192, 192);
     --white-dark:              rgb(192, 192, 192);
     --paragraph-dark:          rgb(125, 123, 123);
+    --text-important-dark:     #FFD700;
     --opacity-dark:            rgba(4,9,30,0.7); 
     --secondaryOpacity-dark:   rgba(0,0,0,0.7);
+    --thirdOpacity-dark:       rgba(0, 0, 0, 0.554);
     --menuBar-dark:            #aaa;
     --buttonText-dark:         #fff;
     --buttonBorder-dark:       #fff;
@@ -45,6 +49,7 @@
 /* GRANDEZZA DEL TESTO E ALTRO */
 :root {
     --title: 62px;
+    --importantTitle: 35px;
     --secondaryTitle: 30px;
     --mainParagraph: 25px;
     --secondaryText: 20px;

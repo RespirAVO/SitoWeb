@@ -3,11 +3,13 @@
     :root {
         --background:         var(--background-light);
         --logo:               var(--logo-light);
-        --black:               var(--black-light);
-        --white:          var(--white-light);
+        --black:              var(--black-light);
+        --white:              var(--white-light);
         --paragraph:          var(--paragraph-light);
+        --text-important:     var(--text-important-light);
         --opacity:            var(--opacity-light); 
         --secondaryOpacity:   var(--secondaryOpacity-light);
+        --thirdOpacity:       var(--thirdOpacity-light);
         --menuBar:            var(--menuBar-light);
         --buttonText:         var(--buttonText-light);
         --buttonBorder:       var(--buttonBorder-light);
@@ -27,11 +29,13 @@
     :root {
         --background:         var(--background-dark);
         --logo:               var(--logo-dark);
-        --black:               var(--black-dark);
-        --white:          var(--white-dark);
+        --black:              var(--black-dark);
+        --white:              var(--white-dark);
         --paragraph:          var(--paragraph-dark);
+        --text-important:     var(--text-important-dark);
         --opacity:            var(--opacity-dark); 
         --secondaryOpacity:   var(--secondaryOpacity-dark);
+        --thirdOpacity:       var(--thirdOpacity-dark);
         --menuBar:            var(--menuBar-dark);
         --buttonText:         var(--buttonText-dark);
         --buttonBorder:       var(--buttonBorder-dark);

@@ -30,6 +30,12 @@
 /* SPAZIO VERTICALE PER INFO NELLE PAGINE */
 .info_col {
     flex-basis: 100%;
+    &.important {
+        padding: 3%;
+        border-radius: var(--radius);
+        border: 3px solid var(--text-important);
+        background: linear-gradient(var(--thirdOpacity), var(--text-important));
+    }
     p {
         color: var(--paragraph);
         font-size: var(--mainParagraph);

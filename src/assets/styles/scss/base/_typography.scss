@@ -17,3 +17,12 @@ h3 {
     font-weight: 800;
     font-size: var(--secondaryTitle);
 }
+
+.text_important {
+    text-align: center;
+    color: var(--text-important);
+    font-size: var(--importantTitle);
+}
+#paragraph_important {
+    color: var(--black);
+}

@@ -7,8 +7,10 @@
   --black-light: black;
   --white-light: #fff;
   --paragraph-light: rgb(125, 123, 123);
+  --text-important-light: #e7ce45;
   --opacity-light: rgba(4, 9, 30, 0.7);
   --secondaryOpacity-light: rgba(0, 0, 0 , 0.7);
+  --thirdOpacity-light: rgba(0, 0, 0, 0.554);
   --menuBar-light: #aaa;
   --buttonText-light: #fff;
   --buttonBorder-light: #fff;
@@ -26,8 +28,10 @@
   --black-dark: rgb(192, 192, 192);
   --white-dark: rgb(192, 192, 192);
   --paragraph-dark: rgb(125, 123, 123);
+  --text-important-dark: #FFD700;
   --opacity-dark: rgba(4,9,30,0.7);
   --secondaryOpacity-dark: rgba(0,0,0,0.7);
+  --thirdOpacity-dark: rgba(0, 0, 0, 0.554);
   --menuBar-dark: #aaa;
   --buttonText-dark: #fff;
   --buttonBorder-dark: #fff;
@@ -44,6 +48,7 @@
 /* GRANDEZZA DEL TESTO E ALTRO */
 :root {
   --title: 62px;
+  --importantTitle: 35px;
   --secondaryTitle: 30px;
   --mainParagraph: 25px;
   --secondaryText: 20px;
@@ -99,6 +104,16 @@ h3 {
   color: var(--black);
   font-weight: 800;
   font-size: var(--secondaryTitle);
+}
+
+.text_important {
+  text-align: center;
+  color: var(--text-important);
+  font-size: var(--importantTitle);
+}
+
+#paragraph_important {
+  color: var(--black);
 }
 
 /* BOTTONI SUPERIORI PER LA SCELTA DELLE PAGINE*/
@@ -410,6 +425,12 @@ input[type=submit]:hover {
 /* SPAZIO VERTICALE PER INFO NELLE PAGINE */
 .info_col {
   flex-basis: 100%;
+}
+.info_col.important {
+  padding: 3%;
+  border-radius: var(--radius);
+  border: 3px solid var(--text-important);
+  background: linear-gradient(var(--thirdOpacity), var(--text-important));
 }
 .info_col p {
   color: var(--paragraph);
@@ -758,8 +779,10 @@ h4 {
     --black: var(--black-light);
     --white: var(--white-light);
     --paragraph: var(--paragraph-light);
+    --text-important: var(--text-important-light);
     --opacity: var(--opacity-light);
     --secondaryOpacity: var(--secondaryOpacity-light);
+    --thirdOpacity: var(--thirdOpacity-light);
     --menuBar: var(--menuBar-light);
     --buttonText: var(--buttonText-light);
     --buttonBorder: var(--buttonBorder-light);
@@ -781,8 +804,10 @@ h4 {
     --black: var(--black-dark);
     --white: var(--white-dark);
     --paragraph: var(--paragraph-dark);
+    --text-important: var(--text-important-dark);
     --opacity: var(--opacity-dark);
     --secondaryOpacity: var(--secondaryOpacity-dark);
+    --thirdOpacity: var(--thirdOpacity-dark);
     --menuBar: var(--menuBar-dark);
     --buttonText: var(--buttonText-dark);
     --buttonBorder: var(--buttonBorder-dark);
