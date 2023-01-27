@@ -5,6 +5,7 @@
   --background-light: white;
   --logo-light: rgb(15, 136, 0);
   --black-light: black;
+  --black2-light: black;
   --white-light: #fff;
   --paragraph-light: rgb(125, 123, 123);
   --text-important-light: #e7ce45;
@@ -26,6 +27,7 @@
   --background-dark: rgb(37, 37, 37);
   --logo-dark: rgb(15, 136, 0);
   --black-dark: rgb(192, 192, 192);
+  --black2-dark: black;
   --white-dark: rgb(192, 192, 192);
   --paragraph-dark: rgb(125, 123, 123);
   --text-important-dark: #FFD700;
@@ -106,14 +108,14 @@ h3 {
   font-size: var(--secondaryTitle);
 }
 
-.text_important {
+#text_important {
   text-align: center;
   color: var(--text-important);
   font-size: var(--importantTitle);
 }
 
 #paragraph_important {
-  color: var(--black);
+  color: var(--black2);
 }
 
 /* BOTTONI SUPERIORI PER LA SCELTA DELLE PAGINE*/
@@ -777,6 +779,7 @@ h4 {
     --background: var(--background-light);
     --logo: var(--logo-light);
     --black: var(--black-light);
+    --black2: var(--black2-light);
     --white: var(--white-light);
     --paragraph: var(--paragraph-light);
     --text-important: var(--text-important-light);
@@ -802,6 +805,7 @@ h4 {
     --background: var(--background-dark);
     --logo: var(--logo-dark);
     --black: var(--black-dark);
+    --black2: var(--black2-dark);
     --white: var(--white-dark);
     --paragraph: var(--paragraph-dark);
     --text-important: var(--text-important-dark);
