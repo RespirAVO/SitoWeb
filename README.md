@@ -1,7 +1,6 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/3d231360-ca98-45c2-837e-8248c03aea87/deploy-status)](https://app.netlify.com/sites/respiravo/deploys)
 
-__Sito web della classe 3C relativo al progetto RespirAVO__
-
+##Sito web della classe 3C relativo al progetto RespirAVO
 Qua puoi trovare il codice sorgente del nostro sito web che abbiamo creato per raggiungere
 piu persone possibili con il nostro progetto RespirAVO.
 
